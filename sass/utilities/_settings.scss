@@ -1,0 +1,80 @@
+
+// -------------------------
+// Settings
+// -------------------------
+
+
+// Colors
+// -------------------------
+$dark: #373737;
+
+$light: #fbfaf9;
+
+$gray: #272727;
+
+$white: #f3f1ee;
+
+$green: #80b041;
+
+$blue: #439fbf;
+
+$yellow: #e2b747;
+
+$red: #fe694b;
+
+$orange: #e2b747;
+
+$purple: #5a62d2;
+
+$mint: #47b3a4;
+
+
+
+
+// Navigation
+// -------------------------
+$navbarBackground: #373737;
+
+
+
+// Sprites
+// -------------------------
+$logoPath: "../images/LOGO+@2x.png";
+
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white;
+$textColor:             #4d4d4b;
+
+
+
+// Links
+// -------------------------
+$linkColor:             #439fbf;
+$linkColorHover:        darken($linkColor, 15%);
+
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:       "chaparral-pro", Georgia, "Times New Roman", Times, serif;
+$baseFontSize:          14px;
+$baseFontFamily:        $sansFontFamily;
+$baseLineHeight:        18px;
+$altFontFamily:         $serifFontFamily;
+$em-base: 				16px;
+
+
+
+// Tables
+// -------------------------
+$tableBackground:                   lighten($white, 10%); // overall background-color
+$tableBackgroundAccent:             #f5f5f5; // for striping
+$tableBackgroundHover:              #f5f5f5; // for hover
+$tableBorder:                       #d3d1c8; // table and cell border
+
+
+

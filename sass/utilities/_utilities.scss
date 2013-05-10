@@ -1,0 +1,128 @@
+
+// ------------------------
+// UTILITY FUNCTIONS/MIXINS
+// ------------------------
+
+
+// EmCalc
+// -------
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+
+// Breakpoints
+// ------------
+@mixin breakpoint($point) {
+  @if $point == large-monitors {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == tablet-H {
+    @media (max-width: 979px) { @content; }
+  }
+  @else if $point == tablet-V {
+    @media (max-width: 768px)  { @content; }
+  }
+
+  @else if $point == phones {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+
+
+// Circle Image 
+// ------------
+@mixin circle-img {
+	border-radius: 1000px;
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+@mixin circle-img-overlay {
+	position: relative;
+}
+
+
+// Overlays/Fades
+// --------------
+@mixin overlay-fade-right { 
+  position: relative;
+
+  &:after {
+    top:0;
+    right:0;
+    content: '';
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 20%;
+    @include filter-gradient(rgba(250, 250, 250, .8), rgba(250, 250, 250, 0.5), horizontal); // IE6-9
+    @include background-image(linear-gradient(right,  rgba(250, 250, 250, .8) 13%, rgba(250, 250, 250, .0) 100%));
+  }
+}
+
+
+// Text Shadows
+// -------------------------
+@mixin darkTextShadow {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+}
+@mixin lightTextShadow {
+	text-shadow: 0 1px 1px rgba(250, 250, 250, 1);
+}
+
+
+
+
+// ZEBRA-STRIPING for Tables
+// ----------------------------
+
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+@mixin table-striped {
+  tbody {
+    tr:nth-child(odd) th, 
+    tr:nth-child(odd) td {
+      background-color: $tableBackgroundAccent;
+    }
+  }
+}
+
+
+
+
+// UTILITY CLASSES
+// ---------------
+
+// Quick Stat Colors
+
+.gain {
+	color: $green;
+}
+
+.loss {
+	color: $red;
+}
+
+// Quick floats
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}

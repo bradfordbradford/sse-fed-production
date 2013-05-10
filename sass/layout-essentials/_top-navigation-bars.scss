@@ -1,0 +1,322 @@
+
+// Top NavBar
+// --------------------------------------------------
+
+.navbar {
+	position: relative;
+	z-index: 10;
+	border-top: 2px solid $gray;
+	border-bottom: 2px solid $gray;
+	margin-bottom:0;
+
+		.navbar-inner {
+		@include box-shadow(0 2px 0px $gray);
+		padding: 0;
+		background:$navbarBackground;
+		filter:none !important; // ie
+		@include border-radius(0);
+		border:0;
+	}
+
+
+	.nav {
+		margin:0;
+
+		li > a {
+			padding: 20px;
+		}
+	}
+	// Menu Button
+	.btn-navbar {
+		background:none;
+		float: left;
+		margin: 20px 0 20px 10px;
+		border: 0;
+		@include box-shadow(none);
+
+		&:hover {
+			background:none;
+		}
+	}
+
+	// Brand
+	.name {
+		float:left;
+		display: block;
+		margin:14px 14px 0;
+		background:url($logoPath) no-repeat top center;
+		background-size: 100%;
+		height: 36px;
+		width:170px;
+		
+		h1 {
+			text-indent: -9999px;
+		}
+	}
+
+	// Top NavBar List (Search & Profile)
+	// ----------------------------------
+	.top-list {
+		list-style: none;
+		float: right; 
+
+		> li {
+			
+			> a {
+				text-transform: uppercase;
+				color: lighten($dark, 68%) !important;
+				font-weight: 400;
+				line-height: 26px;
+				@include darkTextShadow;
+				font-size: emCalc(15px);
+			}
+
+			&:hover {
+				background: darken($dark, 8%);
+				cursor: pointer;
+			}
+
+			// Search 
+			// ----------------
+			a.search {
+				padding:20px 40px 22px;
+			}
+
+			// Profile 
+			// ----------------
+			a.profile {
+				background: darken($dark, 8%);
+
+				.profile-img-wrap {
+					@include circle-img-overlay;
+					width:28px;
+					display: inline-block;
+					margin: 0 10px 0 -10px;
+				}
+
+				.profile-img {
+					@include circle-img;
+
+				}
+			}
+
+			// Profile Dropdown 
+			// ----------------
+			.dropdown-menu {
+				right:0;
+				margin: 1px 0 0;
+				@include border-radius(0);	
+				background-color: $navbarBackground;
+				@include box-shadow(0);
+				border:0;
+
+				&:after, &:before {
+					border:0 !important;
+				}
+
+
+				> li > a {
+					color: lighten($dark, 68%);
+					padding:14px 20px 12px;
+					text-transform: uppercase;
+					white-space: inherit;
+					font-size: emCalc(15px);
+
+					&:hover {
+						background: darken($dark, 8%);
+					}
+				}
+			}
+		}
+
+	}
+
+	// Caret
+	// ------
+	.nav .dropdown-toggle .caret {
+		margin: 8px 0 0 28px;
+		border-top:8px solid #000;
+		border-top-color: #7e7e7d;
+		border-bottom-color: #7e7e7d;
+	}
+
+	// Top Nav on Small Screens
+	// ------------------------
+	@media (max-width: 767px) {
+		// Brand
+		.name {
+			margin: 18px auto 0;
+			float: none;
+			background-size: 84%;
+		}
+
+		// Top NavBar List (Search & Profile)
+		// ----------------------------------
+		.top-list {
+			margin-right: 0;
+			
+			> li {
+				
+				// Search
+				// -------
+				a.search {display: none;}
+
+				// Profile 
+				// --------
+				a.profile {
+					background: none;
+
+					.user-name {
+						display: none;
+					}
+
+					.profile-img-wrap {
+						margin: 0; 
+						width: 32px;
+					}
+	
+				}
+
+				// Profile Dropdown
+				// ---------------- 
+				.dropdown-menu {
+					left: -140px;
+
+					&:after, &:before {
+						border:0 !important;
+					}
+
+					> li > a {
+						color: #cdcdcd;
+						padding:8px 15px;
+						text-transform: uppercase;
+
+						&:hover {
+							background: #373737;
+						}
+					}
+				}
+			}
+
+		}
+		// Caret
+		// -----
+		.nav .dropdown-toggle .caret {
+			display: none;
+		}
+	}
+
+
+
+	// Inner Nav 
+	// ---------
+	.nav-collapse {
+		position: fixed;
+		z-index: -1;
+		margin: 0;
+		list-style: none;
+		padding:70px 0 20px 0;
+		background:#edece8;
+		@include box-shadow(0px 0px 3px 1px rgba(51, 51, 51, 0.25));
+		
+			@media (min-width: 980px) {
+				&.collapse {
+					height: 100% !important;
+				}
+			}
+
+			// Inner Nav Link List
+			// -------------------
+			.nav {
+				margin:0;
+
+				li:first-child {
+						border-top: 1px solid #d5d4ce;
+					}
+
+				> li {
+					border-left: 3px solid #d5d4ce;
+					border-bottom: 1px solid #d5d4ce;
+					padding-right: 56px;
+					float:none;
+					line-height: 32px;
+					
+					// Hover & Active States
+					a:hover, &.active {
+						text-decoration: none;
+						
+						span {
+							color:white;
+						}
+
+						a {
+							@include box-shadow(none !important) ;
+							background: none !important;
+						}
+					}
+								
+					> a {
+						display: inline-block;
+						width: 100%;
+						text-transform: uppercase;
+						color: $dark;
+						padding: 0;
+						font-weight: 600;
+						@include lightTextShadow;
+
+						span {
+							border-right: 1px solid #e3e3dd;
+							display: inline-block;
+							padding: 18px 22px;
+							font-size: emCalc(20px);
+							margin-right: 20px;
+							font-weight: 400;
+							@include transition(background .15s ease-in-out);	
+						}
+					}
+				}
+			}
+		
+		// Inner Nav on Small Screens
+		// ---------------------------
+		@media (max-width: 979px) {
+			position: inherit;
+			background: inherit;
+			margin: auto;
+			padding: 0;
+			
+			// Inner Nav Link List on Small Screens
+			// ------------------------------------
+			.nav {
+				> li {
+					float: left;
+					border-left: 0;
+					width: 100%;
+					margin:0;
+					border-color:darken($dark, 5%) !important;
+					
+					&:last-child {border-bottom:0;}
+					
+					> a {
+						padding:0;
+						margin:0;
+						color: lighten($dark, 68%);
+						@include darkTextShadow;
+
+						span {
+							border-color:darken($dark, 5%);
+							padding: 18px;
+							font-size: emCalc(18px);
+							margin-right: 18px;
+						}
+
+						&:hover {
+							background: none;
+						}
+
+					}
+				}
+			}
+		}
+	}
+}

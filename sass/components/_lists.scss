@@ -1,0 +1,101 @@
+
+
+
+// ----------------------------
+// Stadium Stock Exchange Lists
+// ----------------------------
+
+
+// List Utilities
+// --------------------
+.panel {
+	background: lighten($white, 10%);
+	border: 1px #ccc;
+	padding:10px 16px;
+}
+
+
+
+
+
+// Activity List
+// --------------------
+ul.activity-list {
+
+margin: 0;
+
+	li {
+		color: lighten($textColor, 30%);
+		font-size: emCalc(15px);
+		list-style:none;
+		border-bottom: 1px solid lighten($dark, 64%);
+		padding-bottom: 12px;
+		margin-bottom: 14px;
+		position: relative;
+		
+		&:last-child {
+			border: 0;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+		
+		// Symbolicon
+		&:before {
+			position: absolute;
+			font-size: 13px;
+			margin: 2px 0;
+			color: lighten($textColor, 40%);
+		}
+
+		.inner {
+			padding-left: 24px;
+			display: inline-block;
+		}
+
+		a {
+			color: $textColor;
+			font-weight: 600;
+		}
+
+		.timestamp {
+			color: lighten($textColor, 10%);
+		}
+	}
+}	
+
+
+
+// Special Cases: Aside Lists
+// --------------------------
+.content-aside {
+
+	.panel, article {
+		margin: 32px 0;
+	}
+	
+	// Activity List
+	ul.activity-list {
+
+		li {
+			
+			font-size: emCalc(14px);
+
+			// Symbolicon
+			&:before {
+				color: lighten($textColor, 20%);
+			}
+
+			.inner {
+				padding-left: 20px;
+			}
+
+			.timestamp {
+				color: lighten($textColor, 30%);
+				font-size: emCalc(12px);
+				font-style: italic;
+			}
+		}
+	}
+}
+
+

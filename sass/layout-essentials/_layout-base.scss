@@ -1,0 +1,53 @@
+
+
+
+// ------------------------
+// Layout Base (using Susy)
+// ------------------------
+
+
+
+.content-wrap {
+	@include container();
+	// @include susy-grid-background();
+}
+
+.content-area {
+	@include span-columns(6);
+	@include push(3);
+	margin-left:22.674%;
+}
+
+.content-aside {
+	@include span-columns(3 omega);
+}
+
+// Adjust Content Area & Inner Nav 
+@media (max-width: 1180px) {
+	.content-area {
+		margin-left:23.674%;
+	}
+	.navbar .nav-collapse .nav > li {
+		padding-right: 46px !important;
+	}
+}
+
+@include breakpoint(tablet-H) { 
+	.content-area {
+		@include push(0);
+		@include span-columns(8);
+	}
+
+	.content-aside {
+		@include span-columns(4 omega);
+	}
+}	
+
+
+@include breakpoint(tablet-V) {
+	.content-area, .content-aside, .nested {
+		width: 100% !important;
+		float:none !important;
+	}
+
+}

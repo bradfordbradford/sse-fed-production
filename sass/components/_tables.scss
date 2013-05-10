@@ -1,0 +1,117 @@
+
+@import "layout-essentials/zurb-responsive-table-base";
+
+
+// SSE Table Utilities
+// -------------------
+.table-header {
+  margin: 0;
+  background: lighten($white, 10%);
+  border: 1px solid #CCC;
+  padding: 8px 16px 0;
+  border-bottom: 0;
+}
+
+
+
+// SSE Tables
+// -----------------
+table {
+
+    max-width: 100%;
+    background-color: $tableBackground;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border:1px solid $tableBorder;    
+
+    // Table Hover Effect
+    // ------------------
+    tbody tr:hover td,
+    tbody tr:hover th {
+    background-color: $tableBackgroundHover;}
+
+    // Table Labels
+    // ------------------
+    thead {
+      background: lighten($white, 10%);
+
+      @include filter-gradient(#ecebea, #f2f2f1, vertical); // IE6-9
+      @include background-image(linear-gradient(#ecebea, #f2f2f1));  
+      
+      th {
+        color: #787878;
+        font-weight: 400;
+        font-size: emCalc(11px);
+        vertical-align: bottom;
+        padding: 7px;
+        line-height: 16px;
+      }
+    }
+
+
+    // Table Cells
+    // ------------
+    td {
+      padding: 16px 8px; 
+      text-align: center;
+      font-size: emCalc(19px);
+    }
+
+    th,
+    td {
+      line-height: $baseLineHeight;
+      vertical-align: top;
+      border-top: 1px solid $tableBorder;
+      border-right: 1px solid $tableBorder;
+    }
+
+    // Table Symbolicons
+    // ------------------
+    td span:before {
+      font-size: emCalc(10px);    
+    }
+
+
+    // Table Timestamps
+    // ------------
+    .timestamp {
+      font-size: emCalc(10px);    
+      color: lighten($textColor, 30%);
+    }
+
+
+    
+
+
+    
+    // Remove top border from thead by default
+    caption + thead tr:first-child th,
+    caption + thead tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + thead tr:first-child td,
+    thead:first-child tr:first-child th,
+    thead:first-child tr:first-child td {
+      border-top: 0;
+    }
+    // Account for multiple tbody instances
+    tbody + tbody {
+      border-top: 2px solid $tableBorder;
+    }
+
+
+  }
+
+
+
+  // Overlay Fade for Table on Mobile
+  @media (max-width:768px) {
+    table.responsive {
+      tbody {
+        @include overlay-fade-right;
+      }
+    }
+  }
+
+
+

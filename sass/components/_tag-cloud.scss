@@ -1,0 +1,41 @@
+
+// -------------------------
+// Tag Cloud
+// -------------------------
+
+
+
+.tag-cloud {
+	@extend .nav;
+	@extend .nav-pills;
+	
+
+
+	// Active, Hover
+	.active > a, a:hover, .active > a:hover,  .active > a:focus, {
+		background-color: lighten($dark, 20%) !important;
+		color: $white;
+	}
+
+	// General
+	li {
+		margin: 2px 12px 2px 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		> a {
+			background-color: lighten($dark, 68%);
+			@include border-radius(20px);
+			color: $dark;
+			font-size: emCalc(12px);
+			font-weight: 600;
+
+			&:hover {
+				color:$white !important;
+			}
+		}
+	}
+	
+}

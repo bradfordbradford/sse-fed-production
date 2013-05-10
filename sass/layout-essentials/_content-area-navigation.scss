@@ -1,0 +1,149 @@
+
+
+// ----------------------------
+// Content Area Navigation Base
+// ----------------------------
+
+.content-bar {
+	margin-bottom: 32px;
+	
+	.inner {
+		height: 48px;
+		background: lighten($white, 1%);
+		@include box-shadow(lighten($white, 1%));
+		padding:14px 0;
+		border-bottom: 1px solid lighten($dark, 58%);
+	}
+
+	nav {
+		@extend .content-area;
+		display: block;
+		float:none;
+
+		li {
+			display: inline-block;
+			position: relative;
+			width: 200px;
+			text-align:center;
+			
+			a {
+				display: relative;
+			}
+				
+			// Active State: Create Caret Border 
+			&.active:after {
+				@extend .caret;
+				border-top: 9px solid lighten($white, 1%);
+				border-right: 6px solid transparent;
+				border-left: 6px solid transparent;
+				top: 62px;
+				position: absolute;
+				left: 50.25%;
+			}
+
+			// Active State: Create Caret Background Color
+			&.active:before {
+				@extend .caret;
+				border-top: 11px solid lighten($dark, 58%);
+				border-right: 7px solid transparent;
+				border-left: 7px solid transparent;
+				top: 62px;
+				position: absolute;
+				left: 50%;
+			}
+		}
+
+		a {
+			padding: 14px 18px 0 14px;
+			color: lighten($dark, 58%);
+			text-transform: uppercase;
+			font-size: emCalc(16px);
+			font-weight: 600;
+			display: inline-block;
+			
+			&:hover {
+				text-decoration: none;
+			}
+			&:before {
+				position: absolute;
+			}
+		}
+
+		// Adjust Symbolicons for Tabs, but not Box Buttons
+		li a:before {
+			margin: 1px 0 0 -22px;
+		}
+	}
+}
+
+
+
+// Color Bars & Accompanying Inner Page Settings (based on class assigned to <body>)
+// --------------------------------------------------------------------------------
+
+body.blue {
+
+	// Content Area 
+	.content-bar {
+		border-top: 5px solid $blue;
+
+		.inner {
+			.active a, a:hover {
+				color: $blue;
+			}
+		}
+	}
+
+	// Links
+	a:hover {
+		color: $blue !important;
+	}
+
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($blue, 4%);
+		color: $white !important;
+	}
+	
+	// List Links
+	.content-aside {
+		.activity-list a {
+			color: $blue !important;
+		}
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $blue;
+	}
+}
+
+// Others should follow suite with Blue 
+
+body.green .content-bar {
+	border-top: 5px solid $green;
+	.inner a {
+		.active, &:hover {
+			color: $green;
+		}
+	}
+}
+body.orange .content-bar {
+	border-top: 5px solid $orange;
+	.inner a {
+		.active, &:hover {
+			color: $orange;
+		}
+	}
+}
+body.yellow .content-bar {
+	border-top: 5px solid $yellow;
+
+	.inner a {
+		.active, &:hover {
+			color: $yellow;
+		}
+	}
+}
+
+

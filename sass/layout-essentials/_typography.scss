@@ -1,0 +1,83 @@
+
+
+// ------------------------
+// Typography, Links, Etc
+// ------------------------
+
+
+
+
+// Links
+// ---------------
+a {
+	color: $linkColor;
+	@include transition(.15s color ease-in-out);
+
+	&:hover {
+		color: $linkColorHover;
+		text-decoration: none !important;
+	}
+}
+
+
+
+// Horizontal Rule
+// ---------------
+hr {
+	border-top: 1px solid lighten($dark, 64%);
+	border-bottom: none;
+}
+
+
+
+// Headers
+// ---------------
+h1, h2, h3 {
+	line-height: emCalc(16px);
+}
+
+h2 {
+	font-size:emCalc(26px);
+}
+
+h4 {
+	font-size: emCalc(16px);
+	color: $textColor;
+	text-transform: uppercase;
+}
+
+// List Headers
+// --------------------
+header {
+	@extend .clearfix;
+	border-bottom: 1px solid lighten($dark, 64%);
+	margin-bottom: 12px;
+
+	h2 {
+		float:left;
+	}
+	
+	.btn, .btn-group {
+		float:right;
+	}
+
+	.btn {
+		margin-top: 7px;
+	}
+}
+
+
+// Other
+// ---------------
+.timestamp {
+	display: block;
+	font-size: emCalc(14px);
+}
+
+
+// Selection Text
+// ---------------
+::-moz-selection{text-shadow: none;background-color: darken($white, 10%); color: $textColor;}
+::selection {text-shadow: none;background-color: darken($white, 10%); color: $textColor;}
+
+
