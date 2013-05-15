@@ -1,0 +1,46 @@
+
+
+
+
+// ------------------
+// Article Typography
+// ------------------
+
+
+// Article Header 
+// --------------
+header.article-header {
+
+	h2 {
+		float:left;
+	}
+
+
+	.meta {
+		@extend .clearfix;
+		margin-top: 12px;
+	}
+	
+	.timestamp {
+		font-style: italic;
+		font-size: emCalc(20px);
+	}
+
+	.btn, .btn-group {
+		margin-top: -4px;
+	}
+
+}
+
+// Article Paragraphs & Img's
+// --------------------------
+
+article p {
+	font-family: $serifFontFamily;
+	font-size: emCalc(20px);
+	line-height: emCalc(30px);
+}
+.article-image {
+	@extend .clearfix;
+	margin-bottom: 12px;
+}

@@ -1,0 +1,354 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SSE • Basic Structure</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{Put your SSE description here!}">
+	    
+
+	    <link href="../stylesheets/styles.css" rel="stylesheet">
+	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
+	    <link type="text/css" rel="stylesheet" href="../rickshaw/rickshaw.css">
+
+	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Telegraph Typekit -->
+	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
+	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	
+	<body class="green">
+
+		<div class="site-wrap">
+			
+			<!-- ==================== -->
+			<!-- 	  Main Navs		  -->
+			<!-- ==================== -->
+		    <nav class="navbar">
+		      <div class="navbar-inner">
+		        <div class="container">
+
+		          <!-- Menu Toggle -->
+		          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+
+		          <!-- Main Nav Link List -->
+		          <ul class="nav top-list">
+		          	<li>
+		                <a href="#" class="search">Search</a>
+		              </li>
+		              <li>
+		                <a class="profile dropdown-toggle" data-toggle="dropdown">
+		                  <span class="profile-img-wrap">
+		                    <img src="https://si0.twimg.com/profile_images/3552626974/ea748cdd54a703f4babe49f65cf86572.jpeg" alt="" class="profile-img">
+		                  </span>
+		                  <span class="user-name">John Paul Galt</span>
+		                  <span class="caret"></span>
+		                </a>
+		                <ul class="dropdown-menu">
+		                  <li><a href="#">Action</a></li>
+		                  <li><a href="#">Another action</a></li>
+		                  <li><a href="#">Something else here with a long title</a></li>
+		                </ul>
+		              </li>
+		          </ul>
+		          
+		          <!-- Brand -->
+		          <a class="name" href="/pages"><h1>Stadium Stock Exchange</h1></a>
+
+				  <!-- Inner Nav -->
+		          <div class="nav-collapse collapse">
+		            <nav class="nav">
+		            	<li><a href="#"><span class="ss-dashboard"></span>Dashboard</a></li>
+						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
+						<li class="active"><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
+						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
+						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
+						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
+						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+		            </nav>
+		          </div>
+		        </div>
+		      </div>
+		    </nav> <!-- /main-navs -->
+	
+
+	
+			<!-- ==================== -->
+			<!-- 		Content		  -->
+			<!-- ==================== -->
+			<nav class="content-bar">
+				<div class="inner">
+					<nav>
+						<a href="#" class="box btn ss-list">Return to Portfolio Index</a>
+					</nav>
+				</div>
+			</nav>
+
+			<div class="content-wrap">
+
+				<section class="content-area">
+
+					<header class="chart-header">
+						<h2>TAMU <span class="detail">(13)</span></h2>
+						<div class="meta">
+							<div class="subheading">NCAA Football- SEC</div>
+							<h3>$518.44 <span class="detail">+2.61 (1.18%)</span></h3>
+							<span class="timestamp">Today 3:25PM ET</span>
+						</div>
+					</header>
+
+					<div class="chart-options">
+						<div class="btn-group">
+							<a class="dropdown btn dropdown-toggle" data-toggle="dropdown" href="#">
+							    Week
+							    <span class="caret"></span>
+							 </a>
+							 <ul class="dropdown-menu">
+								  <li><a href="#">Week 1</a></li>
+								  <li><a href="#">Week 2</a></li>
+								  <li><a href="#">Week 3</a></li>
+							  </ul>
+						</div>
+					</div>
+
+					<div id="chart_container">
+						<div id="chart"></div>
+					</div>
+					
+
+					<header class="table-header">
+						<h4>Team Schedule</h4>
+					</header>
+			        <table class="responsive">
+						<thead>
+							<tr>
+								<th>Date</th>
+								<th>Opponent</th>
+								<th>Result</th>
+								<th>Record</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td>Thu, Aug 29</td>
+							<td>vs <a href="#">RICE</a> (2)</td>
+							<td><span class="gain">W</span> 72-36</td>
+							<td>1-0</td>
+						</tr>
+
+						<tr>
+							<td>Sat, Aug 30</td>
+							<td>@ <a href="#">SHS</a></td>
+							<td><span class="gain">W</span> 72-36</td>
+							<td>2-2</td>
+						</tr>
+
+						<tr>
+							<td>Thu, Aug 14</td>
+							<td>vs <a href="#">SMU</a> (16)</td>
+							<td><span class="gain">W</span> 72-36</td>
+							<td>1-2</td>
+						</tr>
+
+						<tr>
+							<td>Thu, Aug 21</td>
+							<td>vs <a href="#">OSU</a> (12)</td>
+							<td><span class="gain">W</span> 72-36</td>
+							<td>2-0</td>
+						</tr>
+			        </table>
+				</section>
+
+				<aside class="content-aside">
+					<header class="table-header">
+						<h4>Overview</h4>
+					</header>
+					<table  class="responsive">
+						<thead>
+							<tr>
+							<th>IPO</th>
+							<th colspan="2">Total Change</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td>127.89</td>
+							<td colspan="2" class="gain">+1.05% (1.69%)</td>
+						</tr>
+
+						<thead>
+							<tr>
+							<th>Total Shares</th>
+							<th>Target Price</th>
+							<th>% from TP</th>
+							</tr>
+						</thead>
+
+						<tr>
+							<td>334</td>
+							<td>810</td>
+							<td>.52%</td>
+						</tr>
+						
+						<thead>
+							<tr>
+							<th colspan="2">Season High</th>
+							<th colspan="1">Season Low</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td colspan="2">
+								1279
+								<div class="timestamp">04/28/13</div>
+							</td>
+							<td colspan="1">
+								702
+								<div class="timestamp">04/28/13</div>
+							</td>
+						</tr>
+
+						<thead>
+							<tr>
+							<th colspan="2">Daily High</th>
+							<th colspan="1">Daily Low</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td colspan="2">
+								309
+								<div class="timestamp">04/28/13</div>
+							</td>
+							<td colspan="1">
+								280
+								<div class="timestamp">04/28/13</div>
+							</td>
+						</tr>
+			        </table>
+
+			        <article class="panel">
+						<h4>Recommended Stock</h4>
+
+						<ul class="activity-list">
+							<li class="ss-user">
+								<div class="inner">
+									Your friend <a href="#">Brenna Manzare</a> joined the <a href="#">2 Fast 2 Furious Big Five</a> Leag…
+									<span class="timestamp">12 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-crown">
+								<div class="inner">
+									Your friend <a href="#">Elias Chambers</a> started the <a href="#">Vanderbilt</a> League.
+									<span class="timestamp">15 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-flag">
+								<div class="inner">
+									Your <a href="#">Francophile Athletes</a> league has 6 new memebers.
+									<span class="timestamp">15 hours ago</span>
+								</div>
+							</li>
+						</ul>
+					</article>
+
+				</aside>
+      
+     
+    		</div> <!-- content-wrap -->
+		</div> <!-- /site-wrap -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="../javascripts/bootstrap-transition.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-modal.js"></script> -->
+	    <script src="../javascripts/bootstrap-dropdown.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
+	    <script src="../javascripts/bootstrap-tab.js"></script>
+	    <script src="../javascripts/bootstrap-tooltip.js"></script>
+	    <script src="../javascripts/bootstrap-popover.js"></script>
+	    <script src="../javascripts/bootstrap-button.js"></script>
+	    <script src="../javascripts/bootstrap-collapse.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
+	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+
+		<!-- Rickshaw Graph -->
+		<script src="../rickshaw/d3.min.js"></script>
+		<script src="../rickshaw/d3.layout.min.js"></script>
+		<script src="../rickshaw/rickshaw.min.js"></script>
+	    <script>
+
+		// Graph Data (x: --Unix Encoded Timestamp--)
+		var data = [ 
+			{ x: 1368421200, y: 5.5 },
+			{ x: 1370062800, y: 260 },
+			{ x: 1373432400, y: 120 },
+			{ x: 1376456400, y: 200 },
+			{ x: 1379739600, y: 40 },
+			{ x: 1380603600, y: 140 },
+		];
+
+		// Import Color Palette
+		// var palette = new Rickshaw.Color.Palette();
+
+		// Graph Specs
+		var graph = new Rickshaw.Graph( {
+			element: document.getElementById("chart"),
+			height: 300,
+			width: 560,
+			series: [
+				{
+					// name: "SMU",
+					data: data,
+					color: "#6f992d"
+					// palette.color()
+				}
+			
+			]
+		} );
+
+		// Display Y Axis
+		var yAxis = new Rickshaw.Graph.Axis.Y( {
+		    graph: graph,
+		    orientation: 'left',
+		    element: document.getElementById('y_axis'),
+		} );
+
+		// Render Y Axis
+		yAxis.render();
+
+		// Populate Tooltip with Custom Data
+		var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+			graph: graph,
+			formatter: function(series, x, y) {
+				var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+				var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+				// var content = swatch + date + '<br>' + '<span class="data">' + series.name + ": $" + (y) + '</span>' ;
+				// without series name:
+				var content = swatch + date + '<br>' + '<span class="data">' + "$" + (y) + '</span>' ;
+				return content;
+			}
+		} );
+
+		// Render Graph
+		graph.render();
+
+		</script>
+		
+	</body>
+	</html>	

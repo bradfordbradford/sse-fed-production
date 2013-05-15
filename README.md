@@ -3,8 +3,12 @@
 --------------
 
 
+Welcome to Stadium Stock Exchange -- FED Production
+=====================
+Stadium Stock Exchange FED is built with some pretty nifty gems & such:
 
-#### Built With
+
+
 - [Bootstrap](https://github.com/twitter/bootstrap) 
 - [SASS](http://sass-lang.com/)
 - [Compass](http://compass-style.org/)
@@ -18,5 +22,25 @@
 
 
 
+Repo Contents
+=====================
+* Page Types: sse-fed-production/pages  
+* Base Source and Compilation Files for SCSS
 
+
+Required Gems
+=====================
+
+- Compass (gem install compass)
+http://compass-style.org/
+
+- Susy (gem install susy)
+http://susy.oddbird.net/
+
+- SASS (gem install sass)
+http://sass-lang.com/)
+
+Watch for changes: 
+			
+			compass watch <site directory name>
 

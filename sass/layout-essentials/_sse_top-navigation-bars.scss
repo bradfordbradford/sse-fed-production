@@ -3,11 +3,16 @@
 // --------------------------------------------------
 
 .navbar {
-	position: relative;
+	position: fixed;
+	width: 100%;
 	z-index: 10;
 	border-top: 2px solid $gray;
 	border-bottom: 2px solid $gray;
 	margin-bottom:0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 
 		.navbar-inner {
 		@include box-shadow(0 2px 0px $gray);
@@ -244,9 +249,10 @@
 					// Hover & Active States
 					a:hover, &.active {
 						text-decoration: none;
-						
+
 						span {
 							color:white;
+							text-shadow:none !important;
 						}
 
 						a {

@@ -9,6 +9,7 @@
 	    
 
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
+	    <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
 
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
@@ -136,10 +137,96 @@
 						  <li><a href="#">Something else here with a long title</a></li>
 					  </ul>
 					</div>
+
+
+<pre class="prettyprint linenums">
+	<ol class="linenums">
+		<li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-left"</span><span class="tag">&gt;</span><span class="pln">Left aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-center"</span><span class="tag">&gt;</span><span class="pln">Center aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-right"</span><span class="tag">&gt;</span><span class="pln">Right aligned text.</span><span class="tag">&lt;/p&gt;</span></li>
+	</ol>
+</pre>
+
+
+
+<form action="">
+	<div class="input-prepend">
+	  <span class="add-on">@</span>
+	  <input class="span2" id="prependedInput" type="text" placeholder="Username">
+	</div>
+	<div class="input-append">
+	  <input class="span2" id="appendedInput" type="text">
+	  <span class="add-on">.00</span>
+	</div>
+
+	<div class="input-append">
+	  <input class="span2" id="appendedInputButton" type="text">
+	  <button class="box btn" type="button">Go!</button>
+	</div>
+</form>
+
+
 				</section>
 
 				<aside class="content-aside">
-					<button class="btn btn-large btn-primary" type="button">Large button</button>
+						
+					<article class="panel">
+						<h4>Related Content</h4>
+
+						<ul class="activity-list">
+							<li class="ss-newspaper">
+								<div class="inner">
+									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+									<span class="timestamp">12 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-newspaper">
+								<div class="inner">
+									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+									<span class="timestamp">12 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-newspaper">
+								<div class="inner">
+									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+									<span class="timestamp">12 hours ago</span>
+								</div>
+							</li>
+						</ul>
+					</article>
+
+
+					<article class="panel">
+						<h4>Recommended Stock</h4>
+
+						<ul class="activity-list">
+							<li class="ss-user">
+								<div class="inner">
+									Your friend <a href="#">Brenna Manzare</a> joined the <a href="#">2 Fast 2 Furious Big Five</a> Leag…
+									<span class="timestamp">12 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-crown">
+								<div class="inner">
+									Your friend <a href="#">Elias Chambers</a> started the <a href="#">Vanderbilt</a> League.
+									<span class="timestamp">15 hours ago</span>
+								</div>
+							</li>
+
+							<li class="ss-flag">
+								<div class="inner">
+									Your <a href="#">Francophile Athletes</a> league has 6 new memebers.
+									<span class="timestamp">15 hours ago</span>
+								</div>
+							</li>
+						</ul>
+					</article>
+
+					<div class="add-space">
+						<img src="http://placehold.it/300x430/595957/ffffff&text=addspace">
+					</div>
+					</article>
 				</aside>
       
      
@@ -161,12 +248,21 @@
 	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
 	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
 
 	    <script>
 	    $(function ()  
 { $("#example").popover();  
 });  
+
+	    // jQuery
+$(document).ready(function() {
+    prettyPrint();
+});
+
 	    </script>
+
+
 		
 	</body>
 	</html>	

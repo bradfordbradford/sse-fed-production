@@ -1,0 +1,100 @@
+
+
+
+// --------------
+// Chart Styles
+// --------------
+
+// Chart Header
+// ---------------
+
+// Article Header 
+// --------------
+header.chart-header {
+
+	
+	.timestamp {
+		font-size: emCalc(18px);
+	}
+
+	h2 {
+		.detail {
+			font-size: emCalc(14px);
+			font-weight: 200;
+			color: lighten($dark, 50%);
+		}
+	}
+
+	h3 {
+		font-size: emCalc(26px);
+		.detail {
+			font-weight: 200;
+			font-size: 18px;
+			margin-top: 4px;
+		}
+	}
+
+}
+
+// Chart Options
+// ---------------
+
+.chart-options {
+	@extend .clearfix;
+
+	.btn, .btn-group {
+		float:right;
+		margin:0 0 10px ;
+	}
+
+	.tag-cloud {
+		float:left;
+	}
+}
+
+#chart_container {
+	margin: 0 0 20px;
+	border: 1px solid lighten($dark, 64%);
+
+	.detail {
+
+		.item {
+			background: #444;
+			background: rgba(68, 68, 68, 0.98);
+			
+			&:after {
+				border-top: 10px solid #444;
+				border-top: 10px solid rgba(68, 68, 68, 0.98);
+				border-right: 9px solid rgba(0, 0, 0, 0);
+				border-left: 9px solid rgba(0, 0, 0, 0);
+				top: 58px;
+				position: absolute;
+				left: 44.8%;
+				content: "";
+			}
+		}
+		
+		.date {
+			font-size: emCalc(16px);
+			font-family: $sansFontFamily;
+			color: lighten($dark, 64%);
+		}
+
+		.data {
+			font-family: $sansFontFamily;
+			font-size: emCalc(18px);
+			color: $white;
+		}
+	}
+
+
+	@include breakpoint(phones) {
+		display:none;
+	}
+}
+
+
+
+
+
+

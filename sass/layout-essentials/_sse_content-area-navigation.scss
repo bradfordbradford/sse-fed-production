@@ -1,0 +1,380 @@
+
+
+// ----------------------------
+// Content Area Navigation Base
+// ----------------------------
+
+.content-bar {
+	margin-bottom: 32px;
+	margin-top: 72px;
+	border-top: 5px solid #d4d3cf;
+	
+	.inner {
+		height: 48px;
+		background: lighten($white, 1%);
+		@include box-shadow(lighten($white, 1%));
+		padding:14px 0;
+		border-bottom: 1px solid lighten($dark, 58%);
+	}
+
+	nav {
+		@extend .content-area;
+		display: block;
+		float:none;
+
+		li {
+			display: inline-block;
+			position: relative;
+			width: 200px;
+			text-align:center;
+			
+			a {
+				display: relative;
+			}
+			
+			&.active {
+				a {
+					color: $textColor;
+				}
+			}	
+
+			// Active State: Create Caret Border 
+			&.active:after {
+				@extend .caret;
+				border-top: 9px solid lighten($white, 1%);
+				border-right: 6px solid transparent;
+				border-left: 6px solid transparent;
+				top: 62px;
+				position: absolute;
+				left: 50%;
+			}
+
+			// Active State: Create Caret Background Color
+			&.active:before {
+				@extend .caret;
+				border-top: 11px solid lighten($dark, 58%);
+				border-right: 7px solid transparent;
+				border-left: 7px solid transparent;
+				top: 62px;
+				position: absolute;
+				left: 49.25%;
+			}
+		}
+
+		a {
+			padding: 14px 18px 0 14px;
+			color: lighten($dark, 58%);
+			text-transform: uppercase;
+			font-size: emCalc(16px);
+			font-weight: 500;
+			display: inline-block;
+			
+			&:hover {
+				text-decoration: none;
+			}
+			&:before {
+				position: absolute;
+			}
+		}
+
+		// Adjust Symbolicons for Tabs, but not Box Buttons
+		li a:before {
+			margin: 1px 0 0 -22px;
+		}
+	}
+
+	// Responsive Settings
+	@include breakpoint(tablet-V) {
+		margin-top: 76px;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+// Color Bars & Accompanying Inner Page Settings (based on class assigned to <body>)
+// --------------------------------------------------------------------------------
+
+// ------------------------
+//  Blue
+// ------------------------
+body.blue {
+
+	// Content Area 
+	.content-bar {
+		border-color: $blue;
+
+		.inner {
+			.active a, a:hover {
+				color: $blue;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $blue !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($blue, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $blue;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $blue;
+	}
+}
+
+
+// ------------------------
+//  Purple
+// ------------------------
+body.purple {
+
+	// Content Area 
+	.content-bar {
+		border-color: $purple;
+
+		.inner {
+			.active a, a:hover {
+				color: $purple;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $purple !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($purple, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $purple;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $purple;
+	}
+}
+
+
+// ------------------------
+//  Green
+// ------------------------
+body.green {
+
+	// Content Area 
+	.content-bar {
+		border-color: $green;
+
+		.inner {
+			.active a, a:hover {
+				color: $green;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $green !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($green, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $green;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $green;
+	}
+}
+
+
+// ------------------------
+//  Light Green
+// ------------------------
+body.light-green {
+
+	// Content Area 
+	.content-bar {
+		border-color: $light-green;
+
+		.inner {
+			.active a, a:hover {
+				color: $light-green;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $light-green !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($light-green, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $light-green;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $light-green;
+	}
+}
+
+
+// ------------------------
+//  Mint
+// ------------------------
+body.mint {
+
+	// Content Area 
+	.content-bar {
+		border-color: $mint;
+
+		.inner {
+			.active a, a:hover {
+				color: $mint;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $mint !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($mint, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $mint;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $mint;
+	}
+}
+
+
+
+// ------------------------
+//  Orange
+// ------------------------
+body.orange {
+
+	// Content Area 
+	.content-bar {
+		border-color: $orange;
+
+		.inner {
+			.active a, a:hover {
+				color: $orange;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $orange !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($orange, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $orange;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $orange;
+	}
+}
+
+
+
+
+// ------------------------
+//  Yellow
+// ------------------------
+body.yellow {
+
+	// Content Area 
+	.content-bar {
+		border-color: $yellow;
+
+		.inner {
+			.active a, a:hover {
+				color: $yellow;
+			}
+		}
+	}
+
+	// On Hover 
+	a:hover {
+		color: $yellow !important;
+	}
+
+	
+	// Flat Buttons
+	.flat.btn:hover {
+		background: darken($yellow, 4%);
+		color: $white !important;
+	}
+	
+	// List Links	
+	.article-list a, .activity-list a {
+		color: $yellow;
+	}
+	
+	// Inner Nav Hover & Active States
+	.navbar .nav-collapse .nav > li a:hover span,  .navbar .nav-collapse .nav > li.active span{
+		background: $yellow;
+	}
+}
+
+

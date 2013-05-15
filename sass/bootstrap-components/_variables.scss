@@ -39,7 +39,8 @@ $dark: 					#373737!default;
 $light: 				#fbfaf9!default;
 $gray: 					#272727!default;
 $white: 				#f3f1ee !default;
-$green: 				#80b041!default;
+$green: 				#628c38!default;
+$light-green: 			#80b041!default;
 $blue: 					#439fbf!default;
 $yellow: 				#e2b747!default;
 $red: 					#fe694b!default;
@@ -51,7 +52,7 @@ $mint: 					#47b3a4!default;
 // Scaffolding
 // -------------------------
 $bodyBackground:        $white !default;
-$textColor:             #747474;
+$textColor:             #444442;
 
 
 // Links
@@ -73,7 +74,7 @@ $altFontFamily:         $serifFontFamily !default;
 $em-base: 				16px;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsFontWeight:    500 !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
 
@@ -128,8 +129,8 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 
 // Forms
 // -------------------------
-$inputBackground:               $white !default;
-$inputBorder:                   #ccc !default;
+$inputBackground:               white !default;
+$inputBorder:                   lighten($dark, 58%) !default;
 $inputBorderRadius:             $baseBorderRadius !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f5f5f5 !default;

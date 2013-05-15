@@ -2,26 +2,61 @@
 @import "layout-essentials/zurb-responsive-table-base";
 
 
-// SSE Table Utilities
-// -------------------
+// SSE Table Header
+// ----------------
 .table-header {
   margin: 0;
   background: lighten($white, 10%);
   border: 1px solid #CCC;
   padding: 8px 16px 0;
   border-bottom: 0;
+
+  h4 {
+    float: left;
+
+    span {
+      margin-left:12px;
+
+      &.ss-up {
+        @extend .gain;
+      }
+
+      &.ss-down {
+        @extend .loss;
+      }
+
+      &.ss-up, &.ss-down {
+        &:before {
+          font-size: emCalc(14px);
+          margin-right:4px;
+        }
+      } 
+    }
+
+  }
+  .btn, .btn-group {
+    float:right;
+  }
+
+  .box.btn {
+    @include background-image(linear-gradient(#f2f1f0, #f1f1f0));  
+    margin: 4px 0;
+    padding: 1px 10px 0px;
+    font-size: emCalc(12px);
+    @include border-radius(4px);
+  }
 }
 
 
 
-// SSE Tables
+// SSE Tables Styles
 // -----------------
 table {
-
     max-width: 100%;
     background-color: $tableBackground;
     border-collapse: collapse;
     border-spacing: 0;
+    margin-bottom: 12px;
     width: 100%;
     border:1px solid $tableBorder;    
 
@@ -55,7 +90,8 @@ table {
     td {
       padding: 16px 8px; 
       text-align: center;
-      font-size: emCalc(19px);
+      font-weight: 200;
+      font-size: emCalc(16px);
     }
 
     th,

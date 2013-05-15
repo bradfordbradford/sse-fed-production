@@ -1,0 +1,64 @@
+
+// -------------------------
+// Forms
+// -------------------------
+
+
+form {
+
+	font-size: emCalc(16px);
+	font-family: $sansFontFamily;
+
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input {
+	  padding:12px 0;
+	  width: 80%;
+	  margin-bottom: 16px;
+	  text-indent: 16px;
+
+
+	  // Focus state
+	  &:focus {
+		border-color: $textColor;
+	  	@include box-shadow(none);
+	  }
+	}
+
+
+	input[type="submit"] {
+		display: block;
+	}
+
+	.inline-input {
+		input {
+			width:100px;
+		}
+	}
+
+	.help-inline {
+		margin-left:40px;
+		// color: lighten($textColor, 20%);
+		text-transform: uppercase;
+	}
+
+	.input-prepend, .input-append {
+		.add-on {
+			padding: 12px 6px;
+		}
+	}
+
+}

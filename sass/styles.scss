@@ -52,30 +52,34 @@
 
 // Settings & Utilities
 // --------------------
-@import "utilities/utilities";
+@import "utilities/sse_utilities";
 
 
 // Grid (Built with Susy Grid for Semantic Markup · http://susy.oddbird.net/)
 // --------------------------------------------------------------------------
 @import "susy";
-@import "layout-essentials/susyGrid-base";
-@import "layout-essentials/layout-base";
+@import "layout-essentials/sse_susyGrid-base";
+@import "layout-essentials/sse_layout-base";
 
 
 // Navigation
 // -------------
-@import "layout-essentials/top-navigation-bars";
-@import "layout-essentials/content-area-navigation"; // Controls Color Bar Area (color stripe, inner breadcrumbs, )
+@import "layout-essentials/sse_top-navigation-bars";
+@import "layout-essentials/sse_content-area-navigation"; // Controls Color Bar Area (color stripe, inner breadcrumbs, )
 
 // // Typography
 // // -------------
-@import "layout-essentials/typography";
+@import "layout-essentials/sse_typography";
 
 
 // // Components
 // // ----------
-@import "components/tables";
-@import "components/lists";
-@import "components/buttons";
-@import "components/tag-cloud";
+@import "components/sse_articles";
+@import "components/sse_tables";
+@import "components/sse_graphs";
+@import "components/sse_lists";
+@import "components/sse_forms";
+@import "components/sse_buttons";
+@import "components/sse_tag-cloud";
+@import "components/sse_tags-badges-banners-headers";
 

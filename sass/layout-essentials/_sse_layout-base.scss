@@ -22,6 +22,12 @@
 	@include span-columns(3 omega);
 }
 
+.form-area {
+	@include span-columns(8);
+	@include push(3);
+	margin-left:22.674%;
+}
+
 // Adjust Content Area & Inner Nav 
 @media (max-width: 1180px) {
 	.content-area {
