@@ -1,6 +1,5 @@
 ![image](https://github.com/lindseybradford/sse-fed/blob/master/images/logo-color.jpg?raw=true)
-
---------------
+=====================
 
 
 Welcome to Stadium Stock Exchange
