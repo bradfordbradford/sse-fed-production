@@ -33,16 +33,21 @@ Required Gems
 =====================
 You'll need the following to work with SSE-FED:
 
-- Compass (gem install compass)
-http://compass-style.org/
+- Compass → http://compass-style.org/
+		
+		gem install compass
+		
+- Susy → http://susy.oddbird.net/
 
-- Susy (gem install susy)
-http://susy.oddbird.net/
+		gem install susy
 
-- SASS (gem install sass)
-http://sass-lang.com/)
 
-Watch for changes: 
+- SASS → http://sass-lang.com/
+
+		gem install sass
+
+
+Watching for changes: 
 			
 			compass watch <site directory name>
 
