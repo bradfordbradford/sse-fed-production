@@ -6,7 +6,7 @@
 Welcome to Stadium Stock Exchange
 =====================
 ##### FED Production 
-Stadium Stock Exchange FED is built with some pretty nifty gems & such:
+Stadium Stock Exchange FED is built with some nifty gems & such:
 
 
 
