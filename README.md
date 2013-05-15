@@ -32,6 +32,7 @@ Repo Contents
 
 Required Gems
 =====================
+You'll need the following to work with SSE-FED:
 
 - Compass (gem install compass)
 http://compass-style.org/
