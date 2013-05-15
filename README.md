@@ -3,8 +3,9 @@
 --------------
 
 
-Welcome to Stadium Stock Exchange -- FED Production
+Welcome to Stadium Stock Exchange
 =====================
+##### FED Production 
 Stadium Stock Exchange FED is built with some pretty nifty gems & such:
 
 
@@ -25,6 +26,7 @@ Stadium Stock Exchange FED is built with some pretty nifty gems & such:
 Repo Contents
 =====================
 * Page Types: sse-fed-production/pages  
+* Docs: sse-fed-production/doc → in progress
 * Base Source and Compilation Files for SCSS
 
 
