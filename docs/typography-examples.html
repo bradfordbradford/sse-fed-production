@@ -104,100 +104,12 @@
 
 									
 				<div id="chart_container">
-					<div id="chart"></div>
-				</div>
-
-<pre class="prettyprint">
-&lt;!-- Markup --&gt;	
-&lt;div id="chart_container"&gt;
-  &lt;div id="chart"&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</pre>
-
-
-<br><br>
-<hr>
-<h3>Required Scripts</h3>
-<pre class="prettyprint">
-&lt;script src="../rickshaw/d3.min.js">&lt;/script&gt;
-&lt;script src="../rickshaw/d3.layout.min.js"&gt;&lt;/script&gt;
-&lt;script src="../rickshaw/rickshaw.min.js"&gt;&lt;/script&gt;
-</pre>
-
-
-
-<br><br>
-<hr>
-<h3>Render Graph</h3>
-<p>For more information on Unix Encoded Timestamps: <a href="http://www.unixtimestamp.com/index.php">Unix Time Stamps</a>, <a href="http://www.epochconverter.com/">Epoch Converter</a>.</p>
-<pre class="prettyprint">
-&lt;!-- Graph Data (x: --Unix Encoded Timestamp--) --&gt;
-
-&lt;script&gt;
-	var data = [ 
-		{ x: 1368421200, y: 5.5 },
-		{ x: 1370062800, y: 260 },
-		{ x: 1373432400, y: 120 },
-		{ x: 1376456400, y: 200 },
-		{ x: 1379739600, y: 40 },
-		{ x: 1380603600, y: 140 },
-	];
-
-	// Import Color Palette
-	// var palette = new Rickshaw.Color.Palette();
-
-	// Graph Specs
-	var graph = new Rickshaw.Graph( {
-		element: document.getElementById("chart"),
-		height: 300,
-		width: 560,
-		series: [
-			{
-				// name: "SMU",
-				data: data,
-				color: "#6f992d"
-				// palette.color()
-			}
-		
-		]
-	} );
-
-	// Display Y Axis
-	var yAxis = new Rickshaw.Graph.Axis.Y( {
-	    graph: graph,
-	    orientation: 'left',
-	    element: document.getElementById('y_axis'),
-	} );
-
-	// Render Y Axis
-	yAxis.render();
-
-	// Populate Tooltip with Custom Data
-	var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-		graph: graph,
-		formatter: function(series, x, y) {
-			var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
-			var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
-			// var content = swatch + date + '<br>' + '<span class="data">' + series.name + ": $" + (y) + '</span>' ;
-			// without series name:
-			var content = swatch + date + '<br>' + '<span class="data">' + "$" + (y) + '</span>' ;
-			return content;
-		}
-	} );
-
-	// Render Graph
-	graph.render();
-&lt;/script&gt;
-</pre>
-
-
+				
 				</section>
 
 				<aside class="content-aside">
 					<h4>Example:</h4>
-					<img src="screenshots/chart-and-header.png" alt="">
+					<!-- <img src="screenshots/chart-and-header.png" alt=""> -->
 				</aside>
       
      
@@ -215,71 +127,6 @@
 	    <script src="../javascripts/bootstrap-button.js"></script>
 	    <script src="../javascripts/bootstrap-collapse.js"></script>
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
-
-
-	    <!-- Rickshaw Graph -->
-		<script src="../rickshaw/d3.min.js"></script>
-		<script src="../rickshaw/d3.layout.min.js"></script>
-		<script src="../rickshaw/rickshaw.min.js"></script>
-	    <script>
-
-		// Graph Data (x: --Unix Encoded Timestamp--)
-		var data = [ 
-			{ x: 1368421200, y: 5.5 },
-			{ x: 1370062800, y: 260 },
-			{ x: 1373432400, y: 120 },
-			{ x: 1376456400, y: 200 },
-			{ x: 1379739600, y: 40 },
-			{ x: 1380603600, y: 140 },
-		];
-
-		// Import Color Palette
-		// var palette = new Rickshaw.Color.Palette();
-
-		// Graph Specs
-		var graph = new Rickshaw.Graph( {
-			element: document.getElementById("chart"),
-			height: 300,
-			width: 560,
-			series: [
-				{
-					// name: "SMU",
-					data: data,
-					color: "#6f992d"
-					// palette.color()
-				}
-			
-			]
-		} );
-
-		// Display Y Axis
-		var yAxis = new Rickshaw.Graph.Axis.Y( {
-		    graph: graph,
-		    orientation: 'left',
-		    element: document.getElementById('y_axis'),
-		} );
-
-		// Render Y Axis
-		yAxis.render();
-
-		// Populate Tooltip with Custom Data
-		var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-			graph: graph,
-			formatter: function(series, x, y) {
-				var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
-				var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
-				// var content = swatch + date + '<br>' + '<span class="data">' + series.name + ": $" + (y) + '</span>' ;
-				// without series name:
-				var content = swatch + date + '<br>' + '<span class="data">' + "$" + (y) + '</span>' ;
-				return content;
-			}
-		} );
-
-		// Render Graph
-		graph.render();
-
-		</script>
-		
 		
 
 		<!-- Prettify Code -->
