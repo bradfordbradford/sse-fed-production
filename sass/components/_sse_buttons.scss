@@ -27,8 +27,12 @@
 		padding:8px 12px;
 		font-size:12px;
 	}	
-
 }
+
+.input-append .box.btn, .input-append .flat.btn {
+	padding:12px 18px!important; // Return to Input default for Buttons
+}
+
 
 .flat.btn {
 	padding:7px 14px;

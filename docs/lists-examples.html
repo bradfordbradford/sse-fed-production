@@ -1,0 +1,339 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SSE • Basic Structure</title>
+		
+		<!-- Responds to device & Description -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{Put your SSE description here!}">
+	    
+		<!-- Styles -->
+	    <link href="../stylesheets/styles.css" rel="stylesheet">
+	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
+	    <!-- <link href="css/pretty-print.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
+	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Telegraph Typekit -->
+	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
+	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	
+	<body class="blue">
+
+		<div class="site-wrap">
+			
+			<!-- ==================== -->
+			<!-- 	  Main Navs		  -->
+			<!-- ==================== -->
+		    <nav class="navbar">
+		      <div class="navbar-inner">
+		        <div class="container">
+
+		          <!-- Menu Toggle -->
+		          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+
+		          <!-- Main Nav Link List -->
+		          <ul class="nav top-list">
+		          	<li>
+		                <a href="#" class="search">Search</a>
+		              </li>
+		              <li>
+		                <a class="profile dropdown-toggle" data-toggle="dropdown">
+		                  <span class="profile-img-wrap">
+		                    <img src="https://si0.twimg.com/profile_images/3552626974/ea748cdd54a703f4babe49f65cf86572.jpeg" alt="" class="profile-img">
+		                  </span>
+		                  <span class="user-name">John Paul Galt</span>
+		                  <span class="caret"></span>
+		                </a>
+		                <ul class="dropdown-menu">
+		                  <li><a href="#">Action</a></li>
+		                  <li><a href="#">Another action</a></li>
+		                  <li><a href="#">Something else here with a long title</a></li>
+		                </ul>
+		              </li>
+		          </ul>
+		          
+		          <!-- Brand -->
+		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
+
+				  <!-- Inner Nav -->
+		          <div class="nav-collapse collapse">
+		            <nav class="nav">
+		            	<li><a href="#"><span class="ss-dashboard"></span>Dashboard</a></li>
+						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
+						<li><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
+						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
+						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
+						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
+						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+		            </nav>
+		          </div>
+		        </div>
+		      </div>
+		    </nav> <!-- /main-navs -->
+	
+
+	
+			<!-- ==================== -->
+			<!-- 		Content		  -->
+			<!-- ==================== -->
+			<div class="content-bar">
+			</div>	
+
+			<div class="content-wrap">
+
+				<section class="content-area">
+
+					<header><h1>Lists</h1></header>
+
+<h2>Article List</h2>
+<p>For lists &amp; indexes with image content (Article Indexes, League Indexes, etc)</p>
+<ul class="article-list">
+	<li>
+		<div class="item-image">
+			<img src="http://placehold.it/80x80&text=·" alt=""/>
+		</div>
+		<div class="item-content">
+			<h3><a href="#">Article Title Here</a></h3>
+			<span class="timestamp">March 29, 2013 11AM</span>
+			<p>Washington Redskins owner Dan Snyder and coach…</p>
+			<span class="ss-action share"><a href="#">249 Shares</a></span>
+		</div>
+	</li>
+	<li>
+		<div class="item-image">
+			<img src="http://placehold.it/80x80&text=·" alt=""/>
+		</div>
+		<div class="item-content">
+			<h3><a href="#">Article Title Here</a></h3>
+			<span class="timestamp">March 29, 2013 11AM</span>
+			<p>Washington Redskins owner Dan Snyder and coach…</p>
+			<span class="ss-action share"><a href="#">249 Shares</a></span>
+		</div>
+	</li>
+</ul>
+<pre class="prettyprint">
+&lt;ul class="article-list"&gt;
+	&lt;li&gt;
+		&lt;div class="item-image"&gt;
+			&lt;img src="http://placehold.it/80x80&text=·" alt=""/&gt;
+		&lt;/div&gt;
+		&lt;div class="item-content"&gt;
+			&lt;h3&gt;&lt;a href="#"&gt;Article Title Here&lt;/a&gt;&lt;/h3&gt;
+			&lt;span class="timestamp"&gt;March 29, 2013 11AM&lt;/span&gt;
+			&lt;p&gt;Washington Redskins owner Dan Snyder and coach…&lt;/p&gt;
+			&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class="item-image"&gt;
+			&lt;img src="http://placehold.it/80x80&text=·" alt=""/&gt;
+		&lt;/div&gt;
+		&lt;div class="item-content"&gt;
+			&lt;h3&gt;&lt;a href="#"&gt;Article Title Here&lt;/a&gt;&lt;/h3&gt;
+			&lt;span class="timestamp"&gt;March 29, 2013 11AM&lt;/span&gt;
+			&lt;p&gt;Washington Redskins owner Dan Snyder and coach…&lt;/p&gt;
+			&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<br><br>
+<h3>Don't be square!</h3>
+<p>Handling profile photos? Need them circular? No problem! Just add the <em>img-circle</em> class to any image, anywhere:</p>
+
+		<div class="item-image">
+			<img class="img-circle" src="http://placehold.it/80x80&text=" alt=""/>
+		</div>
+		<br>
+<pre class="prettyprint">
+&lt;div class="item-image"&gt;
+  &lt;img class="img-circle" src="http://placehold.it/80x80&text=" alt=""/&gt;
+&lt;/div&gt;
+
+</pre>
+
+
+<br><br>
+<hr>
+<h2>Activity Feed List (Activity Feed, Related Content, Recommended Leagues, Recent Activity, etc)</h2>
+<p>Need more? Try out the activity list class.</p>
+<pre class="prettyprint">
+&lt;ul class="activity-list"&gt;
+	&lt;li class="ss-user"&gt;
+		&lt;div class="inner"&gt;
+			&lt;a href="#"&gt;Joshua Wright&lt;/a&gt; purchased &lt;a href="#"&gt;300 TAMU&lt;/a&gt; shares for 340.5/ea.
+			&lt;span class="timestamp"&gt;Today, 1:05PM ET&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+
+	&lt;li class="ss-flag"&gt;
+		&lt;div class="inner"&gt;
+			&lt;a href="#"&gt;Tommy Lee Jones&lt;/a&gt; started a new league &lt;a href="#"&gt;Men in Black 4Ever&lt;/a&gt;.
+			&lt;span class="timestamp"&gt;Today, 12:45PM ET&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+
+	&lt;li class="ss-newspaper"&gt;
+		&lt;div class="inner"&gt;
+			Mlkshk &lt;a href="#"&gt;$100 Contest League&lt;/a&gt; iphone in sriracha raw denim fashion axe wes anderson, hoodie direct trade salvia artisan 3 wolf blue moon contest winner; afternoon delight.
+			&lt;span class="timestamp"&gt;Today 7:13AM ET&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+
+	&lt;li class="ss-up"&gt;
+		&lt;div class="inner"&gt;
+			&lt;a href="#"&gt;UCB&lt;/a&gt; reached a season high price at 404.82.
+			&lt;span class="timestamp"&gt;Today, 11:32AM ET&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+
+	&lt;li class="ss-down"&gt;
+		&lt;div class="inner"&gt;
+			&lt;a href="#"&gt;UT&lt;/a&gt; added to list &lt;a href="#"&gt;Day's Biggest Loser&lt;/a&gt;
+			&lt;span class="timestamp"&gt;Today, 11:28AM ET&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+
+<br><br>
+<hr>
+<h3>Activity List Headers</h3>
+<p>Need a Header for that list? Check out <a href="headers-examples.html">Headers Examples</a></p>
+
+<br><br>
+<hr>
+<h3>Activity List in the Aside</h3>
+<p>Activity lists can easily be placed in the Aside Content Area. Just drop them into an &lt;article class="panel"&gt;&lt;/article&gt; tag.</p>
+<article class="panel">
+<h4>Related Content</h4>
+	<ul class="activity-list">
+		<li class="ss-newspaper">
+			<div class="inner">
+				<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+				<span class="timestamp">12 hours ago</span>
+			</div>
+		</li>
+
+		<li class="ss-newspaper">
+			<div class="inner">
+				<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+				<span class="timestamp">12 hours ago</span>
+			</div>
+		</li>
+
+		<li class="ss-newspaper">
+			<div class="inner">
+				<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
+				<span class="timestamp">12 hours ago</span>
+			</div>
+		</li>
+	</ul>
+</article>
+
+<br>
+<pre class="prettyprint">
+&lt;article class="panel"&gt;
+	&lt;h4&gt;Related Content&lt;/h4&gt;
+
+	&lt;ul class="activity-list"&gt;
+		&lt;li class="ss-newspaper"&gt;
+			&lt;div class="inner"&gt;
+				&lt;a href="#"&gt;Really Lengthy Article Title Should Break to Two Lines&lt;/a&gt;
+				&lt;span class="timestamp"&gt;12 hours ago&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+
+		&lt;li class="ss-newspaper"&gt;
+			&lt;div class="inner"&gt;
+				&lt;a href="#"&gt;Really Lengthy Article Title Should Break to Two Lines&lt;/a&gt;
+				&lt;span class="timestamp"&gt;12 hours ago&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+
+		&lt;li class="ss-newspaper"&gt;
+			&lt;div class="inner"&gt;
+				&lt;a href="#"&gt;Really Lengthy Article Title Should Break to Two Lines&lt;/a&gt;
+				&lt;span class="timestamp"&gt;12 hours ago&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/article>
+</pre>
+
+
+
+
+				</section>
+
+				<aside class="content-aside">
+					<h4>Examples</h4>
+					<img src="screenshots/league-list.png"/>
+					<br><br>
+
+
+					<img src="screenshots/portfolio-list.png"/>
+					<br><br>
+
+
+					<img src="screenshots/activity-list.png"/>
+					<br><br>
+
+
+					<img src="screenshots/panel-list.png"/>
+					<br><br>
+					<img src="screenshots/panel-list-2.png"/>
+
+				</aside>
+      
+     
+    		</div> <!-- content-wrap -->
+		</div> <!-- /site-wrap -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="../javascripts/bootstrap-transition.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-modal.js"></script> -->
+	    <script src="../javascripts/bootstrap-dropdown.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
+	    <script src="../javascripts/bootstrap-tab.js"></script>
+	    <script src="../javascripts/bootstrap-tooltip.js"></script>
+	    <script src="../javascripts/bootstrap-popover.js"></script>
+	    <script src="../javascripts/bootstrap-button.js"></script>
+	    <script src="../javascripts/bootstrap-collapse.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
+	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+		
+		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
+
+
+	</body>
+</html>	

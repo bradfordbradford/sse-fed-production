@@ -3,14 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>SSE • Basic Structure</title>
-
+		
+		<!-- Responds to device & Description -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
 	    
-
+		<!-- Styles -->
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
-
+	    <!-- <link href="css/pretty-print.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
 	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -86,16 +90,142 @@
 			<!-- ==================== -->
 			<!-- 		Content		  -->
 			<!-- ==================== -->
-
+			<div class="content-bar">
+			</div>	
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-					
+
+<header><h1>Extensible &amp; Flexible Headers </h1></header>
+
+
+<header>
+	<h2>Public Leagues</h2>
+	<div class="meta">
+		<div class="subheading">Reccomended</div>
+	</div>
+</header>
+
+<pre class="prettyprint">
+&lt;!-- Header + Subheading --&gt;
+&lt;header&gt;
+	&lt;h2&gt;Public Leagues&lt;/h2&gt;
+	&lt;div class="meta"&gt;
+		&lt;div class="subheading"&gt;Reccomended&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+</pre>		
+
+
+
+<br><br>
+<header>
+<h2>Recent Activity</h2>
+<div class="btn-group">
+	<a class="dropdown btn dropdown-toggle" data-toggle="dropdown" href="#">
+	    Choose Filter…
+	    <span class="caret"></span>
+	 </a>
+	 <ul class="dropdown-menu">
+		  <li><a href="#">Action One</a></li>
+		  <li><a href="#">Action Two</a></li>
+		  <li><a href="#">Action Three</a></li>
+	  </ul>
+</div>
+</header>	
+<pre class="prettyprint">
+&lt;!-- Header + Dropdown Button --&gt;
+&lt;header&gt;
+&lt;h2&gt;Recent Activity&lt;/h2&gt;
+&lt;div class="btn-group"&gt;
+	&lt;a class="dropdown btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+	    Choose Filter…
+	    &lt;span class="caret"&gt;&lt;/span&gt;
+	 &lt;/a&gt;
+	 &lt;ul class="dropdown-menu"&gt;
+		  &lt;li&gt;&lt;a href="#"&gt;Action One&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#"&gt;Action Two&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a href="#"&gt;Action Three&lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+</pre>	
+
+
+
+<br><br>
+<header class="">
+	<h2>Vanderbilt</h2>
+	<div class="meta">
+		<div class="timestamp">Started by <a href="#">Casey Hunter</a> March 1, 2012</div>
+	</div>
+</header>	
+<pre class="prettyprint">
+&lt;!-- Header + Meta with Timestamp --&gt;
+&lt;header class=""&gt;
+	&lt;h2&gt;Vanderbilt&lt;/h2&gt;
+	&lt;div class="meta"&gt;
+		&lt;div class="timestamp"&gt;Started by &lt;a href="#"&gt;Casey Hunter&lt;/a&gt; March 1, 2012&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;	
+</pre>
+
+
+
+
+<br><br>
+<header>
+	<h2>TAMU <span class="detail">(13)</span></h2>
+	<div class="meta">
+		<div class="subheading">NCAA Football- SEC</div>
+		<h3>$518.44 <span class="detail">+2.61 (1.18%)</span></h3>
+		<span class="timestamp">Today 3:25PM ET</span>
+	</div>
+</header>	
+<pre class="prettyprint">
+&lt;!-- Header + Subheading + Meta with Detail &amp; Timestamp --&gt;
+&lt;header&gt;
+	&lt;h2&gt;TAMU &lt;span class="detail"&gt;(13)&lt;/span&gt;&lt;/h2&gt;
+	&lt;div class="meta"&gt;
+		&lt;div class="subheading"&gt;NCAA Football- SEC&lt;/div&gt;
+		&lt;h3&gt;$518.44 &lt;span class="detail"&gt;+2.61 (1.18%)&lt;/span&gt;&lt;/h3&gt;
+		&lt;span class="timestamp"&gt;Today 3:25PM ET&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/header&gt;	
+</pre>
+
+
+
+<br><br>
+<header class="article-header">
+	<h2>Article Title Here That's Really Long & Breaks to Two Lines</h2>
+	<div class="meta">
+		<span class="ss-action share"><a href="#">249 Shares</a></span>
+		<span class="timestamp">March 28, 2013 11:05AM ET</span>
+	</div>
+</header>	
+<pre class="prettyprint">
+&lt;!-- Header + Meta with Shares &amp; Timestamp --&gt;
+&lt;header class="article-header"&gt;
+	&lt;h2&gt;Article Title Here That's Really Long & Breaks to Two Lines&lt;/h2&gt;
+	&lt;div class="meta"&gt;
+		&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;
+		&lt;span class="timestamp"&gt;March 28, 2013 11:05AM ET&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/header&gt;	
+</pre>
+
+
 				</section>
 
 				<aside class="content-aside">
-					
+					<h4>Examples:</h4>
+					<img src="screenshots/articles-detail.png"/>
+					<br><br>
+					<img src="screenshots/articles-index.png"/>
+					<br><br>
+					<img src="screenshots/leagues-detail.png"/>
 				</aside>
       
      
@@ -118,5 +248,16 @@
 	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
 		
+		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
+
+
 	</body>
-	</html>	
+</html>	

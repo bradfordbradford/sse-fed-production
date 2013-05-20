@@ -1,0 +1,323 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SSE • Basic Structure</title>
+		
+		<!-- Responds to device & Description -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{Put your SSE description here!}">
+	    
+		<!-- Styles -->
+	    <link href="../stylesheets/styles.css" rel="stylesheet">
+	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
+	    <!-- <link href="css/pretty-print.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
+	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Telegraph Typekit -->
+	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
+	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	
+	<body class="blue">
+
+		<div class="site-wrap">
+			
+			<!-- ==================== -->
+			<!-- 	  Main Navs		  -->
+			<!-- ==================== -->
+		    <nav class="navbar">
+		      <div class="navbar-inner">
+		        <div class="container">
+
+		          <!-- Menu Toggle -->
+		          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+
+		          <!-- Main Nav Link List -->
+		          <ul class="nav top-list">
+		          	<li>
+		                <a href="#" class="search">Search</a>
+		              </li>
+		              <li>
+		                <a class="profile dropdown-toggle" data-toggle="dropdown">
+		                  <span class="profile-img-wrap">
+		                    <img src="https://si0.twimg.com/profile_images/3552626974/ea748cdd54a703f4babe49f65cf86572.jpeg" alt="" class="profile-img">
+		                  </span>
+		                  <span class="user-name">John Paul Galt</span>
+		                  <span class="caret"></span>
+		                </a>
+		                <ul class="dropdown-menu">
+		                  <li><a href="#">Action</a></li>
+		                  <li><a href="#">Another action</a></li>
+		                  <li><a href="#">Something else here with a long title</a></li>
+		                </ul>
+		              </li>
+		          </ul>
+		          
+		          <!-- Brand -->
+		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
+
+				  <!-- Inner Nav -->
+		          <div class="nav-collapse collapse">
+		            <nav class="nav">
+		            	<li><a href="#"><span class="ss-dashboard"></span>Dashboard</a></li>
+						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
+						<li><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
+						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
+						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
+						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
+						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+		            </nav>
+		          </div>
+		        </div>
+		      </div>
+		    </nav> <!-- /main-navs -->
+	
+
+	
+			<!-- ==================== -->
+			<!-- 		Content		  -->
+			<!-- ==================== -->
+			<div class="content-bar">
+			</div>	
+
+			<div class="content-wrap">
+
+				<section class="content-area">
+
+<h2>Basic Structure</h2>
+<p>The Setup: Doctype, Header, etc. All that other jazz: Main Nav, Main Content, Aside Content</p>
+<pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+  &lt;!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --&gt;
+  &lt;!-- [if lt IE 9]&gt;
+    &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;
+  &lt;![endif]--&gt;
+
+  &lt;meta charset=&quot;UTF-8&quot;/&gt;
+  &lt;title&gt;SSE Basic Structure&lt;/title&gt;
+
+  &lt;!-- Responds to device widths &amp; site description --&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;{Put your SSE description here!}&quot;/&gt;
+
+  &lt;!-- Stylesheets --&gt;
+  &lt;link href=&quot;../stylesheets/styles.css&quot; rel=&quot;stylesheet&quot;/&gt;
+  &lt;link href=&quot;../webfonts/ss-symbolicons-block.css&quot; rel=&quot;stylesheet&quot;/&gt;
+
+  &lt;!-- Modernzir --&gt;
+  &lt;script src=&quot;../javascripts/vendor/modernizr-2.6.2.min.js&quot;/&gt;
+
+  &lt;!-- Typekit --&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;//use.typekit.net/wmd4gdo.js&quot;/&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
+  &lt;/head&gt;
+	
+  &lt;!-- Control Page Color Theme by Body Class --&gt;
+  &lt;body class="blue"&gt;
+
+  &lt;!-- Site Wrap --&gt;
+  &lt;div class="site-wrap"&gt;
+
+  &lt;!-- ========== --&gt;
+  &lt;!-- Navigation --&gt;
+  &lt;!-- ========== --&gt;
+  &lt;nav class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;div class="container"&gt;
+  	... <a href="#navigation">See All</a> ...
+    &lt;/div&gt; &lt;!-- container --&gt;
+  &lt;/div&gt; &lt;!-- navbar-inner --&gt;
+  &lt;/nav&gt; &lt;!-- nav --&gt;
+
+  &lt;!-- ============== --&gt;
+  &lt;!--  Content Area  --&gt;
+  &lt;!-- ============== --&gt;
+  &lt;!-- Content Bar --&gt;
+  &lt;div class="content-bar"&gt;
+  ... <a href="#content-bar">See All</a> ...
+  &lt;/div&gt; &lt;!-- content-bar --&gt;
+
+  &lt;!-- Content Wrap --&gt;
+  &lt;div class="content-wrap"&gt;
+
+	  &lt;!-- Main Content Area --&gt;
+	  &lt;section class="content-area"&gt;
+	  	Full Articles, Charts, Large Tables, Large Lists
+	  &lt;/section&gt;
+
+	  &lt;!-- Aside Content Area --&gt;
+	  &lt;aside class="content-aside"&gt;
+	  	Short Article Lists, League Lists, Recommendations, Small Tables
+	  &lt;/aside&gt;
+    
+  &lt;/div&gt; &lt;!-- content-wrap --&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<br><br>
+
+<a id="navigation"></a>
+<h2>Navigation</h2> 
+<p>Main Navigation Area contains fixed Top Bar Nav &amp; fixed Side Bar Nav in single, concise Unordered List. </p>
+<pre class="prettyprint">
+
+&lt;nav class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+
+    &lt;div class="container"&gt;
+
+
+    &lt;!-- Menu Toggle --&gt;
+	&lt;button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;
+	  &lt;span class="icon-bar"&gt; &lt;/span&gt;
+	  &lt;span class="icon-bar"&gt; &lt;/span&gt;
+	  &lt;span class="icon-bar"&gt; &lt;/span&gt;
+	&lt;/button&gt;
+
+
+    &lt;!-- Main Nav Link List --&gt;
+	&lt;ul class=&quot;nav top-list&quot;&gt;
+	  &lt;!-- Search --&gt;
+	  &lt;li&gt;
+	    &lt;a href=&quot;#&quot; class=&quot;search&quot;&gt;Search&lt;/a&gt;
+	  &lt;/li&gt;
+	  &lt;li&gt;
+	    &lt;a class=&quot;profile dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+	      &lt;span class=&quot;profile-img-wrap&quot;&gt;
+	        &lt;img src=&quot;https://si0.twimg.com/profile_images/3552626974/ea748cdd54a703f4babe49f65cf86572.jpeg&quot; alt=&quot;&quot; class=&quot;profile-img&quot;/&gt;
+	      &lt;/span&gt;
+	      &lt;span class=&quot;user-name&quot;&gt;John Paul Galt&lt;/span&gt;
+	      &lt;span class=&quot;caret&quot;/&gt;
+	    &lt;/a&gt;
+	    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+	      &lt;li&gt;
+	        &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
+	      &lt;/li&gt;
+	      &lt;li&gt;
+	        &lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+	      &lt;/li&gt;
+	      &lt;li&gt;
+	        &lt;a href=&quot;#&quot;&gt;Something else here with a long title&lt;/a&gt;
+	      &lt;/li&gt;
+	    &lt;/ul&gt;
+	  &lt;/li&gt;
+	&lt;/ul&gt; &lt;!-- nav top-list --&gt;
+	
+	&lt;!-- Brand --&gt;
+	&lt;a class="name" href="index.html"&gt;&lt;h1&gt;Stadium Stock Exchange&lt;/h1&gt;&lt;/a&gt;
+
+	&lt;!-- Side Nav --&gt;
+	&lt;div class="nav-collapse collapse"&gt;
+	   &lt;nav class="nav"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-dashboard"&gt;&lt;/span&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-toolbox"&gt;&lt;/span&gt;My Portfolio&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-barchart"&gt;&lt;/span&gt;Stock Market&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-flag"&gt;&lt;/span&gt;Leagues&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-newspaper"&gt;&lt;/span&gt;Articles&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-activity"&gt;&lt;/span&gt;Recent Activity&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span class="ss-info"&gt;&lt;/span&gt;Research&lt;/a&gt;&lt;/li&gt;
+	   &lt;/nav&gt;
+ 	&lt;/div&gt;
+    
+    &lt;/div&gt; &lt;!-- container --&gt;
+
+  &lt;/div&gt; &lt;!-- navbar-inner --&gt;
+&lt;/nav&gt; &lt;!-- nav --&gt;
+
+</pre>
+
+<h3>Hover &amp; Active State</h3>
+<p>To mark the current page, add a class of 'active' to the list item</p>
+<pre class="prettyprint">
+&lt;!-- Hover/Active Example--&gt;
+&lt;li class="active"&gt;&lt;a href="#"&gt;&lt;span class="ss-toolbox"&gt;&lt;/span&gt;My Portfolio&lt;/a&gt;&lt;/li&gt;
+</pre>
+
+
+<br><br>
+
+<a id="content-bar"></a>
+<h2>Content Bar</h2>
+<p>The Content Bar holds sub navigation items, ie: Sub Page list, Return to Index button</p>
+<pre class="prettyprint">
+&lt;div class="content-bar"&gt;
+
+&lt;div class="inner"&gt;
+  &lt;nav&gt;
+    &lt;!-- Sub Pages List with Active State--&gt;
+    &lt;li class="active"&gt;
+      &lt;a class="ss-settings" href="#"&gt;Account Settings&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+      &lt;a class="ss-settings" href="#"&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;!-- Large Button --&gt;
+    &lt;li&gt;
+      &lt;ahref="#" class="box btn ss-list"&gt;Return to Portfolio Index&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/nav>
+&lt;/div&gt;
+
+&lt;/div&gt; &lt;!-- content-bar --&gt;
+</pre>
+
+
+				</section>
+
+				<aside class="content-aside">
+					<h4>Basic Layout Example</h4>
+					<img src="screenshots/basic-layout-example.png"/>
+				</aside>
+      
+     
+    		</div> <!-- content-wrap -->
+		</div> <!-- /site-wrap -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="../javascripts/bootstrap-transition.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-modal.js"></script> -->
+	    <script src="../javascripts/bootstrap-dropdown.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
+	    <script src="../javascripts/bootstrap-tab.js"></script>
+	    <script src="../javascripts/bootstrap-tooltip.js"></script>
+	    <script src="../javascripts/bootstrap-popover.js"></script>
+	    <script src="../javascripts/bootstrap-button.js"></script>
+	    <script src="../javascripts/bootstrap-collapse.js"></script>
+	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
+	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
+	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+		
+		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
+
+
+	</body>
+</html>	

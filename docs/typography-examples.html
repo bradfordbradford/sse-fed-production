@@ -1,0 +1,293 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SSE • Basic Structure</title>
+		
+		<!-- Responds to device & Description -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{Put your SSE description here!}">
+	    
+		<!-- Styles -->
+	    <link href="../stylesheets/styles.css" rel="stylesheet">
+	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
+	    <!-- <link href="css/pretty-print.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
+	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
+
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Telegraph Typekit -->
+	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
+	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	    <link type="text/css" rel="stylesheet" href="../rickshaw/rickshaw.css">
+	</head>
+	
+	<body class="">
+
+		<div class="site-wrap">
+			
+			<!-- ==================== -->
+			<!-- 	  Main Navs		  -->
+			<!-- ==================== -->
+		    <nav class="navbar">
+		      <div class="navbar-inner">
+		        <div class="container">
+
+		          <!-- Menu Toggle -->
+		          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+
+		          <!-- Main Nav Link List -->
+		          <ul class="nav top-list">
+		          	<li>
+		                <a href="#" class="search">Search</a>
+		              </li>
+		              <li>
+		                <a class="profile dropdown-toggle" data-toggle="dropdown">
+		                  <span class="profile-img-wrap">
+		                    <img src="https://si0.twimg.com/profile_images/3552626974/ea748cdd54a703f4babe49f65cf86572.jpeg" alt="" class="profile-img">
+		                  </span>
+		                  <span class="user-name">John Paul Galt</span>
+		                  <span class="caret"></span>
+		                </a>
+		                <ul class="dropdown-menu">
+		                  <li><a href="#">Action</a></li>
+		                  <li><a href="#">Another action</a></li>
+		                  <li><a href="#">Something else here with a long title</a></li>
+		                </ul>
+		              </li>
+		          </ul>
+		          
+		          <!-- Brand -->
+		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
+
+				  <!-- Inner Nav -->
+		          <div class="nav-collapse collapse">
+		            <nav class="nav">
+		            	<li><a href="#"><span class="ss-dashboard"></span>Dashboard</a></li>
+						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
+						<li><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
+						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
+						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
+						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
+						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+		            </nav>
+		          </div>
+		        </div>
+		      </div>
+		    </nav> <!-- /main-navs -->
+	
+
+	
+			<!-- ==================== -->
+			<!-- 		Content		  -->
+			<!-- ==================== -->
+			<div class="content-bar">
+			</div>	
+
+			<div class="content-wrap">
+
+				<section class="content-area">
+
+				<h2>Chart</h2>
+				<p>Built with <a href="http://code.shutterstock.com/rickshaw/">Rickshaw Graph Toolkit</a>.</p>
+
+									
+				<div id="chart_container">
+					<div id="chart"></div>
+				</div>
+
+<pre class="prettyprint">
+&lt;!-- Markup --&gt;	
+&lt;div id="chart_container"&gt;
+  &lt;div id="chart"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+
+
+<br><br>
+<hr>
+<h3>Required Scripts</h3>
+<pre class="prettyprint">
+&lt;script src="../rickshaw/d3.min.js">&lt;/script&gt;
+&lt;script src="../rickshaw/d3.layout.min.js"&gt;&lt;/script&gt;
+&lt;script src="../rickshaw/rickshaw.min.js"&gt;&lt;/script&gt;
+</pre>
+
+
+
+<br><br>
+<hr>
+<h3>Render Graph</h3>
+<p>For more information on Unix Encoded Timestamps: <a href="http://www.unixtimestamp.com/index.php">Unix Time Stamps</a>, <a href="http://www.epochconverter.com/">Epoch Converter</a>.</p>
+<pre class="prettyprint">
+&lt;!-- Graph Data (x: --Unix Encoded Timestamp--) --&gt;
+
+&lt;script&gt;
+	var data = [ 
+		{ x: 1368421200, y: 5.5 },
+		{ x: 1370062800, y: 260 },
+		{ x: 1373432400, y: 120 },
+		{ x: 1376456400, y: 200 },
+		{ x: 1379739600, y: 40 },
+		{ x: 1380603600, y: 140 },
+	];
+
+	// Import Color Palette
+	// var palette = new Rickshaw.Color.Palette();
+
+	// Graph Specs
+	var graph = new Rickshaw.Graph( {
+		element: document.getElementById("chart"),
+		height: 300,
+		width: 560,
+		series: [
+			{
+				// name: "SMU",
+				data: data,
+				color: "#6f992d"
+				// palette.color()
+			}
+		
+		]
+	} );
+
+	// Display Y Axis
+	var yAxis = new Rickshaw.Graph.Axis.Y( {
+	    graph: graph,
+	    orientation: 'left',
+	    element: document.getElementById('y_axis'),
+	} );
+
+	// Render Y Axis
+	yAxis.render();
+
+	// Populate Tooltip with Custom Data
+	var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+		graph: graph,
+		formatter: function(series, x, y) {
+			var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+			var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+			// var content = swatch + date + '<br>' + '<span class="data">' + series.name + ": $" + (y) + '</span>' ;
+			// without series name:
+			var content = swatch + date + '<br>' + '<span class="data">' + "$" + (y) + '</span>' ;
+			return content;
+		}
+	} );
+
+	// Render Graph
+	graph.render();
+&lt;/script&gt;
+</pre>
+
+
+				</section>
+
+				<aside class="content-aside">
+					<h4>Example:</h4>
+					<img src="screenshots/chart-and-header.png" alt="">
+				</aside>
+      
+     
+    		</div> <!-- content-wrap -->
+		</div> <!-- /site-wrap -->
+
+		<!-- Javascripts -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="../javascripts/bootstrap-transition.js"></script>
+	    <script src="../javascripts/bootstrap-dropdown.js"></script>
+	    <script src="../javascripts/bootstrap-tab.js"></script>
+	    <script src="../javascripts/bootstrap-tooltip.js"></script>
+	    <script src="../javascripts/bootstrap-popover.js"></script>
+	    <script src="../javascripts/bootstrap-button.js"></script>
+	    <script src="../javascripts/bootstrap-collapse.js"></script>
+	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+
+
+	    <!-- Rickshaw Graph -->
+		<script src="../rickshaw/d3.min.js"></script>
+		<script src="../rickshaw/d3.layout.min.js"></script>
+		<script src="../rickshaw/rickshaw.min.js"></script>
+	    <script>
+
+		// Graph Data (x: --Unix Encoded Timestamp--)
+		var data = [ 
+			{ x: 1368421200, y: 5.5 },
+			{ x: 1370062800, y: 260 },
+			{ x: 1373432400, y: 120 },
+			{ x: 1376456400, y: 200 },
+			{ x: 1379739600, y: 40 },
+			{ x: 1380603600, y: 140 },
+		];
+
+		// Import Color Palette
+		// var palette = new Rickshaw.Color.Palette();
+
+		// Graph Specs
+		var graph = new Rickshaw.Graph( {
+			element: document.getElementById("chart"),
+			height: 300,
+			width: 560,
+			series: [
+				{
+					// name: "SMU",
+					data: data,
+					color: "#6f992d"
+					// palette.color()
+				}
+			
+			]
+		} );
+
+		// Display Y Axis
+		var yAxis = new Rickshaw.Graph.Axis.Y( {
+		    graph: graph,
+		    orientation: 'left',
+		    element: document.getElementById('y_axis'),
+		} );
+
+		// Render Y Axis
+		yAxis.render();
+
+		// Populate Tooltip with Custom Data
+		var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+			graph: graph,
+			formatter: function(series, x, y) {
+				var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+				var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+				// var content = swatch + date + '<br>' + '<span class="data">' + series.name + ": $" + (y) + '</span>' ;
+				// without series name:
+				var content = swatch + date + '<br>' + '<span class="data">' + "$" + (y) + '</span>' ;
+				return content;
+			}
+		} );
+
+		// Render Graph
+		graph.render();
+
+		</script>
+		
+		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
+	</body>
+</html>	
