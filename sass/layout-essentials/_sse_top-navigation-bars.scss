@@ -284,8 +284,8 @@
 			}
 		
 		// Inner Nav on Small Screens
-		// ---------------------------
-		@media (max-width: 979px) {
+		// --------------------------
+		@include breakpoint(tablet-H) {
 			position: inherit;
 			background: inherit;
 			margin: auto;
@@ -300,6 +300,7 @@
 					width: 100%;
 					margin:0;
 					border-color:darken($dark, 5%) !important;
+					line-height: 8px;
 					
 					&:last-child {border-bottom:0;}
 					
@@ -307,6 +308,7 @@
 						padding:0;
 						margin:0;
 						color: lighten($dark, 68%);
+						font-size: emCalc(12px);
 						@include darkTextShadow;
 
 						span {
@@ -324,5 +326,6 @@
 				}
 			}
 		}
+
 	}
 }

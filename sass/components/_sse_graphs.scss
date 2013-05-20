@@ -22,15 +22,31 @@ header.chart-header {
 			font-size: emCalc(14px);
 			font-weight: 200;
 			color: lighten($dark, 50%);
+
+			// Vertical Tablets
+			@include breakpoint(tablet-V) {
+				font-size: emCalc(12px);
+			}
 		}
 	}
 
 	h3 {
 		font-size: emCalc(26px);
+
+		// Vertical Tablets
+		@include breakpoint(tablet-V) {
+			font-size: emCalc(20px);
+		}
+
 		.detail {
 			font-weight: 200;
 			font-size: 18px;
 			margin-top: 4px;
+
+			// Vertical Tablets
+			@include breakpoint(tablet-V) {
+				font-size: emCalc(14px);
+			}
 		}
 	}
 
@@ -87,7 +103,7 @@ header.chart-header {
 		}
 	}
 
-
+	// Phones
 	@include breakpoint(phones) {
 		display:none;
 	}

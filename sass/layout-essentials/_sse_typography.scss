@@ -39,15 +39,29 @@ h1, h2, h3 {
 
 h1, h2, h3, h4, h5, h6 {
 	margin:8px 0 10px;
+	
+	// Vertical Tablets
+	@include breakpoint(tablet-V) {
+		margin-bottom: 5px;
+	}		
 }
 
 h2 {
 	font-size:emCalc(26px);
+	
+	// Vertical Tablets
+	@include breakpoint(tablet-V) {
+		font-size: emCalc(24px);
+	}
 }
 
 h3 {
 	font-size:emCalc(20px);
 	margin-bottom:6px;
+
+	@include breakpoint(tablet-V) {
+		font-size: emCalc(18px);
+	}
 }
 
 h4 {

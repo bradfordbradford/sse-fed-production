@@ -36,6 +36,10 @@
 				color:$white !important;
 			}
 		}
+
+		@include breakpoint(tablet-V) {
+			margin-right: 6px;
+		}
 	}
 	
 }

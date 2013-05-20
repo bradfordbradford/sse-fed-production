@@ -65,6 +65,12 @@ header {
 	margin-bottom: 10px;
 	float:left;
 	clear:left;
+
+	// Vertical Tablets
+	@include breakpoint(tablet-V) {
+		font-size: emCalc(16px);
+		margin-bottom: 4px;
+	}
 }
 
 

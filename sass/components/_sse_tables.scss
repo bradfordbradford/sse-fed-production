@@ -7,8 +7,8 @@
 .table-header {
   margin: 0;
   background: lighten($white, 10%);
-  border: 1px solid #CCC;
-  padding: 8px 16px 0;
+  border: 1px solid $tableBorder;
+  padding: 8px 16px;
   border-bottom: 0;
 
   h4 {
@@ -16,6 +16,7 @@
 
     span {
       margin-left:12px;
+      display: inline-block;
 
       &.ss-up {
         @extend .gain;
@@ -34,17 +35,32 @@
     }
 
   }
+
   .btn, .btn-group {
     float:right;
   }
 
   .box.btn {
     @include background-image(linear-gradient(#f2f1f0, #f1f1f0));  
-    margin: 4px 0;
+    margin: 2px 0 0;
     padding: 1px 10px 0px;
     font-size: emCalc(12px);
     @include border-radius(4px);
   }
+
+  // On Phones
+  @include breakpoint(phones) {
+    h4 span {
+      margin-left: 10px;
+      font-size: emCalc(13px);
+        
+        &.ss-up:before , &.ss-down:before {
+          font-size: emCalc(12px);
+        }
+
+    }
+  }
+
 }
 
 
@@ -144,10 +160,7 @@ table {
   @media (max-width:768px) {
     table.responsive {
       tbody {
-        @include overlay-fade-right;
+        // @include overlay-fade-right;
       }
     }
   }
-
-
-

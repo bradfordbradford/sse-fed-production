@@ -16,9 +16,11 @@ h1 {
 	margin: 80px auto 40px;
 	text-align: center;
 	font-size: 2.8em;
-	padding-bottom: 80px;
+	line-height: 1em;
+	padding: 0 6px  80px 6px;
+	/*padding-bottom: 80px;*/
 	border-bottom: 1px solid #d1d1d1;
-	color:#439fbf;
+	color:#628c38;
 }
 
 a {
@@ -27,11 +29,11 @@ a {
 }
 
 section {
-	width: 780px;
+	width: 80%;
 	margin: auto;
 	border-bottom: 1px solid #d1d1d1;
 	margin: 32px auto;
-	padding: 12px 0;
+	padding: 12px;
 }
 
 section:last-child {

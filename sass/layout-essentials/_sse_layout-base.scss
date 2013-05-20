@@ -6,38 +6,41 @@
 // ------------------------
 
 
-
+// Content Wrap
+// ------------
 .content-wrap {
 	@include container();
 	// @include susy-grid-background();
 }
 
+// Content Area
+// ------------
 .content-area {
 	@include span-columns(6);
 	@include push(3);
 	margin-left:22.674%;
 }
 
+// Content Aside
+// ------------
 .content-aside {
 	@include span-columns(3 omega);
 }
 
-.form-area {
-	@include span-columns(8);
-	@include push(3);
-	margin-left:22.674%;
-}
 
-// Adjust Content Area & Inner Nav 
+// Adjust Content Area & Inner Nav Margins at 1180px 
+// -------------------------------------------------
 @media (max-width: 1180px) {
 	.content-area {
 		margin-left:23.674%;
 	}
 	.navbar .nav-collapse .nav > li {
-		padding-right: 46px !important;
+		padding-right: 26px !important;
 	}
 }
 
+// Adust Content Area & Aside - Tablet H
+// -------------------------------------
 @include breakpoint(tablet-H) { 
 	.content-area {
 		@include push(0);
@@ -50,6 +53,8 @@
 }	
 
 
+// Adust Content Area & Aside - Tablet V
+// -------------------------------------
 @include breakpoint(tablet-V) {
 	.content-area, .content-aside, .nested {
 		width: 100% !important;

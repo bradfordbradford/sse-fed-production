@@ -4,6 +4,8 @@
 // Content Area Navigation Base
 // ----------------------------
 
+
+
 .content-bar {
 	margin-bottom: 32px;
 	margin-top: 72px;
@@ -18,15 +20,20 @@
 	}
 
 	nav {
-		@extend .content-area;
+		// Setup Grid
+		// ----------
+		@include span-columns(9);
+		@include push(3);
+		margin-left:23.674%;
+
 		display: block;
 		float:none;
 
 		li {
 			display: inline-block;
 			position: relative;
-			width: 200px;
 			text-align:center;
+			margin: 0 10px;
 			
 			a {
 				display: relative;
@@ -34,7 +41,7 @@
 			
 			&.active {
 				a {
-					color: $textColor;
+					color: $blue;
 				}
 			}	
 
@@ -46,7 +53,7 @@
 				border-left: 6px solid transparent;
 				top: 62px;
 				position: absolute;
-				left: 50%;
+				left: 40%;
 			}
 
 			// Active State: Create Caret Background Color
@@ -57,12 +64,12 @@
 				border-left: 7px solid transparent;
 				top: 62px;
 				position: absolute;
-				left: 49.25%;
+				left: 39.25%;
 			}
 		}
 
 		a {
-			padding: 14px 18px 0 14px;
+			padding: 14px 18px 0;
 			color: lighten($dark, 58%);
 			text-transform: uppercase;
 			font-size: emCalc(16px);
@@ -72,22 +79,49 @@
 			&:hover {
 				text-decoration: none;
 			}
-			&:before {
+			&:not(.btn):before {
 				position: absolute;
+				margin: 1px 0 0 -16px;
 			}
 		}
+		
 
-		// Adjust Symbolicons for Tabs, but not Box Buttons
-		li a:before {
-			margin: 1px 0 0 -22px;
-		}
 	}
 
-	// Responsive Settings
+	// Adust Content Bar Size  - Tablet H
+	// -------------------------------------
+	@include breakpoint(tablet-H) {
+		nav {
+			@include push(0);
+			@include span-columns(12);
+			float:none;
+
+
+			a {
+				padding-top: 6px;
+				font-size: emCalc(12px);
+			}
+		}
+	}	
+
+	// Adust Content Bar Items  - Tablet V
+	// -------------------------------------
 	@include breakpoint(tablet-V) {
 		margin-top: 76px;
 		margin-bottom: 10px;
+
+		// Hide Caret
+		.caret, nav li.active:after, nav li.active:before {
+			display: none;
+		}
+
+		// Flexible Width
+		
+		.inner {
+			height: auto;
+		}
 	}
+
 }
 
 
