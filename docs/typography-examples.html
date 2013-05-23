@@ -29,7 +29,7 @@
 	    <link type="text/css" rel="stylesheet" href="../rickshaw/rickshaw.css">
 	</head>
 	
-	<body class="">
+	<body class="orange">
 
 		<div class="site-wrap">
 			
@@ -99,14 +99,204 @@
 
 				<section class="content-area">
 
-				<header><h1>Tailored Typography</h1></header>
+				<header><h1>Tailored Typography &amp; UI Components</h1></header>
+				<p>Typography can be edited in <em>sse_typography.scss</em>. UI components, like Badges, captions, and more, can be found in <em>sse_tags-badges-banners-headers.scss</em>.</p>
 				
+				<br><br><br>
+				<header>
+					<h2>Headers</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>
+				<h1>h1. This is a very large header.</h1>
+
+				<h2>h2. This is a large header.</h2>
+
+				<h3>h3. This is a medium header</h3>
+
+				<h4>h4. This is a moderate, important header.</h4>
+
+				<h5>h5. This is a small header.</h5>
 				
+				<h6>h6. This is a tiny header.</h6>
+
+			
+<pre>
+&lt;h1&gt;h1. This is a very large header.&lt;/h1&gt;
+&lt;h2&gt;h2. This is a large header.&lt;/h2&gt;
+&lt;h3&gt;h3. This is a medium header.&lt;/h3&gt;
+&lt;h4&gt;h4. This is a moderate, important header.&lt;/h4&gt;
+&lt;h5&gt;h5. This is a small header.&lt;/h5&gt;
+&lt;h6&gt;h6. This is a tiny header.&lt;/h6&gt;
+</pre>
+
+				<br><br>
+				<header>
+					<h2>Subheading</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>	
+				<span class="subheading">span.subheading - This is a subheading</span>
+				<br><br>
+<pre>
+&lt;span class="subheading"&gt;span.subheading - This is a subheading.&lt;/span&gt;
+</pre>
+
+				<p>Here it is in action:</p>
+				<header>
+					<h2>Public Leagues</h2>
+					<span class="subheading">Reccomended</span>
+				</header>
+
+<pre class="prettyprint">
+&lt;!-- Header + Subheading --&gt;
+&lt;header&gt;
+	&lt;h2&gt;Public Leagues&lt;/h2&gt;
+	&lt;span class="subheading"&gt;Reccomended&lt;/span&gt;
+&lt;/header&gt;
+</pre>	
+
+				<br><br>
+				<header>
+					<h2>There's Links. And then there's Links with SS-Icons…</h2>
+					<span class="subheading">sse_typography.scss</span>
+				</header>	
+				</header>
+				<p><a href="#">This is a plain old link.</a> If a color is set on the body class, the hover state will match.</p>
+				<br>
+<pre>
+&lt;a href="#"&gt;a - This is a link.&lt;/a&gt;
+</pre>
+
+				<br>
+				<p>Add eye-catching icons in a matter of keystrokes. This is a link with a <a href="#" class="ss-action"> SS-Icon</a>. Isn't it iconic?</p>
+<pre>
+&lt;a class="ss-action" href="#"&gt;a - This is a link with an icon.&lt;/a&gt;
+</pre>
+ 				<p>For a full list of available icons, check out the SS-Icons docs (webfonts > ss-icons-docs.html).</p>
+
+
+				<br><br>
+				<header>
+					<h2>Prompt sharing with SS-Icons</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>	
+				<p><span class="ss-action share"><a href="#">249 Shares</a></span></p>
+				<pre>
+&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;</pre>
+
+
+ 				<br><br>
+				<header>
+					<h2>Badges</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>	
+				<span class="badge">Pro</span>
+				<span class="yellow badge">Pro</span>
+				<span class="red badge">Pro</span>
+				<span class="blue badge">Pro</span>
+				<span class="green badge">Pro</span>
+				<br><br>
+<pre>
+&lt;span class="badge"&gt;span.badge - This is a regular old badge.&lt;/span&gt;
+&lt;span class="yellow badge"&gt;span.yellow.badge - This is a yellow old badge.&lt;/span&gt;
+&lt;span class="red badge"&gt;span.red.badge - This is a red old badge.&lt;/span&gt;
+&lt;span class="blue badge"&gt;span.blue.badge - This is a blue old badge.&lt;/span&gt;
+&lt;span class="green badge"&gt;span.green.badge - This is a green old badge.&lt;/span&gt;
+</pre>
+				<p>Need more colors? Easy-peasy! Check out <em>sse_tags-badges-banners-headers.scss</em> and add color classes as needed.</p>
+
+				
+				<br><br>
+				<header>
+					<h2>Banners</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>	
+				<div class="league-banner">
+					<img src="http://placehold.it/650x350" alt="caption here as well">
+					<a href="#"><span class="stat">23,986</span> Members</a>
+				</div>
+
+<pre>
+&lt;div class="league-banner"&gt;
+	&lt;img src="../images/content/article-placeholder.jpg" alt="caption here as well"&gt;
+	&lt;a href="#"&gt;&lt;span class="stat"&gt;23,986&lt;/span&gt; Members&lt;/a&gt;
+&lt;/div&gt;
+</pre>				
+
+
+				<br><br><br>
+				<header>
+					<h2>Image Caption</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>
+				<span class="image-caption">span.image-caption - This is an Image Caption</span>
+				<br><br>
+<pre>
+&lt;span class="image-caption&gt;span.image-caption - This is an image caption.&lt;/span&gt;
+</pre>
+
+<p>Typically, it's used in tandem with an image. Like so:</p>
+<div class="article-image">
+	<img src="../images/content/article-placeholder.jpg" alt="caption here as well">
+	<span class="image-caption">Image Caption Here</span>
+</div>
+
+<pre>
+&lt;div class="article-image"&gt;
+	&lt;img src="../images/content/article-placeholder.jpg" alt="caption here as well"&gt;
+	&lt;span class="image-caption"&gt;Image Caption Here&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+				<br><br>
+				<header>
+					<h2>Footnote</h2>
+					<span class="subheading">sse_tags-badges-banners-headers.scss</span>
+				</header>
+				<span class="footnote">This is a footnote. And, here's a <a href="#">Link.</a></span>
+
+				<pre>
+&lt;span class="footnote" href="#"&gt;span.footnote - This is a footnote.&lt;/span&gt;
+</pre>
+
+				<br><br>
+				<header>
+					<h2>Tag Cloud</h2>
+					<span class="subheading">sse_tag-cloud.scss</span>
+				</header>
+				<ul class="tag-cloud">
+				  <li><a href="#">Portfolio Summary</a></li>
+				  <li><a href="#">Comparison Chart</a></li>
+				</ul>		
+
+				<br><br>
+				<header><h2>Unordered List</h2></header>
+
+				<ul>
+				  <li>List item with a much longer description or more content.</li>
+				  <li>List item</li>
+				  <li>List item
+				    <ul>
+				      <li>Nested List Item</li>
+				      <li>Nested List Item</li>
+				      <li>Nested List Item</li>
+				    </ul>
+				  </li>
+				  <li>List item</li>
+				</ul>
+
+
+				<br><br>
+				<header><h2>Definition List</h2></header>
+				<dl>
+				  <dt>Definition List</dt>
+				  <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</dd>
+				</dl>
+
+
 				</section>
 
 				<aside class="content-aside">
-					<h4>Example:</h4>
-					<!-- <img src="screenshots/chart-and-header.png" alt=""> -->
+					
 				</aside>
       
      

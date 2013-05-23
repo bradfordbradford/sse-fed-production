@@ -1475,6 +1475,8 @@ header.article-header .timestamp { font-style: italic; font-size: 1.25em; }
 header.article-header .btn, header.article-header .btn-group { margin-top: -4px; }
 @media (max-width: 768px) { header.article-header .timestamp { font-size: 0.875em; } }
 
+article { margin-bottom: 40px; }
+
 article p { font-family: "chaparral-pro", Georgia, "Times New Roman", Times, serif; font-size: 1.25em; line-height: 1.875em; }
 @media (max-width: 768px) { article p { font-size: 1.125em; line-height: 1.75em; } }
 
@@ -1619,10 +1621,14 @@ header .btn { margin: 7px 0; }
 .share:before { margin-right: 4px; position: relative; top: 2px; }
 
 .footnote { color: #c6c6c6; font-size: 0.875em; }
-.footnote a { color: #c6c6c6 !important; }
+.footnote a { color: #bcbcbc !important; text-decoration: underline; }
 
 .badge { -webkit-border-radius: 3px 3px; -moz-border-radius: 3px 3px; border-radius: 3px 3px; background: #d0d0d0; text-transform: uppercase; font-size: 0.875em; text-shadow: none; }
+.badge.yellow { background: #e2b747; }
+.badge.red { background: #fe694b; }
+.badge.green { background: #628c38; }
+.badge.blue { background: #439fbf; }
 
 .league-banner { margin-bottom: 20px; }
-.league-banner a { background: #373737; font-weight: 400; background: rgba(55, 55, 55, 0.9); position: relative; display: block; margin-top: -40px; padding: 6px 0; text-indent: 12px; color: #f3f1ee; }
+.league-banner a { background: #373737; font-weight: 400; background: rgba(55, 55, 55, 0.9); position: relative; display: block; margin-top: -36px; padding: 6px 0; text-indent: 12px; color: #f3f1ee; }
 .league-banner a .stat { color: #e2b747; display: inline-block; margin-right: 6px; font-size: 1.625em; }

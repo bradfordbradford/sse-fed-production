@@ -3,14 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>SSE • Basic Structure</title>
-
+		
+		<!-- Responds to device & Description -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
 	    
-
+		<!-- Styles -->
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons-block.css" rel="stylesheet">
-
+	    <!-- <link href="css/pretty-print.css" rel="stylesheet"> -->
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
 	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -21,9 +25,11 @@
 	    <!-- Telegraph Typekit -->
 	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	    <link type="text/css" rel="stylesheet" href="../rickshaw/rickshaw.css">
 	</head>
 	
-	<body class="mint">
+	<body class="orange">
 
 		<div class="site-wrap">
 			
@@ -63,7 +69,7 @@
 		          </ul>
 		          
 		          <!-- Brand -->
-		          <a class="name" href="/pages"><h1>Stadium Stock Exchange</h1></a>
+		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
 
 				  <!-- Inner Nav -->
 		          <div class="nav-collapse collapse">
@@ -72,7 +78,7 @@
 						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
 						<li><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
 						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
-						<li class="active"><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
+						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
 						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
 						<li><a href="#"><span class="ss-info"></span>Research</a></li>
 		            </nav>
@@ -87,83 +93,91 @@
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
-			</div>
+			</div>	
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-					<article>
-						<header class="article-header">
-							<h2>Article Title Here That's Really Long & Breaks to Two Lines</h2>
-							<div class="meta">
-								<span class="ss-action share"><a href="#">249 Shares</a></span>
-								<span class="timestamp">March 28, 2013 11:05AM ET</span>
-							</div>
-						</header>
-						
-						<div class="article-image">
-							<img src="../images/content/article-placeholder.jpg" alt="caption here as well">
-							<span class="image-caption">Image Caption Here</span>
-						</div>
-						
-						<p>Nulla tonx cray thundercats, kogi eiusmod art party. Wolf quinoa godard pork belly actually voluptate. Try-hard fixie pug echo park, gentrify etsy eu deserunt sint +1 mustache direct trade mlkshk selvage consequat. Trust fund authentic pop-up cosby sweater, seitan street art gluten-free.</p>
 
-						<p>Ethical placeat eiusmod, direct trade accusamus delectus cardigan id biodiesel. Beard actually odio, deserunt placeat flexitarian trust fund. Tofu 90's farm-to-table, disrupt high life cray plaid squid officia tumblr fashion axe.</p>
+				<header><h1>Buttons &amp; Such</h1></header>
+				
+				<br><br>
+				<header>
+					<h2>Boxy, Flat, Dropdown…</h2>
+					<span class="subheading">sse_buttons.scss</span>
+				</header>
+				
+				<a href="#" class="box btn">Box Button</a>
+<br><br>
+<pre>&lt;a href="#" class="box btn"&gt;Box Button&lt;/a&gt;</pre>
 
-						<span class="footnote">This is a footnote. Read <a href="#">More Here.</a></span>
-					</article>
+<br>
+				<a href="#" class="flat btn">Flat Button</a>
+<br><br>
+<pre>&lt;a href="#" class="flat btn"&gt;Flat Button&lt;/a&gt;</pre>
+
+<br>
+				<div class="btn-group">
+					<a class="dropdown btn dropdown-toggle" data-toggle="dropdown" href="#">
+					    Dropdown Button
+					    <span class="caret"></span>
+					 </a>
+					 <ul class="dropdown-menu">
+						  <li><a href="#">Action One</a></li>
+						  <li><a href="#">Action Two</a></li>
+						  <li><a href="#">Action Three</a></li>
+					  </ul>
+				</div>
+				<br><br>
+<pre>
+&lt;div class="btn-group"&gt;
+  &lt;a class="dropdown btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+    Choose Filter…
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action One&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action Two&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action Three&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>				
+
+
+<br><br>
+<a href="#" class="box btn ss-list">Box Button with SS-Icon</a>
+<br><br>
+<pre>&lt;a href="#" class="box btn ss-list"&gt;Box Button with SS-Icon&lt;/a&gt;</pre>
+<br><br>
 				</section>
 
 				<aside class="content-aside">
-
-			        <article class="panel">
-						<h4>Related Content</h4>
-
-						<ul class="activity-list">
-							<li class="ss-newspaper">
-								<div class="inner">
-									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
-									<span class="timestamp">12 hours ago</span>
-								</div>
-							</li>
-
-							<li class="ss-newspaper">
-								<div class="inner">
-									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
-									<span class="timestamp">12 hours ago</span>
-								</div>
-							</li>
-
-							<li class="ss-newspaper">
-								<div class="inner">
-									<a href="#">Really Lengthy Article Title Should Break to Two Lines</a>
-									<span class="timestamp">12 hours ago</span>
-								</div>
-							</li>
-						</ul>
-					</article>
-
+					
 				</aside>
       
      
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
+		<!-- Javascripts -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	    <script src="../javascripts/bootstrap-transition.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
-	    <!-- // <script src="../javascripts/bootstrap-modal.js"></script> -->
 	    <script src="../javascripts/bootstrap-dropdown.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
 	    <script src="../javascripts/bootstrap-tab.js"></script>
 	    <script src="../javascripts/bootstrap-tooltip.js"></script>
 	    <script src="../javascripts/bootstrap-popover.js"></script>
 	    <script src="../javascripts/bootstrap-button.js"></script>
 	    <script src="../javascripts/bootstrap-collapse.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
-	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
 		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
 	</body>
-	</html>	
+</html>	

@@ -57,9 +57,9 @@
 
 // Grid (Built with Susy Grid for Semantic Markup · http://susy.oddbird.net/)
 // --------------------------------------------------------------------------
-@import "susy";
-@import "layout-essentials/sse_susyGrid-base";
-@import "layout-essentials/sse_layout-base";
+@import "susy"; 
+@import "layout-essentials/sse_susyGrid-base"; // define grid
+@import "layout-essentials/sse_layout-base"; // apply grid
 
 
 // Navigation

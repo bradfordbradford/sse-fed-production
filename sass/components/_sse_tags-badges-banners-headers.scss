@@ -112,7 +112,8 @@ header {
 	font-size:emCalc(14px);
 
 	a {
-		color: lighten($dark, 56%) !important;
+		color: lighten($dark, 52%) !important;
+		text-decoration: underline;
 	}
 }
 
@@ -125,6 +126,21 @@ header {
 	text-transform:uppercase;
 	font-size: emCalc(14px);
 	text-shadow:none;
+
+	&.yellow {
+		background: $yellow;
+	}
+
+	&.red {
+		background: $red;
+	}
+
+	&.green {
+		background: $green;
+	}
+	&.blue {
+		background: $blue;
+	}
 }
 
 
@@ -140,7 +156,7 @@ header {
 		background: rgba(55, 55, 55, 0.9);
 		position: relative;
 		display: block;
-		margin-top: -40px;
+		margin-top: -36px;
 		padding: 6px 0;
 		text-indent: 12px;
 		color: $white;

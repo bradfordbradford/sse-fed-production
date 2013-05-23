@@ -37,7 +37,7 @@ You'll need the following to work with SSE-FED:
 		
 		gem install compass
 		
-- Susy → http://susy.oddbird.net/
+- Susy → http://susy.oddbird.net/ (more info on installation: http://susy.oddbird.net/guides/getting-started/) 
 
 		gem install susy
 

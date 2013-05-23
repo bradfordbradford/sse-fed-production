@@ -42,6 +42,10 @@ header.article-header {
 // Article Paragraphs & Img's
 // --------------------------
 
+article {
+	margin-bottom: 40px;
+}
+
 article p {
 	font-family: $serifFontFamily;
 	font-size: emCalc(20px);
