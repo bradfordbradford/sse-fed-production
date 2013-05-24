@@ -1,0 +1,93 @@
+
+
+
+// ------------------
+// SSE Sign Up Layout
+// ------------------
+
+
+body.signup {
+	
+
+	// Content Aside
+	// ------------
+	.content-aside {
+		float: left;
+		width: 30%;
+		background: #888;
+		height: 100%;
+		position: absolute;
+		background: url('http://stadiumse.com/assets/blackandwhitestadium-4660bb15a0feb0d83e4bcb95e8671e1d.jpg') -290px 0;
+		@include dark-fade-V-B;
+		border-right: 1px solid $dark;
+
+		.inner-copy {
+			position: absolute;
+			bottom: 0;
+			padding: 50px 10% 10%;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			//Type & Buttons 
+			h1, a {
+				color: $yellow;
+			}
+
+			p {
+				color: $white;
+			}
+			
+			.btn {
+				color: $gray;
+
+				&:hover {
+					background: $yellow;
+				}
+			}
+
+		}
+	}	
+
+	// Content Area
+	// ------------
+	.content-area {
+		float: left;
+		width: 70%;
+		margin-left: 30%;
+	}
+
+	// Form
+	form {
+		margin: 60px;
+	}
+
+	
+}
+
+
+
+// Adust Content Area & Aside - Tablet H
+// -------------------------------------
+// @include breakpoint(tablet-H) { 
+// 	.content-area {
+// 		@include push(0);
+// 		@include span-columns(8);
+// 	}
+
+// 	.content-aside {
+// 		@include span-columns(4 omega);
+// 	}
+// }	
+
+
+// Adust Content Area & Aside - Tablet V
+// -------------------------------------
+@include breakpoint(tablet-V) {
+	.content-aside {
+		
+	}
+
+}
+

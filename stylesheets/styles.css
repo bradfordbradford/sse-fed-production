@@ -1333,6 +1333,24 @@ address { display: block; margin-bottom: 20px; font-style: normal; line-height: 
 @media (max-width: 979px) { .content-area { margin-left: 0%; width: 65.77323%; float: left; margin-right: 2.68032%; display: inline; }
   .content-aside { width: 31.54645%; float: right; margin-right: 0; *margin-left: -2.214em; display: inline; } }
 @media (max-width: 768px) { .content-area, .content-aside, .nested { width: 100% !important; float: none !important; } }
+.form-area { width: 65.77323%; float: left; margin-right: 2.68032%; display: inline; margin-left: 25.67008%; margin-left: 22.674%; }
+@media (max-width: 1180px) { .form-area { margin-left: 23.674%; } }
+@media (max-width: 979px) { .form-area { margin-left: 0%; width: 100%; float: left; margin-right: 2.68032%; display: inline; } }
+@media (max-width: 768px) { .form-area form textarea, .form-area form input[type="text"], .form-area form input[type="password"], .form-area form input[type="datetime"], .form-area form input[type="datetime-local"], .form-area form input[type="date"], .form-area form input[type="month"], .form-area form input[type="time"], .form-area form input[type="week"], .form-area form input[type="number"], .form-area form input[type="email"], .form-area form input[type="url"], .form-area form input[type="search"], .form-area form input[type="tel"], .form-area form input[type="color"], .form-area form .uneditable-input { width: 90%; }
+  .form-area .help-inline { margin-left: 0; }
+  .form-area .help-inline .prompt { text-indent: -9999px; display: inline-block; } }
+@media (max-width: 480px) { .form-area form textarea, .form-area form input[type="text"], .form-area form input[type="password"], .form-area form input[type="datetime"], .form-area form input[type="datetime-local"], .form-area form input[type="date"], .form-area form input[type="month"], .form-area form input[type="time"], .form-area form input[type="week"], .form-area form input[type="number"], .form-area form input[type="email"], .form-area form input[type="url"], .form-area form input[type="search"], .form-area form input[type="tel"], .form-area form input[type="color"], .form-area form .uneditable-input { margin-bottom: 16px; padding: 8px 0; text-indent: 6px; width: 85%; } }
+
+body.signup .content-aside { float: left; width: 30%; background: #888; height: 100%; position: absolute; background: url("http://stadiumse.com/assets/blackandwhitestadium-4660bb15a0feb0d83e4bcb95e8671e1d.jpg") -290px 0; border-right: 1px solid #373737; }
+body.signup .content-aside:before { top: 0px; right: 0; content: ''; position: absolute; height: 100%; width: 100%; *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#66000000', endColorstr='#00000000'); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(50%, rgba(0, 0, 0, 0))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); }
+body.signup .content-aside .inner-copy { position: absolute; bottom: 0; padding: 50px 10% 10%; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body.signup .content-aside .inner-copy h1, body.signup .content-aside .inner-copy a { color: #e2b747; }
+body.signup .content-aside .inner-copy p { color: #f3f1ee; }
+body.signup .content-aside .inner-copy .btn { color: #272727; }
+body.signup .content-aside .inner-copy .btn:hover { background: #e2b747; }
+body.signup .content-area { float: left; width: 70%; margin-left: 30%; }
+body.signup form { margin: 60px; }
+
 .navbar { position: fixed; width: 100%; z-index: 10; border-top: 2px solid #272727; border-bottom: 2px solid #272727; margin-bottom: 0; top: 0; left: 0; right: 0; z-index: 1000; }
 .navbar .navbar-inner { -webkit-box-shadow: 0 2px 0px #272727; -moz-box-shadow: 0 2px 0px #272727; box-shadow: 0 2px 0px #272727; padding: 0; background: #373737; filter: none !important; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0; }
 .navbar .nav, .navbar .tag-cloud { margin: 0; }
@@ -1391,7 +1409,7 @@ address { display: block; margin-bottom: 20px; font-style: normal; line-height: 
 .content-bar nav li.active:before { border-top: 11px solid #cbcbcb; border-right: 7px solid transparent; border-left: 7px solid transparent; top: 62px; position: absolute; left: 39.25%; }
 .content-bar nav a { padding: 14px 18px 0; color: #cbcbcb; text-transform: uppercase; font-size: 1em; font-weight: 500; display: inline-block; }
 .content-bar nav a:hover { text-decoration: none; }
-.content-bar nav a:not(.btn):before { position: absolute; margin: 1px 0 0 -16px; }
+.content-bar nav a:not(.btn):before { position: absolute; margin: 1px 0 0 -20px; }
 @media (max-width: 979px) { .content-bar nav { margin-left: 0%; width: 100%; float: left; margin-right: 2.68032%; display: inline; float: none; }
   .content-bar nav a { padding-top: 6px; font-size: 0.75em; } }
 @media (max-width: 768px) { .content-bar { margin-top: 76px; margin-bottom: 10px; }
@@ -1561,14 +1579,6 @@ ul.article-list .btn { float: right; }
 .content-aside ul.activity-list li .inner { padding-left: 20px; }
 .content-aside ul.activity-list li .timestamp { color: #91918e; font-size: 0.875em; font-style: italic; }
 
-.form-area { width: 65.77323%; float: left; margin-right: 2.68032%; display: inline; margin-left: 25.67008%; margin-left: 22.674%; }
-@media (max-width: 1180px) { .form-area { margin-left: 23.674%; } }
-@media (max-width: 979px) { .form-area { margin-left: 0%; width: 100%; float: left; margin-right: 2.68032%; display: inline; } }
-@media (max-width: 768px) { .form-area form textarea, .form-area form input[type="text"], .form-area form input[type="password"], .form-area form input[type="datetime"], .form-area form input[type="datetime-local"], .form-area form input[type="date"], .form-area form input[type="month"], .form-area form input[type="time"], .form-area form input[type="week"], .form-area form input[type="number"], .form-area form input[type="email"], .form-area form input[type="url"], .form-area form input[type="search"], .form-area form input[type="tel"], .form-area form input[type="color"], .form-area form .uneditable-input { width: 90%; }
-  .form-area .help-inline { margin-left: 0; }
-  .form-area .help-inline .prompt { text-indent: -9999px; display: inline-block; } }
-@media (max-width: 480px) { .form-area form textarea, .form-area form input[type="text"], .form-area form input[type="password"], .form-area form input[type="datetime"], .form-area form input[type="datetime-local"], .form-area form input[type="date"], .form-area form input[type="month"], .form-area form input[type="time"], .form-area form input[type="week"], .form-area form input[type="number"], .form-area form input[type="email"], .form-area form input[type="url"], .form-area form input[type="search"], .form-area form input[type="tel"], .form-area form input[type="color"], .form-area form .uneditable-input { margin-bottom: 16px; padding: 8px 0; text-indent: 6px; width: 85%; } }
-
 form { font-size: 1em; font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 form textarea, form input[type="text"], form input[type="password"], form input[type="datetime"], form input[type="datetime-local"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="week"], form input[type="number"], form input[type="email"], form input[type="url"], form input[type="search"], form input[type="tel"], form input[type="color"], form .uneditable-input { padding: 12px 0; width: 80%; margin-bottom: 16px; text-indent: 16px; }
 form textarea:focus, form input[type="text"]:focus, form input[type="password"]:focus, form input[type="datetime"]:focus, form input[type="datetime-local"]:focus, form input[type="date"]:focus, form input[type="month"]:focus, form input[type="time"]:focus, form input[type="week"]:focus, form input[type="number"]:focus, form input[type="email"]:focus, form input[type="url"]:focus, form input[type="search"]:focus, form input[type="tel"]:focus, form input[type="color"]:focus, form .uneditable-input:focus { border-color: #444442; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
@@ -1576,6 +1586,8 @@ form input[type="submit"] { display: block; }
 form .inline-input input { width: 100px; }
 form .help-inline { position: relative; top: -6px; margin-left: 30px; padding-left: 10px; text-transform: uppercase; }
 form .input-prepend .add-on, form .input-append .add-on { padding: 12px 6px; }
+
+.btn { -webkit-transition: background 0.15s, color 0.15s ease-in-out; -moz-transition: background 0.15s, color 0.15s ease-in-out; -o-transition: background 0.15s, color 0.15s ease-in-out; transition: background 0.15s, color 0.15s ease-in-out; }
 
 .box.btn { padding: 12px 18px; color: #373737; text-transform: uppercase; font-size: 14px; font-weight: 600; border: 1px solid #d5d5d5; background: none; -webkit-border-radius: 2px 2px; -moz-border-radius: 2px 2px; border-radius: 2px 2px; text-shadow: none !important; }
 .box.btn:before { margin-right: 12px; position: relative; top: 2px; }

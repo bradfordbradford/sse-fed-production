@@ -49,7 +49,7 @@
 
 // Overlays/Fades
 // --------------
-// Fade Horizontal, from Right
+// Default Fade Horizontal, from Right // For light backgrounds
 @mixin fade-H-R {
   &:before {
       top:0;
@@ -65,7 +65,7 @@
 }
 
 
-// Fade Vertically, from Bottom
+// Default Fade Vertically, from Bottom // For light backgrounds
 @mixin fade-V-B {
   max-height: 114px;
   position: relative;
@@ -82,6 +82,20 @@
       width: 100%;
       @include filter-gradient(rgba(243, 241, 238, .9), rgba(243, 241, 238, 0.5), vertical); // IE6-9
       @include background-image(linear-gradient(bottom,  rgba(243, 241, 238, .8) 6%, rgba(243, 241, 238, .0) 40%));
+    }
+}
+
+// Dark Fade Vertically, from Bottom // For Image backgrounds
+@mixin dark-fade-V-B {
+    &:before {
+      top:0px;
+      right:0;
+      content: '';
+      position: absolute;
+      height: 100%;  
+      width: 100%;
+      @include filter-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0), vertical); // IE6-9
+      @include background-image(linear-gradient(bottom,  rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, 0) 50%));
     }
 }
 

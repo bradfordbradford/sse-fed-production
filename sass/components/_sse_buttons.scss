@@ -4,6 +4,10 @@
 // Buttons
 // --------
 
+.btn {
+	@include transition(background .15s, color .15s ease-in-out);
+}
+
 
 .box.btn {
 	padding: 12px 18px;
@@ -15,7 +19,6 @@
 	background:none;
 	@include border-radius(2px 2px);
 	text-shadow:none !important;
-
 
 	&:before {
 		margin-right:12px;

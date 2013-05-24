@@ -26,6 +26,7 @@ Repo Contents
 =====================
 * Page Types: sse-fed-production/pages  
 * Docs: sse-fed-production/doc → in progress
+* SS-Icons Docs: webfonts > ss-icons-docs.html
 * Base Source and Compilation Files for SCSS
 
 

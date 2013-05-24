@@ -1,0 +1,48 @@
+// Setup Form Grid
+// ----------------
+.form-area {
+	@include span-columns(8);
+	@include push(3);
+	margin-left:22.674%;
+
+  	// Adjust Form Margins at 1180px 
+	// -----------------------------
+	@media (max-width: 1180px) {
+		margin-left:23.674%;
+	}
+
+	// Adjust Form Width at Tablet H
+	// -----------------------------
+	@include breakpoint(tablet-H) {
+		@include push(0);
+	  	@include span-columns(12);
+	}
+
+	// Adjust Form Width at Tablet V
+	// -----------------------------
+	@include breakpoint(tablet-V) {
+		form textarea, form input[type="text"], form input[type="password"], form input[type="datetime"], form input[type="datetime-local"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="week"], form input[type="number"], form input[type="email"], form input[type="url"], form input[type="search"], form input[type="tel"], form input[type="color"], form .uneditable-input {
+			width:90%;
+		}
+		.help-inline {
+			margin-left: 0;
+			
+			.prompt {
+				text-indent: -9999px;
+				display: inline-block;
+			}
+		}
+	}
+	
+	// Adjust Form Fields at Phones
+	// -----------------------------
+	@include breakpoint(phones) {
+
+		form textarea, form input[type="text"], form input[type="password"], form input[type="datetime"], form input[type="datetime-local"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="week"], form input[type="number"], form input[type="email"], form input[type="url"], form input[type="search"], form input[type="tel"], form input[type="color"], form .uneditable-input {
+			margin-bottom: 16px;
+		    padding: 8px 0;
+		    text-indent: 6px;
+		    width:85%;
+		}
+	}
+}
