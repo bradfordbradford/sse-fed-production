@@ -1341,12 +1341,12 @@ address { display: block; margin-bottom: 20px; font-style: normal; line-height: 
   .form-area .help-inline .prompt { text-indent: -9999px; display: inline-block; } }
 @media (max-width: 480px) { .form-area form textarea, .form-area form input[type="text"], .form-area form input[type="password"], .form-area form input[type="datetime"], .form-area form input[type="datetime-local"], .form-area form input[type="date"], .form-area form input[type="month"], .form-area form input[type="time"], .form-area form input[type="week"], .form-area form input[type="number"], .form-area form input[type="email"], .form-area form input[type="url"], .form-area form input[type="search"], .form-area form input[type="tel"], .form-area form input[type="color"], .form-area form .uneditable-input { margin-bottom: 16px; padding: 8px 0; text-indent: 6px; width: 85%; } }
 
-body.signup .content-aside { float: left; width: 30%; background: #888; height: 100%; position: absolute; background: url("http://stadiumse.com/assets/blackandwhitestadium-4660bb15a0feb0d83e4bcb95e8671e1d.jpg") -290px 0; border-right: 1px solid #373737; }
+body.signup .content-aside { float: left; width: 30%; background: #888; height: 100%; position: absolute; background: url("../images/stadium-bg.jpeg") -290px 0; border-right: 1px solid #373737; }
 body.signup .content-aside:before { top: 0px; right: 0; content: ''; position: absolute; height: 100%; width: 100%; *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#66000000', endColorstr='#00000000'); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(50%, rgba(0, 0, 0, 0))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); }
 body.signup .content-aside .inner-copy { position: absolute; bottom: 0; padding: 50px 10% 10%; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body.signup .content-aside .inner-copy h1, body.signup .content-aside .inner-copy a { color: #e2b747; }
 body.signup .content-aside .inner-copy p { color: #f3f1ee; }
-body.signup .content-aside .inner-copy .btn { color: #272727; }
+body.signup .content-aside .inner-copy .btn { color: #272727; margin-bottom: 8px; }
 body.signup .content-aside .inner-copy .btn:hover { background: #e2b747; }
 body.signup .content-area { float: left; width: 70%; margin-left: 30%; }
 body.signup form { margin: 60px; }

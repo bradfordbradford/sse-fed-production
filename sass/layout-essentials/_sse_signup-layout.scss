@@ -17,7 +17,7 @@ body.signup {
 		background: #888;
 		height: 100%;
 		position: absolute;
-		background: url('http://stadiumse.com/assets/blackandwhitestadium-4660bb15a0feb0d83e4bcb95e8671e1d.jpg') -290px 0;
+		background: url('../images/stadium-bg.jpeg') -290px 0;
 		@include dark-fade-V-B;
 		border-right: 1px solid $dark;
 
@@ -41,6 +41,7 @@ body.signup {
 			
 			.btn {
 				color: $gray;
+				margin-bottom: 8px;
 
 				&:hover {
 					background: $yellow;
