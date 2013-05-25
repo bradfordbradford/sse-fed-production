@@ -1343,14 +1343,22 @@ address { display: block; margin-bottom: 20px; font-style: normal; line-height: 
 
 body.signup .content-aside { float: left; width: 30%; background: #888; height: 100%; position: absolute; background: url("../images/stadium-bg.jpeg") -290px 0; border-right: 1px solid #373737; }
 body.signup .content-aside:before { top: 0px; right: 0; content: ''; position: absolute; height: 100%; width: 100%; *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#66000000', endColorstr='#00000000'); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(50%, rgba(0, 0, 0, 0))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%); }
+body.signup .content-aside .name { float: left; display: block; margin: 14px 14px 0; background: url("../images/LOGO+@2x.png") no-repeat top center; background-size: 100%; height: 36px; width: 170px; }
+body.signup .content-aside .name h1 { text-indent: -9999px; }
 body.signup .content-aside .inner-copy { position: absolute; bottom: 0; padding: 50px 10% 10%; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body.signup .content-aside .inner-copy h1, body.signup .content-aside .inner-copy a { color: #e2b747; }
 body.signup .content-aside .inner-copy p { color: #f3f1ee; }
 body.signup .content-aside .inner-copy .btn { color: #272727; margin-bottom: 8px; }
 body.signup .content-aside .inner-copy .btn:hover { background: #e2b747; }
+body.signup .content-aside .inner-copy .btn:before { margin: 0 4px 0 0; top: 1px; position: relative; }
 body.signup .content-area { float: left; width: 70%; margin-left: 30%; }
 body.signup form { margin: 60px; }
 
+@media (max-width: 768px) { body.signup .content-aside { background-position: 0px -168px; border-right: 0; border-bottom: 1px solid #373737; height: 280px; position: relative; display: block; }
+  body.signup .content-aside .name { margin: 12px 12px 0; width: 110px; float: none; display: inline-block; }
+  body.signup .content-aside:before { background-image: none; }
+  body.signup .content-aside .inner-copy { padding: 10px 30px; width: 100%; }
+  body.signup form { margin: 40px 20px; } }
 .navbar { position: fixed; width: 100%; z-index: 10; border-top: 2px solid #272727; border-bottom: 2px solid #272727; margin-bottom: 0; top: 0; left: 0; right: 0; z-index: 1000; }
 .navbar .navbar-inner { -webkit-box-shadow: 0 2px 0px #272727; -moz-box-shadow: 0 2px 0px #272727; box-shadow: 0 2px 0px #272727; padding: 0; background: #373737; filter: none !important; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0; }
 .navbar .nav, .navbar .tag-cloud { margin: 0; }
@@ -1465,6 +1473,10 @@ body.yellow .flat.btn:hover { background: #dfb035; color: #f3f1ee !important; }
 body.yellow .article-list a, body.yellow .activity-list a { color: #e2b747; }
 body.yellow .navbar .nav-collapse .nav > li a:hover span, body.yellow .navbar .nav-collapse .tag-cloud > li a:hover span, body.yellow .navbar .nav-collapse .nav > li.active span, body.yellow .navbar .nav-collapse .tag-cloud > li.active span { background: #e2b747; }
 
+@font-face { font-family: "entypo"; src: url("../webfonts/entypo-social/entypo-social.ttf"); }
+
+.entypo { font-family: "entypo"; }
+
 a { color: #439fbf; -webkit-transition: 0.15s color ease-in-out; -moz-transition: 0.15s color ease-in-out; -o-transition: 0.15s color ease-in-out; transition: 0.15s color ease-in-out; }
 a:hover { color: #2e7087; text-decoration: none !important; }
 
@@ -1483,6 +1495,11 @@ h3 { font-size: 1.25em; margin-bottom: 6px; }
 
 h4 { font-size: 1.125em; color: #444442; text-transform: uppercase; }
 
+@media (max-width: 480px) { h1 { font-size: 1.75em; }
+  h2 { font-size: 1.25em; }
+  h3 { font-size: 1em; }
+  h4 { font-size: 1em; }
+  h5 { font-size: 0.875em; } }
 ::-moz-selection { text-shadow: none; background-color: #ded8d0; color: #444442; }
 
 ::selection { text-shadow: none; background-color: #ded8d0; color: #444442; }

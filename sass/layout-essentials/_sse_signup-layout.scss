@@ -21,6 +21,21 @@ body.signup {
 		@include dark-fade-V-B;
 		border-right: 1px solid $dark;
 
+		// Brand
+		.name {
+			float:left;
+			display: block;
+			margin:14px 14px 0;
+			background:url($logoPath) no-repeat top center;
+			background-size: 100%;
+			height: 36px;
+			width:170px;
+			
+			h1 {
+				text-indent: -9999px;
+			}
+		}
+
 		.inner-copy {
 			position: absolute;
 			bottom: 0;
@@ -45,6 +60,12 @@ body.signup {
 
 				&:hover {
 					background: $yellow;
+				}
+
+				&:before {
+					margin: 0 4px 0 0;
+					top: 1px;
+					position: relative;
 				}
 			}
 
@@ -86,8 +107,38 @@ body.signup {
 // Adust Content Area & Aside - Tablet V
 // -------------------------------------
 @include breakpoint(tablet-V) {
-	.content-aside {
-		
+	body.signup {
+
+		// Content Aside
+		.content-aside {
+			background-position: 0px -168px;
+			border-right:0;
+			border-bottom: 1px solid $dark;
+			height: 280px;
+			position: relative;
+			display: block;
+
+			.name {
+				margin: 12px 12px 0;
+				width: 110px;
+				float: none;
+				display: inline-block;
+			}
+
+			&:before {
+				background-image: none;
+			}
+
+			.inner-copy {
+				padding: 10px 30px;
+				width: 100%;
+			}
+		}
+
+		// Form 
+		form {
+			margin: 40px 20px;
+		}
 	}
 
 }

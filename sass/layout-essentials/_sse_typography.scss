@@ -5,6 +5,15 @@
 // ------------------------
 
 
+// Import Entypo for Social Icons
+@font-face {
+  font-family: "entypo";
+  src: url("../webfonts/entypo-social/entypo-social.ttf");
+}
+
+.entypo {
+	font-family: "entypo";
+}
 
 
 // Links
@@ -34,7 +43,6 @@ hr {
 // ---------------
 h1, h2, h3 {
 	line-height: emCalc(16px);
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,9 +79,27 @@ h4 {
 }
 
 
+// Type for Mobile
+// ---------------
+@include breakpoint(phones) {
+	
+	h1 		{font-size: emCalc(28px);}
+	h2 		{font-size: emCalc(20px);}
+	h3 		{font-size: emCalc(16px);}
+	h4 		{font-size: emCalc(16px);}
+	h5 		{font-size: emCalc(14px);}
+	
+}
+
+
+
+
 // Selection Text
 // ---------------
 ::-moz-selection{text-shadow: none;background-color: darken($white, 10%); color: $textColor;}
 ::selection {text-shadow: none;background-color: darken($white, 10%); color: $textColor;}
+
+
+
 
 
