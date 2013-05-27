@@ -26,7 +26,8 @@ Repo Contents
 =====================
 * Page Types: sse-fed-production/pages  
 * Docs: sse-fed-production/doc → in progress
-* SS-Icons Docs: webfonts > ss-icons-docs.html
+* SS-Icons Docs: webfonts > ss-symbolicons > ss-icons-docs.html
+* Entyop Social Docs: http://www.entypo.com/characters.php 
 * Base Source and Compilation Files for SCSS
 
 
