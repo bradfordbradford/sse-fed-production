@@ -61,12 +61,7 @@ body.signup {
 				&:hover {
 					background: $yellow;
 				}
-
-				&:before {
-					margin: 0 4px 0 0;
-					top: 1px;
-					position: relative;
-				}
+				
 			}
 
 		}
@@ -130,14 +125,14 @@ body.signup {
 			}
 
 			.inner-copy {
-				padding: 10px 30px;
+				padding: 15px 30px;
 				width: 100%;
 			}
 		}
 
 		// Form 
 		form {
-			margin: 40px 20px;
+			margin:10px 20px;
 		}
 	}
 

@@ -10,9 +10,7 @@
 
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
-
-	    <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
+	  
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
 	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -25,7 +23,7 @@
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
-	<body class="blue">
+	<body class="yellow">
 
 		<div class="site-wrap">
 			
@@ -65,7 +63,7 @@
 		          </ul>
 		          
 		          <!-- Brand -->
-		          <a class="name" href="/index.html"><h1>Stadium Stock Exchange</h1></a>
+		          <a class="name" href="/pages"><h1>Stadium Stock Exchange</h1></a>
 
 				  <!-- Inner Nav -->
 		          <div class="nav-collapse collapse">
@@ -76,7 +74,7 @@
 						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
 						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
 						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
-						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+						<li class="active"><a href="#"><span class="ss-info"></span>Research</a></li>
 		            </nav>
 		          </div>
 		        </div>
@@ -89,26 +87,74 @@
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
+				<div class="inner">
+					<nav>
+						<li class="active"><a class="ss-info" href="#">Market Summary</a></li>
+
+					</nav>
+				</div>
 			</div>
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-					
+					<article>
+						<header class="article-header">
+							<h2>Market Summary Article</h2>
+							<div class="meta">
+								<span class="ss-addheart share"><a href="#">249 Shares</a></span>
+								<span class="timestamp">March 28, 2013 11:05AM ET</span>
+							</div>
+						</header>
+						<div class="article-snippet">
+							<p>Nulla tonx cray thundercats, kogi eiusmod art party. Wolf quinoa godard pork belly actually voluptate. Try-hard fixie pug echo park, gentrify etsy eu deserunt sint +1 mustache direct trade mlkshk selvage consequat. Trust fund authentic pop-up cosby sweater, seitan street art gluten-free.</p>>
+						</div>
+						<a href="#" class="flat btn">Read More</a>
+					</article>
+
+					<article>
+						<header>
+							<h2>Top Stories</h2>
+						</header>
+
+						<ul class="article-list">
+							<li>
+								<div class="item-image">
+									<img src="http://placehold.it/80x80&text=·" alt=""/>
+								</div>
+								<div class="item-content">
+									<h3><a href="#">Article Title Here</a></h3>
+									<span class="timestamp">March 29, 2013 11AM</span>
+									<p>Washington Redskins owner Dan Snyder and coach…</p>
+									<span class="ss-action share"><a href="#">249 Shares</a></span>
+								</div>
+							</li>
+							<li>
+								<div class="item-image">
+									<img src="http://placehold.it/80x80&text=·" alt=""/>
+								</div>
+								<div class="item-content">
+									<h3><a href="#">Article Title Here</a></h3>
+									<span class="timestamp">March 29, 2013 11AM</span>
+									<p>Washington Redskins owner Dan Snyder and coach…</p>
+									<span class="ss-action share"><a href="#">249 Shares</a></span>
+								</div>
+							</li>
+						</ul>
+					</article>
+				</section>
+
+				<aside class="content-aside">
 					<header class="table-header">
-						<h4>Assets</h4>
+						<h4>My Vanderbilt Portfolio</h4>
 					</header>
-			        <table class="responsive">
+					<table  class="responsive">
 						<thead>
 							<tr>
-								<th></th>
-								<th>Team</th>
-								<th>Last Price</th>
-								<th>Purchase Price</th>
-								<th>Total Shares</th>
-								<th>Daily Change</th>
-								<th>Total Change</th>
-								<th>Current Value</th>
+							<th></th>
+							<th>Team</th>
+							<th>Last Price</th>
+							<th>Today's Change</th>
 							</tr>
 						</thead>
 					
@@ -117,161 +163,27 @@
 							<td><a href="#">UCLA</a></td>
 							<td>127.89</td>
 							<td class="gain">+0.72%</td>
-							<td>5M</td>
-							<td class="gain">+0.72%</td>
-							<td class="gain">+0.72%</td>
-							<td>$17.89</td>
 						</tr>
 
 						<tr>
 							<td><span class="loss ss-down"></span></td>
-							<td><a href="#">TAMU</a></td>
-							<td>334.66</td>
-							<td class="loss">-0.52%</td>
-							<td>1,800</td>
-							<td class="loss">-0.52%</td>
-							<td class="loss">-0.52%</td>
-							<td>$34.66</td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="loss">+0.72%</td>
 						</tr>
 
 						<tr>
 							<td><span class="gain ss-up"></span></td>
-							<td><a href="#">OSU</a></td>
-							<td>5133.67</td>
-							<td class="gain">+0.12%</td>
-							<td>821</td>
-							<td class="gain">+0.12%</td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
 							<td class="gain">+0.72%</td>
-							<td>$533.67</td>
 						</tr>
 
 						<tr>
 							<td><span class="loss ss-down"></span></td>
-							<td><a href="#">LSU</a></td>
-							<td>167.99</td>
-							<td class="loss">-0.63%</td>
-							<td>1.2M</td>
-							<td class="loss">-0.63%</td>
-							<td class="loss">-0.63%</td>
-							<td>$17.99</td>
-						</tr>
-			        </table>
-
-					<pre class="prettyprint linenums">
-					&lt;header class="table-header"&gt;&lt;h4&gt;Assets&lt;/h4&gt;&lt;/header&gt;
-
-					&lt;table class="responsive"&gt;
-					  
-					  &lt;thead&gt;
-					  &lt;tr&gt;
-						&lt;th&gt;&lt;/th&gt;
-						&lt;th&gt;Team&lt;/th&gt;
-						&lt;th&gt;Last Price&lt;/th&gt;
-						&lt;th&gt;Purchase Price&lt;/th&gt;
-						&lt;th&gt;Total Shares&lt;/th&gt;
-						&lt;th&gt;Daily Change&lt;/th&gt;
-						&lt;th&gt;Total Change&lt;/th&gt;
-						&lt;th&gt;Current Value&lt;/th&gt;
-					  &lt;/tr&gt;
-					  &lt;/thead&gt;
-
-					  
-					  &lt;tr&gt;
-					  	&lt;td class="gain ss-up"&gt;&lt;/td&gt;
-						&lt;td&gt;&lt;a href="#"&gt;UCLA&lt;/a&gt;&lt;/td&gt;
-						&lt;td&gt;127.89&lt;/td&gt;
-						&lt;td class="gain"&gt;+0.72%&lt;/td&gt;
-						&lt;td &gt;5m&lt;/td&gt;
-						&lt;td class="gain"&gt;+0.72%&lt;/td&gt;
-						&lt;td class="gain"&gt;+0.72%&lt;/td&gt;
-						&lt;td &gt;$17.89&lt;/td&gt;
-					  &lt;/tr&gt;
-
-
-					  &lt;tr&gt;
-					  	&lt;td class="loss ss-down"&gt;&lt;/td&gt;
-						&lt;td&gt;&lt;a href="#"&gt;TAMU&lt;/a&gt;&lt;/td&gt;
-						&lt;td&gt;334.66&lt;/td&gt;
-						&lt;td class="loss"&gt;-0.52%&lt;/td&gt;
-						&lt;td &gt;1,800&lt;/td&gt;
-						&lt;td class="loss"&gt;-0.52%&lt;/td&gt;
-						&lt;td class="loss"&gt;-0.52%&lt;/td&gt;
-						&lt;td &gt;$34.66&lt;/td&gt;
-					  &lt;/tr&gt;
-						
-						&lt;…ETC…&gt;
-					  
-					&lt;/table&gt;
-					</pre>
-
-
-				</section>
-
-				<aside class="content-aside">
-					<header class="table-header">
-						<h4>Overview</h4>
-					</header>
-					<table  class="responsive">
-						<thead>
-							<tr>
-							<th>IPO</th>
-							<th colspan="2">Total Change</th>
-							</tr>
-						</thead>
-					
-						<tr>
+							<td><a href="#">UCLA</a></td>
 							<td>127.89</td>
-							<td colspan="2" class="gain">+0.72% (1.69%)</td>
-						</tr>
-
-						<thead>
-							<tr>
-							<th>Total Shares</th>
-							<th>Target Price</th>
-							<th>% from TP</th>
-							</tr>
-						</thead>
-
-						<tr>
-							<td>334</td>
-							<td>810</td>
-							<td>.52%</td>
-						</tr>
-						
-						<thead>
-							<tr>
-							<th colspan="2">Season High</th>
-							<th colspan="1">Season Low</th>
-							</tr>
-						</thead>
-					
-						<tr>
-							<td colspan="2">
-								1279
-								<div class="timestamp">04/28/13</div>
-							</td>
-							<td colspan="1">
-								702
-								<div class="timestamp">04/28/13</div>
-							</td>
-						</tr>
-
-						<thead>
-							<tr>
-							<th colspan="2">Daily High</th>
-							<th colspan="1">Daily Low</th>
-							</tr>
-						</thead>
-					
-						<tr>
-							<td colspan="2">
-								309
-								<div class="timestamp">04/28/13</div>
-							</td>
-							<td colspan="1">
-								280
-								<div class="timestamp">04/28/13</div>
-							</td>
+							<td class="loss">+0.72%</td>
 						</tr>
 			        </table>
 
@@ -297,9 +209,6 @@
 	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
 	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
-	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
-	    <script src="http://twitter.github.io/bootstrap/assets/js/application.js"></script>
-	    
 		
 	</body>
-	</html>	
+</html>	

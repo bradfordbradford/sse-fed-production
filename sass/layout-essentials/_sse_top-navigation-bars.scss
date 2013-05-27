@@ -130,7 +130,15 @@
 					&:hover {
 						background: darken($dark, 8%);
 					}
+
+				
 				}
+
+				// Active/Hover
+				> .active > a, > .active > a:hover, > .active > a:focus {
+					background: darken($dark, 8%);
+				}
+
 			}
 		}
 
