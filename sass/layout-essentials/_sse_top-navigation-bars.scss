@@ -69,22 +69,16 @@
 			
 			> a {
 				text-transform: uppercase;
-				color: lighten($dark, 68%) !important;
+				color: #F0F0F0 !important;
 				font-weight: 400;
 				line-height: 26px;
 				@include darkTextShadow;
 				font-size: emCalc(15px);
 			}
 
-			&:hover {
+			&:hover, .toggle-on {
 				background: darken($dark, 8%);
 				cursor: pointer;
-			}
-
-			// Search 
-			// ----------------
-			a.search {
-				padding:20px 40px 22px;
 			}
 
 			// Profile 
@@ -169,10 +163,13 @@
 			margin-right: 0;
 			
 			> li {
+
+				// Search Toggle & Search Area
+				// ---------------------------
+				a.search {
+					display: none;
+				}
 				
-				// Search
-				// -------
-				a.search {display: none;}
 
 				// Profile 
 				// --------
@@ -287,6 +284,10 @@
 							font-weight: 400;
 							@include transition(background .15s ease-in-out);	
 						}
+					}
+
+					.search {
+						display: inherit;
 					}
 				}
 			}

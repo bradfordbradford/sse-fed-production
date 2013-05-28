@@ -47,8 +47,9 @@
 		          <!-- Main Nav Link List -->
 		          <ul class="nav top-list">
 		          	<li>
-		                <a href="#" class="search">Search</a>
-		              </li>
+		          		<a href="#search" role="button" class="search" data-toggle="modal">Search</a>
+					 </li>
+
 		              <li>
 		                <a class="profile dropdown-toggle" data-toggle="dropdown">
 		                  <span class="profile-img-wrap">
@@ -78,6 +79,8 @@
 						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
 						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
 						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+						<li class="search"><a href="#search" role="button" class="search" data-toggle="modal"><span class="ss-search"></span>Search</a></li>
+						<!-- <a href="#search" role="button" class="search" data-toggle="modal">Search</a> -->
 		            </nav>
 		          </div>
 		        </div>
@@ -85,11 +88,15 @@
 		    </nav> <!-- /main-navs -->
 	
 
-	
 			<!-- ==================== -->
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
+				<div class="inner">
+					<nav>
+						<li></li>
+					</nav>
+				</div>
 			</div>
 
 			<div class="content-wrap">
@@ -128,7 +135,7 @@
 					    <h3 id="myModalLabel">Modal header</h3>
 					  </div>
 					  <div class="modal-body">
-					    <p>One fine body…</p>
+					    <p>Text here, yada yada. Yoda. Wait, …what?</p>
 					  </div>
 					  <div class="modal-footer">
 					    <button class="flat btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -191,7 +198,7 @@
 							</div>
 						</header>
 						<div class="article-snippet">
-							<p>Nulla tonx cray thundercats, kogi eiusmod art party. Wolf quinoa godard pork belly actually voluptate. Try-hard fixie pug echo park, gentrify etsy eu deserunt sint +1 mustache direct trade mlkshk selvage consequat. Trust fund authentic pop-up cosby sweater, seitan street art gluten-free.</p>>
+							<p>Nulla tonx cray thundercats, kogi eiusmod art party. Wolf quinoa godard pork belly actually voluptate. Try-hard fixie pug echo park, gentrify etsy eu deserunt sint +1 mustache direct trade mlkshk selvage consequat. Trust fund authentic pop-up cosby sweater, seitan street art gluten-free.</p>
 						</div>
 						<a href="#" class="flat btn">Read More</a>
 					</article>
@@ -311,6 +318,17 @@
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
+
+		<!-- Search Box -->
+		<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-body">
+		    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
+		    <p>Find articles, members, &amp; more.</p>
+		  </div>
+		</div>
+
+
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	    <script src="../javascripts/bootstrap-transition.js"></script>
@@ -340,6 +358,7 @@
 			$(document).ready(function() {
 			    prettyPrint();
 			});
+
 	    </script>
 
 

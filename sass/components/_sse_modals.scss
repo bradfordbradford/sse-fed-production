@@ -1,0 +1,73 @@
+
+// --------
+// Modals
+// --------
+
+.modal-backdrop {
+	background-color: white;
+	
+	&.fade.in {
+		opacity: .94;
+	}
+}
+
+.modal {
+	background: lighten($white, 10%);
+	border: 1px solid lighten($dark, 64%);
+}
+
+.modal-footer {
+	background: $grayLighter;
+}
+
+
+
+// Search Modal
+// -------------------
+#search{
+	background:none;
+	@include box-shadow(none);
+	border:0;
+	
+	input {
+		width: 78%;
+		padding: 10px;
+	}
+
+	.btn {
+		margin-bottom: 10px;
+		padding: 10px 16px;
+	}
+
+	p {
+		text-transform: uppercase;
+		color: $blue;
+	}
+}
+
+
+// Search Modal Mobile
+// -------------------
+@include breakpoint(tablet-V) {
+	#search {
+		width: 240px;
+		margin-left: -124px;
+
+		input {
+			width: 87%;
+			padding: 10px;
+		}
+
+		.btn {
+			width: 84%;
+		}
+
+		p {
+			font-size: emCalc(11px);
+			text-align: center;
+		}
+	}
+}
+
+
+

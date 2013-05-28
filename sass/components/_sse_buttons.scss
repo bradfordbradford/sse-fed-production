@@ -43,7 +43,7 @@
 	font-size: 13px;
 	font-weight: 400;
 	border: none;
-	background:darken($white, 2%);
+	background:darken($white, 4%);
 	@include border-radius(4px 4px);
 	text-shadow:none !important;
 	@include box-shadow(none);
