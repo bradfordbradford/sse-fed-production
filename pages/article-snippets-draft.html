@@ -2,18 +2,19 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SSE • Drafts</title>
-
+		<title>SSE • Basic Structure</title>
+		
+		<!-- Responds to device & Description -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
 	    
-
+		<!-- Styles -->
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
-
-	    <!-- Google Prettify CSS -->
-	    <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
+	    
+	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
+		
+		<!-- Modernizr: modernizr.com -->
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
 	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -96,11 +97,39 @@
 			<div class="content-wrap">
 
 				<section class="content-area">
+<a href="#" id="showMore">Before</a>
 
-<h2>Article Detail</h2>
-<p>Full length articles live inside the Content Area section.</p>
+<h2>Article Snippets</h2>
+<p>There are two ways to display snippets of information: 
+	<ol>
+		<li>Expand the article in-page.</li>
+		<li>Link out to the full article</li>
+	</ol>
+</p>
+<p>The markup is almost identical, but by adding an <em>'expand'</em> ID to the button, you can toggle the article between full and truncated views</p>
+
+<br><br>
+
+<article>
+	<header class="article-header">
+		<h2>Article Snippet: Expand In-Page</h2>
+		<div class="meta">
+			<span class="ss-addheart share"><a href="#">249 Shares</a></span>
+			<span class="timestamp">March 28, 2013 11:05AM ET</span>
+		</div>
+	</header>
+
+	<div class="article-snippet">
+	    <p>Below is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.</p>
+
+	    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	</div>
+	<a href="#" class="flat btn" id="expand">Read More</a>
+</article>
+
+
 <pre class="prettyprint">
-&lt;!-- Article --&gt;
+&lt;!-- Article: Expand In-Page --&gt;
 &lt;article&gt;
 
 &lt;!-- Article Header --&gt;
@@ -112,17 +141,57 @@
 &lt;/div&gt;
 &lt;/header&gt;
 
-&lt;!-- Article Image &amp; Caption --&gt;
-&lt;div class="article-image"&gt;
-&lt;img src="../images/content/article-placeholder.jpg" alt="caption here as well"&gt;
-&lt;span class="image-caption"&gt;Image Caption Here&lt;/span&gt;
+&lt;!-- Article Content --&gt;
+&lt;div class="article-snippet"&gt;
+	&lt;p>&gt;elow is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;!-- Article Content --&gt;
-&lt;p&gt;Paragraph and article content goes here.&lt;/p&gt;
+&lt;!-- Toggle Read More --&gt;
+&lt;a href="#" class="flat btn" id="expand"&gt;Read More&lt;/a&gt;
 
 &lt;/article&gt;
+</pre>
 
+<br><br>
+<article>
+	<header class="article-header">
+		<h2>Article Snippet: Open Article in New Tab</h2>
+		<div class="meta">
+			<span class="ss-addheart share"><a href="#">249 Shares</a></span>
+			<span class="timestamp">March 28, 2013 11:05AM ET</span>
+		</div>
+	</header>
+
+	<div class="article-snippet">
+	    <p>Below is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.</p>
+
+	    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	</div>
+	<a href="#" class="flat btn" target="_blank" id="expand">Read More</a>
+</article>
+
+<pre class="prettyprint">
+&lt;!-- Article: Open In New Tab --&gt;
+&lt;article&gt;
+
+&lt;!-- Article Header --&gt;
+&lt;header class="article-header"&gt;
+&lt;h2&gt;Article Title Here That's Really Long & Breaks to Two Lines&lt;/h2&gt;
+&lt;div class="meta"&gt;
+	&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;
+	&lt;span class="timestamp"&gt;March 28, 2013 11:05AM ET&lt;/span&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Article Content --&gt;
+&lt;div class="article-snippet"&gt;
+	&lt;p>&gt;elow is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Toggle Read More --&gt;
+&lt;a href="link-to-page" target="_blank" class="flat btn"&gt;Read More&lt;/a&gt;
+
+&lt;/article&gt;
 </pre>
 
 
@@ -130,17 +199,18 @@
 
 				<aside class="content-aside">
 					<h4>Example:</h4>
-					<img src="screenshots/article-detail.png" alt="">
+					<img src="screenshots/market-summary-example.png" alt="">
 				</aside>
-      
-     			<!-- Search Box -->
+
+				<!-- Search Box -->
 				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-body">
 				    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
 				    <p>Find articles, members, &amp; more.</p>
 				  </div>
 				</div>
-
+      
+     
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
@@ -166,6 +236,8 @@
 				$( ".article-snippet" ).toggleClass( "expanded", 150 );
 				return false;
 			});
+		
+
 		</script>
 
 		

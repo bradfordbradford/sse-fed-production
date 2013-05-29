@@ -81,7 +81,8 @@
       height: 100%;  
       width: 100%;
       @include filter-gradient(rgba(243, 241, 238, .9), rgba(243, 241, 238, 0.5), vertical); // IE6-9
-      @include background-image(linear-gradient(bottom,  rgba(243, 241, 238, .8) 6%, rgba(243, 241, 238, .0) 40%));
+      @include background-image(linear-gradient(bottom,  rgba(243, 241, 238, .8) 30%, rgba(243, 241, 238, .0) 70%));
+      @include transition(all .15s ease-out);
     }
 }
 

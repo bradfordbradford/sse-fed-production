@@ -74,7 +74,7 @@
 		          <!-- Main Nav Link List -->
 		          <ul class="nav top-list">
 		          	<li>
-		                <a href="#" class="search">Search</a>
+		                <a href="#search" role="button" class="search" data-toggle="modal">Search</a>
 		              </li>
 		              <li>
 		                <a class="profile dropdown-toggle" data-toggle="dropdown">
@@ -105,6 +105,7 @@
 						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
 						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
 						<li><a href="#"><span class="ss-info"></span>Research</a></li>
+						<li class="search"><a href="#search" role="button" class="search" data-toggle="modal"><span class="ss-search"></span>Search</a></li>
 		            </nav>
 		          </div>
 		        </div>
@@ -202,6 +203,14 @@ graph.render();
 				<aside class="content-aside">
 				
 				</aside>
+
+				<!-- Search Box -->
+				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-body">
+				    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
+				    <p>Find articles, members, &amp; more.</p>
+				  </div>
+				</div>
       
      
     		</div> <!-- content-wrap -->
@@ -264,7 +273,7 @@ graph.render();
 
 	    <script src="../javascripts/bootstrap-transition.js"></script>
 	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
-	    <!-- // <script src="../javascripts/bootstrap-modal.js"></script> -->
+	    <script src="../javascripts/bootstrap-modal.js"></script>
 	    <script src="../javascripts/bootstrap-dropdown.js"></script>
 	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
 	    <script src="../javascripts/bootstrap-tab.js"></script>

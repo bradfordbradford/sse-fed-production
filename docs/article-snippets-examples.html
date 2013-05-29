@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SSE • Leagues Detail</title>
+		<title>SSE • Drafts</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
@@ -10,6 +10,9 @@
 
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
+
+	    <!-- Google Prettify CSS -->
+	    <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -23,7 +26,7 @@
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
-	<body class="yellow">
+	<body class="">
 
 		<div class="site-wrap">
 			
@@ -44,7 +47,7 @@
 		          <!-- Main Nav Link List -->
 		          <ul class="nav top-list">
 		          	<li>
-		                <a href="#search" role="button" class="search" data-toggle="modal">Search</a>
+		                <a href="#" class="search">Search</a>
 		              </li>
 		              <li>
 		                <a class="profile dropdown-toggle" data-toggle="dropdown">
@@ -63,7 +66,7 @@
 		          </ul>
 		          
 		          <!-- Brand -->
-		          <a class="name" href="/pages"><h1>Stadium Stock Exchange</h1></a>
+		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
 
 				  <!-- Inner Nav -->
 		          <div class="nav-collapse collapse">
@@ -71,7 +74,7 @@
 		            	<li><a href="#"><span class="ss-dashboard"></span>Dashboard</a></li>
 						<li><a href="#"><span class="ss-toolbox"></span>My Portfolio</a></li>
 						<li><a href="#"><span class="ss-barchart"></span>Stock Market</a></li>
-						<li class="active"><a href="#"><span class="ss-flag"></span>Leagues</a></li>
+						<li><a href="#"><span class="ss-flag"></span>Leagues</a></li>
 						<li><a href="#"><span class="ss-newspaper"></span>Articles</a></li>
 						<li><a href="#"><span class="ss-activity"></span>Recent Activity</a></li>
 						<li><a href="#"><span class="ss-info"></span>Research</a></li>
@@ -88,143 +91,107 @@
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
-				<div class="inner">
-					<nav>
-						<li><a class="box btn" href="#">Return to League Index</a></li>
-					</nav>
-				</div>
-			</div>
+			</div>	
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-					<header class="">
-						<h2>Vanderbilt</h2>
-						<div class="meta">
-							<div class="timestamp">Started by <a href="#">Casey Hunter</a> March 1, 2012</div>
-						</div>
-					</header>
 
-					<ul class="article-list">
-						<li>
-							<div class="item-image">
-								<img class="img-circle" src="http://placehold.it/80x80&text=" alt=""/>
-							</div>
-							<div class="item-content">								
-								<div class="item-header">
-									<h3><a href="#">Will Smith</a></h3>
-								</div>
-								<p>Washington Redskins owner Dan Snyder and coach…</p>
-								<span class="footnote">Stat Here | <a href="#">23 members</a></span>
-							</div>
-						</li>
+<article>
+	<header class="article-header">
+		<h2>Article Snippet: Open Article in New Tab</h2>
+		<div class="meta">
+			<span class="ss-addheart share"><a href="#">249 Shares</a></span>
+			<span class="timestamp">March 28, 2013 11:05AM ET</span>
+		</div>
+	</header>
 
-						<li>
-							<div class="item-image">
-								<img class="img-circle" src="http://placehold.it/80x80&text=" alt=""/>
-							</div>
-							<div class="item-content">								
-								<div class="item-header">
-									<h3><a href="#">Will Smith</a></h3>
-									<div class="badge">Top Trader</div>
-								</div>
-								<p>Washington Redskins owner Dan Snyder and coach…</p>
-								<span class="footnote">Stat Here | <a href="#">23 members</a></span>
-							</div>
-						</li>
+	<div class="article-snippet">
+	    <p>Below is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.</p>
 
-						<li>
-							<div class="item-image">
-								<img class="img-circle" src="http://placehold.it/80x80&text=" alt=""/>
-							</div>
-							<div class="item-content">								
-								<div class="item-header">
-									<h3><a href="#">Will Smith</a></h3>
-								</div>
-								<p>Washington Redskins owner Dan Snyder and coach…</p>
-								<span class="footnote">Stat Here | <a href="#">23 members</a></span>
-							</div>
-						</li>
-					</ul>
+	    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	</div>
+	<a href="#" class="flat btn" target="_blank">Read More</a>
+</article>
+
+<pre class="prettyprint">
+&lt;!-- Article: Open In New Tab --&gt;
+&lt;article&gt;
+
+&lt;!-- Article Header --&gt;
+&lt;header class="article-header"&gt;
+&lt;h2&gt;Article Title Here That's Really Long & Breaks to Two Lines&lt;/h2&gt;
+&lt;div class="meta"&gt;
+	&lt;span class="ss-action share"&gt;&lt;a href="#"&gt;249 Shares&lt;/a&gt;&lt;/span&gt;
+	&lt;span class="timestamp"&gt;March 28, 2013 11:05AM ET&lt;/span&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Article Content --&gt;
+&lt;div class="article-snippet"&gt;
+	&lt;p>&gt;elow is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Toggle Read More --&gt;
+&lt;a href="link-to-page" target="_blank" class="flat btn"&gt;Read More&lt;/a&gt;
+
+&lt;/article&gt;
+</pre>
+
+
 				</section>
 
 				<aside class="content-aside">
-					<div class="league-banner">
-						<img src="../images/content/article-placeholder.jpg" alt="caption here as well">
-						<a href="#"><span class="stat">23,986</span> Members</a>
-					</div>
-
-					<header class="table-header">
-						<h4>My Vanderbilt Portfolio</h4>
-					</header>
-					<table  class="responsive">
-						<thead>
-							<tr>
-							<th></th>
-							<th>Team</th>
-							<th>Last Price</th>
-							<th>Today's Change</th>
-							</tr>
-						</thead>
-					
-						<tr>
-							<td><span class="gain ss-up"></span></td>
-							<td><a href="#">UCLA</a></td>
-							<td>127.89</td>
-							<td class="gain">+0.72%</td>
-						</tr>
-
-						<tr>
-							<td><span class="loss ss-down"></span></td>
-							<td><a href="#">UCLA</a></td>
-							<td>127.89</td>
-							<td class="loss">+0.72%</td>
-						</tr>
-
-						<tr>
-							<td><span class="gain ss-up"></span></td>
-							<td><a href="#">UCLA</a></td>
-							<td>127.89</td>
-							<td class="gain">+0.72%</td>
-						</tr>
-
-						<tr>
-							<td><span class="loss ss-down"></span></td>
-							<td><a href="#">UCLA</a></td>
-							<td>127.89</td>
-							<td class="loss">+0.72%</td>
-						</tr>
-			        </table>
-
+					<h4>Example:</h4>
+					<img src="screenshots/market-summary-example.png" alt="">
 				</aside>
-
-				<!-- Search Box -->
+      			
+      			<!-- Search Box -->
 				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-body">
 				    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
 				    <p>Find articles, members, &amp; more.</p>
 				  </div>
 				</div>
-      
      
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
+		<!-- Javascripts -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	    <script src="../javascripts/bootstrap-transition.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-alert.js"></script> -->
 	    <script src="../javascripts/bootstrap-modal.js"></script>
 	    <script src="../javascripts/bootstrap-dropdown.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-scrollspy.js"></script> -->
 	    <script src="../javascripts/bootstrap-tab.js"></script>
 	    <script src="../javascripts/bootstrap-tooltip.js"></script>
 	    <script src="../javascripts/bootstrap-popover.js"></script>
 	    <script src="../javascripts/bootstrap-button.js"></script>
 	    <script src="../javascripts/bootstrap-collapse.js"></script>
-	    <!-- // <script src="../javascripts/bootstrap-carousel.js"></script> -->
-	    <!-- // <script src="../javascripts/bootstrap-typeahead.js"></script> -->
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
+		<!-- // <script src="../javascripts/vendor/jquery.ui.effect.js"></script> -->
+
+		<!-- Article Snippet JS -->
+		<script>
+			// Article Snippet
+			// ---------------
+			$( "#expand" ).click(function() {
+				
+				$( ".article-snippet" ).toggleClass( "expanded", 150 );
+				return false;
+			});
 		
+
+		</script>
+
+		
+
+		<!-- Prettify Code -->
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script>
+	    	// make code pretty
+	    	window.prettyPrint && prettyPrint()
+	    </script>
+
 	</body>
-	</html>	
+</html>	
