@@ -24,10 +24,15 @@
 
 // Search Modal
 // -------------------
-#search{
+#search {
+	position: absolute;
 	background:none;
 	@include box-shadow(none);
 	border:0;
+
+	.modal-body {
+		max-height: 100%;
+	}
 	
 	input {
 		width: 78%;
