@@ -1594,6 +1594,7 @@ header.chart-header h3 .detail { font-weight: 200; font-size: 18px; margin-top: 
 ul.activity-list li:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
 ul.activity-list li:before { position: absolute; font-size: 13px; margin: 2px 0; color: #aaaaa8; }
 ul.activity-list li .inner { padding-left: 24px; display: inline-block; }
+ul.activity-list li h4 { margin: 0 0 4px; }
 ul.activity-list li a { color: #444442; font-weight: 600; }
 ul.activity-list li .timestamp { color: #5e5e5b; }
 
