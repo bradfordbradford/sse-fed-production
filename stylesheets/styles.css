@@ -1579,10 +1579,10 @@ header.chart-header h3 .detail { font-weight: 200; font-size: 18px; margin-top: 
 .chart-options .btn, .chart-options .btn-group { float: right; margin: 0 0 10px; }
 .chart-options .tag-cloud { float: left; }
 .chart-options .buy-sell { float: left; }
-.chart-options .buy-sell .gain.btn, .chart-options .buy-sell .table-header h4 span.btn.ss-up, .table-header h4 .chart-options .buy-sell span.btn.ss-up { color: #628c38; -webkit-border-radius: 2px 0 0 2px; -moz-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; }
-.chart-options .buy-sell .gain.btn:hover, .chart-options .buy-sell .table-header h4 span.btn.ss-up:hover, .table-header h4 .chart-options .buy-sell span.btn.ss-up:hover { background: #5d8535; color: #f3f1ee; }
-.chart-options .buy-sell .loss.btn, .chart-options .buy-sell .table-header h4 span.btn.ss-down, .table-header h4 .chart-options .buy-sell span.btn.ss-down { color: #fe694b; -webkit-border-radius: 0px 2px 2px 0px; -moz-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px; }
-.chart-options .buy-sell .loss.btn:hover, .chart-options .buy-sell .table-header h4 span.btn.ss-down:hover, .table-header h4 .chart-options .buy-sell span.btn.ss-down:hover { background: #fe6141; color: #f3f1ee; }
+.chart-options .buy-sell .gain.btn, .chart-options .buy-sell .table-header h4 span.btn.ss-up, .table-header h4 .chart-options .buy-sell span.btn.ss-up { background: #80b041; color: #f3f1ee; -webkit-border-radius: 2px 0 0 2px; -moz-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; }
+.chart-options .buy-sell .gain.btn:hover, .chart-options .buy-sell .table-header h4 span.btn.ss-up:hover, .table-header h4 .chart-options .buy-sell span.btn.ss-up:hover { background: #628c38; }
+.chart-options .buy-sell .loss.btn, .chart-options .buy-sell .table-header h4 span.btn.ss-down, .table-header h4 .chart-options .buy-sell span.btn.ss-down { -webkit-border-radius: 0px 2px 2px 0px; -moz-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px; }
+.chart-options .buy-sell .loss.btn:hover, .chart-options .buy-sell .table-header h4 span.btn.ss-down:hover, .table-header h4 .chart-options .buy-sell span.btn.ss-down:hover { background: #fe694b; color: #f3f1ee; }
 
 #chart_container { margin: 0 0 20px; border: 1px solid #dadada; }
 #chart_container .detail .item { background: #444; background: rgba(68, 68, 68, 0.98); }
