@@ -1626,21 +1626,27 @@ form .inline-input input { width: 100px; }
 form .help-inline { position: relative; top: -6px; margin-left: 30px; padding-left: 10px; text-transform: uppercase; }
 form .input-prepend .add-on, form .input-append .add-on { padding: 12px 6px; }
 
-.modal-backdrop { background-color: white; }
+.modal-backdrop { background-color: #f1f1f1; }
 .modal-backdrop.fade.in { opacity: .94; }
 
 .modal { background: white; border: 1px solid #dadada; }
+.modal .flat.btn { background: #D5D3D2; }
 
 .modal-footer { background: #f3f1ee; }
 
-#search { position: absolute; background: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; }
-#search .modal-body { max-height: 100%; }
+.custom.modal { position: absolute; background: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; }
+.custom.modal .modal-body { max-height: 100%; }
+.custom.modal .chart-options .select-group { float: left; margin: 0 12px 0 0; width: 120px; }
+.custom.modal .chart-options .select-group select { width: 100%; }
+.custom.modal .chart-options .btn { margin-top: 22px; }
+.custom.modal .chart-options .btn.gain, .custom.modal .chart-options .table-header h4 span.btn.ss-up, .table-header h4 .custom.modal .chart-options span.btn.ss-up, .custom.modal .chart-options .btn.loss, .custom.modal .chart-options .table-header h4 span.btn.ss-down, .table-header h4 .custom.modal .chart-options span.btn.ss-down { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+
+@media (max-width: 768px) { .custom.modal { width: 240px; margin-left: -124px; } }
 #search input { width: 78%; padding: 10px; }
 #search .btn { margin-bottom: 10px; padding: 10px 16px; }
 #search p { text-transform: uppercase; }
 
-@media (max-width: 768px) { #search { width: 240px; margin-left: -124px; }
-  #search input { width: 87%; padding: 10px; }
+@media (max-width: 768px) { #search input { width: 87%; padding: 10px; }
   #search .btn { width: 84%; }
   #search p { font-size: 0.6875em; text-align: center; } }
 .btn { -webkit-transition: background 0.15s, color 0.15s ease-in-out; -moz-transition: background 0.15s, color 0.15s ease-in-out; -o-transition: background 0.15s, color 0.15s ease-in-out; transition: background 0.15s, color 0.15s ease-in-out; }

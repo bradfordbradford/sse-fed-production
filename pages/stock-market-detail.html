@@ -115,8 +115,8 @@
 
 					<div class="chart-options">
 						<div class="buy-sell">
-							<a href="#" class="flat btn loss">Sell</a>
-							<a href="#" class="flat btn gain">Buy</a>	
+							<a href="#sell-modal" role="button" data-toggle="modal" class="flat btn loss">Sell</a>
+							<a href="#buy-modal" role="button" data-toggle="modal"  class="flat btn gain">Buy</a>	
 						</div>
 
 						<div class="btn-group">
@@ -278,10 +278,185 @@
 				</aside>
       
       			<!-- Search Box -->
-				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div id="search" class="custom modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-body">
 				    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
-				    <p>Find articles, members, &amp; more.</p>
+				    <p>Find articles, members, &amp; more.</p>				    
+				  </div>
+				</div>
+
+				<!-- Buy Box -->
+				<div id="buy-modal" class="custom modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-body">
+				    
+				    <!-- Info -->
+				    <header class="table-header">
+						<h4>TAMU Stock</h4>
+					</header>
+					<table  class="responsive">
+						<thead>
+							<tr>
+							<th></th>
+							<th>Team</th>
+							<th>Current Price</th>
+							<th>Today's Change</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td><span class="gain ss-up"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="gain">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="loss ss-down"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="loss">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="gain ss-up"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="gain">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="loss ss-down"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="loss">+0.72%</td>
+						</tr>
+			        </table>
+
+					<!-- Purchase Form -->
+					<form action="" class="chart-options">
+						<div class="select-group">
+							<label>Order Type</label>
+							<select>
+							  <option>Market Price</option>
+							  <option>Limit</option>
+							  <option>Put</option>
+							  <option>Short</option>
+							</select> 
+						</div>
+
+						<div class="select-group">
+							<label>Quantity</label>
+							<select>
+							  <option>1000</option>
+							  <option>2000</option>
+							  <option>3000</option>
+							  <option>4000</option>
+							  <option>…</option>
+							</select> 
+						</div>
+
+						<div class="select-group">
+							<label>Pick a Portfolio</label>
+							<select>
+							  <option>VANDERBILT</option>
+							  <option>THUNDERCATS</option>
+							  <option>THE BIG LEBOWSKI</option>
+							</select> 
+						</div>
+
+						<div class="buy-sell">
+							<a href="#" class="flat btn gain">Buy</a>	
+						</div>
+					</form>
+
+				  </div>
+				</div>
+
+
+				<!-- Buy Box -->
+				<div id="sell-modal" class="custom modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-body">
+				    
+				    <!-- Info -->
+				    <header class="table-header">
+						<h4>TAMU Stock</h4>
+					</header>
+					<table  class="responsive">
+						<thead>
+							<tr>
+							<th></th>
+							<th>Team</th>
+							<th>Current Price</th>
+							<th>Today's Change</th>
+							</tr>
+						</thead>
+					
+						<tr>
+							<td><span class="gain ss-up"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="gain">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="loss ss-down"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="loss">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="gain ss-up"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="gain">+0.72%</td>
+						</tr>
+
+						<tr>
+							<td><span class="loss ss-down"></span></td>
+							<td><a href="#">UCLA</a></td>
+							<td>127.89</td>
+							<td class="loss">+0.72%</td>
+						</tr>
+			        </table>
+
+					<!-- Purchase Form -->
+					<form action="" class="chart-options">
+						<div class="select-group">
+							<label>Order Type</label>
+							<select>
+							  <option>Market Price</option>
+							  <option>Limit</option>
+							  <option>Put</option>
+							  <option>Short</option>
+							</select> 
+						</div>
+
+						<div class="select-group">
+							<label>Quantity</label>
+							<select>
+							  <option>1000</option>
+							  <option>2000</option>
+							  <option>3000</option>
+							  <option>4000</option>
+							  <option>…</option>
+							</select> 
+						</div>
+
+						<div class="select-group">
+							<label>Pick a Portfolio</label>
+							<select>
+							  <option>VANDERBILT</option>
+							  <option>THUNDERCATS</option>
+							  <option>THE BIG LEBOWSKI</option>
+							</select> 
+						</div>
+
+						<div class="buy-sell">
+							<a href="#" class="flat btn loss">Sell</a>	
+						</div>
+					</form>
+
 				  </div>
 				</div>
      
