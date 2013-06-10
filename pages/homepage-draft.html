@@ -11,7 +11,6 @@
  
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="../stylesheets/jquery.parallax.css"> -->
 	     
 
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
@@ -25,41 +24,11 @@
 	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-
-	    <style type="text/css" media="screen, projection">
-			body {
-				padding:0;
-				margin:0;
-				position: relative;
-
-			}
-
-			html, body {
-				background: #515356;
-				color: #cbd0d5;
-				height:100%;
-				width:100%;
-			}
-			#port {	
-				overflow: hidden;
-				position: relative;
-				height: 640px;
-			}
-
-			.magic {
-			    position: absolute;
-			}
-
-		</style>
+	    
 	</head>
 	
 	<body class="homepage">
-		
-
-		<div id="port">
-			<img class="magic" src="../images/stadium-bg.jpeg" alt="" style="width:1400px; height:700px;"/>
-		</div>
-
+	
 		<div class="site-wrap">
 			
 			<!-- ==================== -->
@@ -97,8 +66,8 @@
 			<!-- ==================== -->
 			<!-- 		Content		  -->
 			<!-- ==================== -->
-		
-				<section class="home-hero">
+
+				<section class="home-hero" id="magicBG">
 					<div class="inner">
 						<h2>Welcome to Stadium Stock Exchange, home of Sport Titans around the world.</h2>
 						<p>Too fast, too furious. It's ours, we spend it.</p>
@@ -166,7 +135,7 @@
 		</div> <!-- /site-wrap -->
 
 
-<!-- 
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	    <script src="../javascripts/bootstrap-transition.js"></script>
@@ -180,17 +149,17 @@
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
 		<script src="../javascripts/jquery.parallax.min.js"></script>
 
- -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-		<script src="../javascripts/jquery.parallax.min.js"></script>		
-		<script type="text/javascript">
-		// jParallax
-			jQuery(document).ready(function(){
-				// Declare parallax on layers
-				jQuery('.magic').parallax({
-					mouseport: jQuery("#port")
-				});
-			});
+
+		<script>
+		$(document).ready(function(){
+		   $('#magicBG').mousemove(function(e){
+		      var mousePosX = (e.pageX/$(window).width())*100;
+		      $('#magicBG').css('background-position-x', mousePosX +'%');
+		      var mousePosY = (e.pageY/$(window).height())*100;
+		      $('#magicBG').css('background-position-y', mousePosY +'%');
+		      console.log(mousePosX, mousePosY);
+		   }); 
+		});
 		</script>
 		
 	</body>

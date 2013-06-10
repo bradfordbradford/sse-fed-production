@@ -9,10 +9,20 @@
 
 
 footer.site-footer {
+	@include push(2);
+	margin-top: 140px;
+	border-top: 1px solid #e4e4e4;
+
 	padding: 60px 10px 30px;
 	background:$white;
 	border-bottom: 5px solid $dark;
 	@include clearfix;
+
+	// Mobile Adjust Margin
+	// --------------------
+	@include breakpoint(tablet-H) {
+		@include push(0);
+	}
 	
 	div.footer-column {
 		@include span-columns(2);
@@ -62,5 +72,29 @@ footer.site-footer {
 		p {
 			margin-top: 40px;
 		}
+	}
+
+	// Mobile Adjust Cols
+	// --------------------
+	@include breakpoint(phones) {
+		div.footer-column {
+			width: auto;
+			float: none;
+			display: block;
+			margin: 0 auto !important 
+		}
+	}
+}
+
+
+
+
+// Full Width Centered Footer (for additional layouts with no side bar, 
+// add their body class to this list)
+// --------------------------
+.homepage {
+	footer.site-footer {
+		@include push(0);		
+		margin-top: 0;
 	}
 }

@@ -6,7 +6,7 @@
 // --------------------
 
 body.homepage {
-
+	
 	// Home Hero
 	.home-hero {
 		margin-top: 68px;
@@ -14,25 +14,78 @@ body.homepage {
 	    height: auto;
 	    left: 0;
 	    min-height: 600px;
-	    min-width: 500px;
 	    overflow: hidden;
 	    top: 0;
-	    width: 100%;
+
 
 	    @include transition(background-position .4s ease-in-out);
 
 		// Inner Content
 		.inner {
-			@include span-columns(6);
-			@include push(1);
+			width: 72%;
+			margin-left: 17%;
+			margin-top: 140px;
+			
+			
+			.video-column {
+				@include span-columns(4);
+				float:right;
+				border-right:1px solid $white;
+				padding-right:16px;
 
-			padding-top: 140px;
+				.btn {
+					width: 100%;
+					padding:12px 0;
+				}
+				
+				.watch-wrap {
+					display: block;
+					background: white;
+					background:rgba(255, 255, 255, 0.5);
+					border: 1px solid #A3A3A3;
+					height: 145px; 
+					width: 100%;
+					margin-bottom: 16px;
+					@include transition(all .15s ease-in-out);
+
+					.ss-play {
+						font-size: 4em;
+						color: rgba(55, 55, 55, 0.78);
+						text-align: center;
+						display: block;
+						margin-top: 70px;
+
+					}
+
+					&:hover {
+						background: rgba(255, 255, 255, 0.6);
+						.ss-play {
+							color: rgba(55, 55, 55, 0.9);
+						}
+					}
+				}
+			}
+
+			.signup-column {
+				@include span-columns(7);
+				float:left;
+				padding-right:16px;
+				margin-top: 28px;
+
+				input {
+					width: 70%;
+				}
+				.btn {
+					margin-bottom: 16px;
+					width: 22%;
+				}
+			}
 
 			h2 {
-				font-size: emCalc(36px);
+				font-size: 1.678em;
 				text-shadow: 1px 1px 1px #1F1F1F;
 				margin-bottom: 24px;
-				line-height: 1.3em;
+				line-height: 1.32em;
 				font-weight: 200;
 			}
 
@@ -40,12 +93,8 @@ body.homepage {
 				color: $white;
 			}
 
-			.btn-wrap {
-				margin-top: 20px;
-			}
-
 			.btn {
-				padding:12px 24px;
+				padding:12px 0;
 				font-size: emCalc(16px);
 				margin: 0 2px;
 
@@ -53,6 +102,51 @@ body.homepage {
 					background: $yellow;
 				}
 			}
+
+			// Mobile Alterations
+			@include breakpoint(tablet-H) {
+				width: auto;
+				
+				.signup-column, .video-column {
+					width: auto;
+					float: none;
+					border-right:0;
+				}
+				.signup-column {
+					margin-top: 24px;
+
+					.btn {
+						width: 28%
+					}
+				}
+			}
+
+			@include breakpoint(phones) {
+				.signup-column {
+					input, .btn {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+	}
+
+	// Hide Side Nav
+	.nav-collapse.collapse {
+		display: none;
+	}
+	// Show Top Bar 
+	@include breakpoint(tablet-H) {
+		.nav-collapse.collapse {
+			display: inherit;
+		}
+	}
+
+	// Mobile Alteration for Nav
+	@include breakpoint(tablet-H) {
+		.mobile-hide {
+			display: none;
 		}
 	}
 

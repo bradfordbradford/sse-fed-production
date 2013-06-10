@@ -34,7 +34,7 @@
 			<!-- ==================== -->
 			<!-- 	  Main Navs		  -->
 			<!-- ==================== -->
-		    <nav class="navbar">
+			<nav class="navbar">
 		      <div class="navbar-inner">
 		        <div class="container">
 
@@ -47,21 +47,27 @@
 
 		          <!-- Main Nav Link List -->
 		          <ul class="nav top-list">
-		          	<li><a href="#">About</a></li>
-		          	<li><a href="#">Help</a></li>
+		          	<li class="mobile-hide"><a href="#">About</a></li>
+		          	<li class="mobile-hide"><a href="#">Help</a></li>
 		          	<a href="#" class="flat btn">Log In</a>
-		          	<a href="#" class="flat btn">Sign Up</a>
 		          </ul>
 		          
 		          <!-- Brand -->
 		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
 
-				  
+				  <!-- Inner Nav -->
+		          <div class="nav-collapse collapse">
+		            <nav class="nav">
+		            	<li><a href="#"><span class="ss-user"></span>About</a></li>
+		            	<li><a href="#"><span class="ss-info"></span>Help</a></li>
+		            </nav>
+		          </div>
 		        </div>
 		      </div>
 		    </nav> <!-- /main-navs -->
 	
 
+	
 	
 			<!-- ==================== -->
 			<!-- 		Content		  -->
@@ -69,12 +75,30 @@
 
 				<section class="home-hero" id="magicBG">
 					<div class="inner">
-						<h2>Welcome to Stadium Stock Exchange, home of Sport Titans around the world.</h2>
-						<p>Too fast, too furious. It's ours, we spend it.</p>
+						<div class="logo"></div>
 
-						<div class="btn-wrap">
-							<a href="#" class="flat btn">Learn More</a> <a href="#" class="flat btn">Watch the Video</a> 
-						</div>
+							<div class="signup-column">
+								<h2>Welcome to Stadium Stock Exchange, home of Sport Titans around the world.</h2>
+						
+								<form action="">
+									<input type="text" placeholder="Email">
+									
+									<button type="submit" class="flat btn">Get Started</button>
+								</form>
+								
+							</div>
+
+
+							<div class="video-column">
+								<a href="" class="watch-wrap">
+									<span class="ss-play"></span>
+								</a>
+								<a class="flat btn" href="#">Watch Now</a>
+							</div>
+						
+							
+
+							
 					</div>
 				</section>
 
@@ -121,16 +145,7 @@
 				</footer>
 	
 
-				
-				<!-- Search Box -->
-				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-body">
-				    <input type="text" /> <a href="#" class="flat btn ss-search"> Search</a>
-				    <p>Find articles, members, &amp; more.</p>
-				  </div>
-				</div>
-      
-     
+			
     	
 		</div> <!-- /site-wrap -->
 
@@ -147,20 +162,7 @@
 	    <script src="../javascripts/bootstrap-button.js"></script>
 	    <script src="../javascripts/bootstrap-collapse.js"></script>
 	    <script src="../javascripts/vendor/zurb-responsive-tables.js"></script>
-		<script src="../javascripts/jquery.parallax.min.js"></script>
 
-
-		<script>
-		$(document).ready(function(){
-		   $('#magicBG').mousemove(function(e){
-		      var mousePosX = (e.pageX/$(window).width())*100;
-		      $('#magicBG').css('background-position-x', mousePosX +'%');
-		      var mousePosY = (e.pageY/$(window).height())*100;
-		      $('#magicBG').css('background-position-y', mousePosY +'%');
-		      console.log(mousePosX, mousePosY);
-		   }); 
-		});
-		</script>
 		
 	</body>
 	</html>	

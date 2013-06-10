@@ -128,6 +128,63 @@ ul.article-list {
 }
 
 
+// Recommended List
+// --------------------
+ul.recommended-list {
+	
+	@extend .list-slats;
+
+	li {
+
+		@extend .clearfix;
+
+		.item-image {
+			float:left; 
+			margin-right: 20px;
+		}
+
+		.item-content {
+			padding-left: 100px;
+		}
+
+		p {
+			font-size: emCalc(16px);
+			color: $textColor;
+			font-family: $sansFontFamily;
+			margin-bottom: 0;
+		}
+
+		.footnote {
+			display: block;
+			margin-top: 4px;
+			border-top: 1px solid #EEE;
+			padding-top: 4px;
+		}
+
+		.share a {
+			color: lighten($dark, 50%);
+		}	
+	}
+
+	.btn {
+		float:right;
+		margin-top: 12px;
+		@include background-image(linear-gradient(#f2f1f0, #f1f1f0));  		
+	    padding: 1px 10px 0px;
+	    font-size: emCalc(12px);
+	    @include border-radius(4px);
+
+	    &.gain {
+	    	color: $green;
+	    }
+
+	    &.loss {
+	    	color: $red;
+	    }
+	}
+}
+
+
 
 // Special Cases: Aside Lists
 // --------------------------
@@ -157,6 +214,23 @@ ul.article-list {
 				color: lighten($textColor, 30%);
 				font-size: emCalc(14px);
 				font-style: italic;
+			}
+		}
+	}
+
+	// Article List
+	ul.recommended-list {
+		li {
+			.item-image {
+				width: 20%;
+				margin-right: 16px;
+			}
+			.item-content {
+				padding-left: 64px;
+
+				@include breakpoint(phones) {
+					padding-left: 80px;
+				}
 			}
 		}
 	}

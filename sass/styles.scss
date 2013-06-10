@@ -55,20 +55,24 @@
 @import "utilities/sse_utilities";
 
 
-// Grid & Layouts (Built with Susy Grid for Semantic Markup · http://susy.oddbird.net/)
-// ------------------------------------------------------------------------------------
+// Susy Grid (Built with Susy Grid for Semantic Markup · http://susy.oddbird.net/)
+// ---------
 @import "susy"; 
 @import "layout-essentials/sse_susyGrid-base"; // define grid
-@import "layout-essentials/sse_default-layout"; // apply default layout
-@import "layout-essentials/sse_form-layout"; // apply form layout
-@import "layout-essentials/sse_signup-layout"; // apply signup layout
-@import "layout-essentials/sse_homepage-layout"; // apply signup layout
 
 
 // Navigation
 // -------------
 @import "layout-essentials/sse_top-navigation-bars";
 @import "layout-essentials/sse_content-bar"; // Controls Color Bar Area (color stripe, inner breadcrumbs, )
+
+
+//Layouts
+// ------------------------------------------------------------------------------------
+@import "layout-essentials/sse_form-layout"; // apply form layout
+@import "layout-essentials/sse_signup-layout"; // apply signup layout
+@import "layout-essentials/sse_homepage-layout"; // apply homepage layout
+// @import "layout-essentials/sse_homepage-layout-alt"; // apply hompeage alt layout
 
 
 // Footer
