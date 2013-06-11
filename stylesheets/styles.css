@@ -1576,6 +1576,8 @@ header.chart-header h3 { font-size: 1.625em; }
 header.chart-header h3 .detail { font-weight: 200; font-size: 18px; margin-top: 4px; }
 @media (max-width: 768px) { header.chart-header h3 .detail { font-size: 0.875em; } }
 
+#y_axis { position: absolute; top: 0; left: -40px; bottom: 0; width: 40px; }
+
 .chart-options .btn, .chart-options .btn-group { float: right; margin: 0 0 10px; }
 .chart-options .tag-cloud { float: left; }
 .chart-options .buy-sell { float: left; }
@@ -1584,7 +1586,7 @@ header.chart-header h3 .detail { font-weight: 200; font-size: 18px; margin-top: 
 .chart-options .buy-sell .loss.btn, .chart-options .buy-sell .table-header h4 span.btn.ss-down, .table-header h4 .chart-options .buy-sell span.btn.ss-down { -webkit-border-radius: 0px 2px 2px 0px; -moz-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px; }
 .chart-options .buy-sell .loss.btn:hover, .chart-options .buy-sell .table-header h4 span.btn.ss-down:hover, .table-header h4 .chart-options .buy-sell span.btn.ss-down:hover { background: #fe694b; color: #f3f1ee; }
 
-#chart_container { margin: 0 0 20px; border: 1px solid #dadada; }
+#chart_container { margin: 0 0 20px; position: relative; border: 1px solid #dadada; }
 #chart_container .detail .item { background: #444; background: rgba(68, 68, 68, 0.98); }
 #chart_container .detail .item:after { border-top: 10px solid #444; border-top: 10px solid rgba(68, 68, 68, 0.98); border-right: 9px solid rgba(0, 0, 0, 0); border-left: 9px solid rgba(0, 0, 0, 0); top: 58px; position: absolute; left: 44.8%; content: ""; }
 #chart_container .detail .date { font-size: 1em; font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #dadada; }

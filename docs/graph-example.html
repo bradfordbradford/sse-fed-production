@@ -6,7 +6,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
-	    
+
 
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
@@ -26,11 +26,11 @@
 	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
-	    
+
 	<body class="green">
 
 		<div class="site-wrap">
-			
+
 			<!-- ==================== -->
 			<!-- 	  Main Navs		  -->
 			<!-- ==================== -->
@@ -65,7 +65,7 @@
 		                </ul>
 		              </li>
 		          </ul>
-		          
+
 		          <!-- Brand -->
 		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
 
@@ -85,31 +85,31 @@
 		        </div>
 		      </div>
 		    </nav> <!-- /main-navs -->
-	
 
-	
+
+
 			<!-- ==================== -->
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
-			</div>	
+			</div>
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-				
+
 				<header><h1>Graph The Rise &amp; Fall</h1></header>
 				<h2>Graphs</h2>
 				<p>Built with <a href="http://code.shutterstock.com/rickshaw/">Rickshaw Graph Toolkit</a>.</p>
 
-									
+
 				<div id="chart_container">
 					<div id="chart"></div>
-					<div id="slider"></div>
+					<div id="y_axis"></div>
 				</div>
 
 <pre class="prettyprint">
-&lt;!-- Markup --&gt;	
+&lt;!-- Markup --&gt;
 &lt;div id="chart_container"&gt;
   &lt;div id="chart"&gt;
   &lt;/div&gt;
@@ -137,7 +137,7 @@
 <p>Populate Graph Data (x: Unix Encoded Timestamp, y: price of stock)</p>
 <p>For more information on Unix Encoded Timestamps: <a href="http://www.unixtimestamp.com/index.php">Unix Time Stamps</a>, <a href="http://www.epochconverter.com/">Epoch Converter</a>.</p>
 <pre class="prettyprint">
-var data = [ 
+var data = [
 	{ x: 1368421200, y: 5.5 },
 	{ x: 1370062800, y: 260 },
 	{ x: 1373432400, y: 120 },
@@ -168,7 +168,7 @@ var graph = new Rickshaw.Graph( {
 			data: data,
 			color: palette.color(2),
 		}
-	
+
 	]
 } );
 </pre>
@@ -221,7 +221,7 @@ graph.render();
 
 &lt;script&gt;
 // Populate Graph Data (x: Unix Encoded Timestamp, y: price of stock)
-var data = [ 
+var data = [
 	{ x: 1368421200, y: 5.5 },
 	{ x: 1370062800, y: 260 },
 	{ x: 1373432400, y: 120 },
@@ -244,7 +244,7 @@ var graph = new Rickshaw.Graph( {
 			data: data,
 			color: palette.color(2),
 		}
-	
+
 	]
 } );
 
@@ -282,7 +282,7 @@ graph.render();
 					<h4>Example:</h4>
 					<img src="screenshots/chart-and-header.png" alt="">
 				</aside>
-      				
+
       			<!-- Search Box -->
 				<div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-body">
@@ -290,7 +290,7 @@ graph.render();
 				    <p>Find articles, members, &amp; more.</p>
 				  </div>
 				</div>
-     
+
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
@@ -317,7 +317,7 @@ graph.render();
 	    <script>
 
 		// Graph Data (x: --Unix Encoded Timestamp--)
-		var data = [ 
+		var data = [
 			{ x: 1368421200, y: 5.5 },
 			{ x: 1370062800, y: 260 },
 			{ x: 1373432400, y: 120 },
@@ -340,7 +340,7 @@ graph.render();
 					data: data,
 					color: palette.color(2),
 				}
-			
+
 			]
 		} );
 
@@ -370,15 +370,15 @@ graph.render();
 		graph.render();
 
 		</script>
-		
-		
+
+
 
 		<!-- Prettify Code -->
-	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
 	    <script>
 	    	// make code pretty
 	    	window.prettyPrint && prettyPrint()
 	    </script>
 
 	</body>
-</html>	
+</html>
