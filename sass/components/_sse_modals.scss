@@ -4,7 +4,7 @@
 // --------
 
 .modal-backdrop {
-	background-color: white;
+	background-color: #f1f1f1;
 	
 	&.fade.in {
 		opacity: .94;
@@ -14,6 +14,12 @@
 .modal {
 	background: lighten($white, 10%);
 	border: 1px solid lighten($dark, 64%);
+
+	// Darken Flat Buttons for Modal Backdrop
+	.flat.btn {
+		background: #D5D3D2;
+	}
+
 }
 
 .modal-footer {
@@ -22,9 +28,10 @@
 
 
 
-// Search Modal
+
+// Custom SSE Modal
 // -------------------
-#search {
+.custom.modal {
 	position: absolute;
 	background:none;
 	@include box-shadow(none);
@@ -33,7 +40,45 @@
 	.modal-body {
 		max-height: 100%;
 	}
-	
+
+	.chart-options {
+
+		.select-group {
+			float: left;
+			margin: 0 12px 0 0;
+			width: 120px;
+
+			select {
+				width: 100%;
+			}
+		}
+
+		.btn {
+			margin-top: 22px;
+
+			&.gain, &.loss {
+				@include border-radius(2px);
+			}
+
+		}
+	}
+}
+
+
+// Custom SSE Modal Mobile
+// -----------------------
+@include breakpoint(tablet-V) {
+	.custom.modal {
+		width: 240px;
+		margin-left: -124px;
+	}
+}
+
+
+
+// Search Modal
+// ------------
+#search {
 	input {
 		width: 78%;
 		padding: 10px;
@@ -44,7 +89,7 @@
 		padding: 10px 16px;
 	}
 
-	p {
+	p{
 		text-transform: uppercase;
 	}
 }
@@ -54,8 +99,6 @@
 // -------------------
 @include breakpoint(tablet-V) {
 	#search {
-		width: 240px;
-		margin-left: -124px;
 
 		input {
 			width: 87%;
@@ -72,6 +115,9 @@
 		}
 	}
 }
+
+
+
 
 
 
