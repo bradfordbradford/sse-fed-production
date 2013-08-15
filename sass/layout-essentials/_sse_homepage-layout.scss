@@ -6,17 +6,16 @@
 // --------------------
 
 body.homepage {
-	
+
 	// Home Hero
 	.home-hero {
 		margin-top: 68px;
-		background: url(../images/stadium-bg.jpeg) no-repeat 0 0 scroll; 
+		background: url(../images/stadium-bg.jpeg) no-repeat 0 0 scroll;
 	    height: auto;
 	    left: 0;
 	    min-height: 600px;
 	    overflow: hidden;
 	    top: 0;
-
 
 	    @include transition(background-position .4s ease-in-out);
 
@@ -25,8 +24,8 @@ body.homepage {
 			width: 72%;
 			margin-left: 17%;
 			margin-top: 140px;
-			
-			
+
+
 			.video-column {
 				@include span-columns(4);
 				float:left;
@@ -37,13 +36,13 @@ body.homepage {
 					width: 100%;
 					padding:12px 0;
 				}
-				
+
 				.watch-wrap {
 					display: block;
 					background: white;
 					background:rgba(255, 255, 255, 0.5);
 					border: 1px solid #A3A3A3;
-					height: 145px; 
+					height: 145px;
 					width: 100%;
 					margin-bottom: 16px;
 					@include transition(all .15s ease-in-out);
@@ -107,7 +106,7 @@ body.homepage {
 			@include breakpoint(tablet-H) {
 				width: auto;
 				margin:0 15px;
-				
+
 				.signup-column, .video-column {
 					width: auto;
 					float: none;
@@ -137,7 +136,7 @@ body.homepage {
 	.nav-collapse.collapse {
 		display: none;
 	}
-	// Show Top Bar 
+	// Show Top Bar
 	@include breakpoint(tablet-H) {
 		.nav-collapse.collapse {
 			display: inherit;

@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>SSE • Basic Structure</title>
-		
+
 		<!-- Responds to device & Description -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{Put your SSE description here!}">
-	    
+
 		<!-- Styles -->
 	    <link href="../stylesheets/styles.css" rel="stylesheet">
 	    <link href="../webfonts/ss-symbolicons/ss-symbolicons-block.css" rel="stylesheet">
-	    
+
 	    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css">
-		
+
 		<!-- Modernizr: modernizr.com -->
 	    <script src="../javascripts/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -25,12 +25,19 @@
 	    <!-- Telegraph Typekit -->
 	    <script type="text/javascript" src="//use.typekit.net/wmd4gdo.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	    <style>
+			.article-snippet-wrap.expanded #expand.btn {
+				display: none;
+			}
+		</style>
+
 	</head>
-	
+
 	<body class="">
 
 		<div class="site-wrap">
-			
+
 			<!-- ==================== -->
 			<!-- 	  Main Navs		  -->
 			<!-- ==================== -->
@@ -65,7 +72,7 @@
 		                </ul>
 		              </li>
 		          </ul>
-		          
+
 		          <!-- Brand -->
 		          <a class="name" href="index.html"><h1>Stadium Stock Exchange</h1></a>
 
@@ -85,22 +92,33 @@
 		        </div>
 		      </div>
 		    </nav> <!-- /main-navs -->
-	
 
-	
+
+
 			<!-- ==================== -->
 			<!-- 		Content		  -->
 			<!-- ==================== -->
 			<div class="content-bar">
-			</div>	
+			</div>
 
 			<div class="content-wrap">
 
 				<section class="content-area">
-<a href="#" id="showMore">Before</a>
+<!-- http://plugins.learningjquery.com/expander/ TBC-->
+<!-- <div class="expandable">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+    </p>
+    <p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+    officia deserunt mollit anim id est laborum.
+    </p>
+  </div> -->
+
 
 <h2>Article Snippets</h2>
-<p>There are two ways to display snippets of information: 
+<p>There are two ways to display snippets of information:
 	<ol>
 		<li>Expand the article in-page.</li>
 		<li>Link out to the full article</li>
@@ -119,12 +137,15 @@
 		</div>
 	</header>
 
-	<div class="article-snippet">
-	    <p>Below is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.</p>
 
-	    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+	<div class="article-snippet-wrap">
+		<div class="article-snippet">
+		    <p>Below is compilation of miscellaneous tools &amp; features you can use—both SSE specific as well as Bootstrap originals. This is just a sampling of some Bootstrap essentials you might find helpful, but of course, anything on the bootstrap site can be pulled in as needed.</p>
+
+		    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+		</div>
+		<a href="#" class="flat btn" id="expand">Read More</a>
 	</div>
-	<a href="#" class="flat btn" id="expand">Read More</a>
 </article>
 
 
@@ -209,8 +230,8 @@
 				    <p>Find articles, members, &amp; more.</p>
 				  </div>
 				</div>
-      
-     
+
+
     		</div> <!-- content-wrap -->
 		</div> <!-- /site-wrap -->
 
@@ -233,21 +254,18 @@
 			// Article Snippet
 			// ---------------
 			$( "#expand" ).click(function() {
-				$( ".article-snippet" ).toggleClass( "expanded", 150 );
-				return false;
+				$( ".article-snippet-wrap" ).toggleClass( "expanded", 150)
+
 			});
-		
 
 		</script>
 
-		
-
 		<!-- Prettify Code -->
-	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script> 
+	    <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
 	    <script>
 	    	// make code pretty
 	    	window.prettyPrint && prettyPrint()
 	    </script>
 
 	</body>
-</html>	
+</html>

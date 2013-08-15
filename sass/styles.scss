@@ -55,9 +55,9 @@
 @import "utilities/sse_utilities";
 
 
-// Grid & Layouts (Built with Susy Grid for Semantic Markup · http://susy.oddbird.net/)
+// Grid & Layouts (Built with Susy Grid for Semantic Markup: http://susy.oddbird.net/)
 // ------------------------------------------------------------------------------------
-@import "susy"; 
+@import "susy";
 @import "layout-essentials/sse_susyGrid-base"; // define grid
 @import "layout-essentials/sse_default-layout"; // apply default layout
 @import "layout-essentials/sse_form-layout"; // apply form layout
@@ -94,4 +94,5 @@
 @import "components/sse_buttons";
 @import "components/sse_tag-cloud";
 @import "components/sse_tags-badges-banners-headers"; //UI Components & Special Typography
+
 

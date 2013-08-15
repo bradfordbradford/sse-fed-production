@@ -7,7 +7,7 @@
 // ------------------
 
 
-// Article Header 
+// Article Header
 // --------------
 header.article-header {
 
@@ -20,7 +20,7 @@ header.article-header {
 		@extend .clearfix;
 		margin-top: 12px;
 	}
-	
+
 	.timestamp {
 		font-style: italic;
 		font-size: emCalc(20px);
@@ -67,19 +67,39 @@ article p {
 
 // Article Snippet
 // ---------------
-.article-snippet {
-	height:90px;
-	overflow:hidden;
-	@include fade-V-B;
+.article-snippet-wrap {
+	.article-snippet {
+		height:90px;
+		overflow:hidden;
+		@include fade-V-B;
+	}
 
-	&.expanded {
+	&.expanded .article-snippet {
 	    height: 100%;
 	    overflow: hidden;
+	    max-height: 100%;
 
 	    &:before {
 	    	background: none;
 			background-image:none;
 	    }
 	}
+
 }
+
+// .article-snippet {
+// 	height:90px;
+// 	overflow:hidden;
+// 	@include fade-V-B;
+
+// 	&.expanded {
+// 	    height: 100%;
+// 	    overflow: hidden;
+
+// 	    &:before {
+// 	    	background: none;
+// 			background-image:none;
+// 	    }
+// 	}
+// }
 
